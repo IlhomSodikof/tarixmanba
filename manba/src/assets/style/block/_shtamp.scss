@@ -1,0 +1,29 @@
+.shtamp-container{
+  min-height: 50vh;
+  background-color: rgb(236, 213, 171);
+  padding: 20px;
+  .title-shtamp{
+    
+    display: flex;
+    align-items: end;
+    h2{
+      
+      font-size: 30px;
+      span{
+        font-size: 15px;
+        padding-left: 10px;
+        font-weight: 400;
+        font-family: sans-serif;
+      }
+    }
+  
+
+    
+  } 
+   .title-shtamp-card{
+      padding-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+    }
+}
