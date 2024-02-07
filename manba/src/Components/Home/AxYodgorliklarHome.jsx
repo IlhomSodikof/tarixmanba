@@ -1,15 +1,15 @@
 import React from 'react'
 import MiniCard from '../components/MiniCard'
 
-export default function Shtamp() {
+export default function AxYodgorliklarHome() {
   return (
     <>
       <div className='shtamp-container'>
         <div className='title-shtamp'>
-          <h2 >Muhirlar<span>BARCHASI</span></h2>
+          <h2 >Arxeologik yodgorliklar<span>BARCHASI</span></h2>
         </div>
         <div className="title-shtamp-card">
-          {[1, 2,].map((item) =>
+          {[1].map((item) =>
             <MiniCard />
           )}
         </div>
