@@ -1,42 +1,36 @@
-*{
+* {
   padding: 0;
   margin: 0;
   list-style-type: none;
   text-decoration: none;
-
 }
 
-.container-layout{
-  padding-top: 100px;
+.container-layout {
+  // padding-top: 100px;
   min-height: 69vh;
 }
 
-
-.map-img{
+.map-img {
   width: 90%;
   float: left;
-
 }
-.map-img path{
+.map-img path {
   fill: aqua;
-  stroke: #FFF;
+  stroke: #fff;
   stroke-width: 2px;
 }
-.map-img path:hover{
+.map-img path:hover {
   position: absolute;
   fill: red;
   color: #000;
   font-size: 20px;
-  
 }
 
-
-.map-img svg a{
+.map-img svg a {
   position: relative;
-  span{
+  span {
     position: absolute;
     z-index: 1000;
     color: #000;
   }
- 
 }
