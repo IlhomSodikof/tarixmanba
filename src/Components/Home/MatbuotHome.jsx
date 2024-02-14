@@ -102,7 +102,7 @@ export default function MatbuotHome() {
   return (
     <>
       <div className="info_carousel">
-        <h2 >Matbuot<span>BARCHASI</span></h2>
+        <h2 >Matbuot  <span> BARCHASI</span></h2>
 
         <Slider
           {...settings}
