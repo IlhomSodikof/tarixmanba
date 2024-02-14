@@ -9,6 +9,7 @@
 .container-layout{
   padding-top: 100px;
   min-height: 69vh;
+ 
 }
 
 
@@ -39,4 +40,13 @@
     color: #000;
   }
  
+}
+
+.map-cotainerssssss{
+  position: relative;
+  left: -10px !important;
+  width: 800px !important;
+  overflow:auto ;
+  border-radius: 15px;
+  object-position: center;
 }

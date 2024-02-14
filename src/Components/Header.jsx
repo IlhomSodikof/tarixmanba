@@ -16,6 +16,7 @@ import { FaPhotoFilm } from "react-icons/fa6";
 import { ImNewspaper } from "react-icons/im";
 import { BiSearchAlt } from "react-icons/bi";
 import { RiMenu5Line } from "react-icons/ri";
+import { CiInboxIn } from "react-icons/ci";
 
 export default function Header() {
   const valRef = useRef(null)
@@ -65,25 +66,30 @@ export default function Header() {
               }}
             >
               <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
-                <Link className='nav-drop-link'><MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span></Link>
-              </motion.li>
-              <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
-                <Link className='nav-drop-link'><RiFilePaper2Line /> <span> Yozma manbalar</span></Link>
+                <Link className='nav-drop-link'> <TbBuildingCastle /><span> Arxealogiya</span></Link>
               </motion.li>
               <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
                 <Link className='nav-drop-link'><HiUserGroup /> <span> Xalq og'zaki ijodi</span></Link>
               </motion.li>
               <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
-                <Link className='nav-drop-link'>< LiaBoxOpenSolid /> <span> Tarixiy xujatlar</span></Link>
+                <Link className='nav-drop-link'><MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span></Link>
               </motion.li>
               <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
                 <Link className='nav-drop-link'><GiTwoCoins /> <span> Tangalar</span></Link>
               </motion.li>
               <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
-                <Link className='nav-drop-link'> <GiStamper /><span> Muhirlar</span></Link>
+                <Link className='nav-drop-link'><RiFilePaper2Line /> <span> Bitiklar</span></Link>
+              </motion.li>
+
+              <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
+                <Link className='nav-drop-link'>< LiaBoxOpenSolid /> <span> Tarixiy hujatlar</span></Link>
+              </motion.li>
+
+              <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
+                <Link className='nav-drop-link'> <GiStamper /><span> San'at asarlari</span></Link>
               </motion.li>
               <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
-                <Link className='nav-drop-link'> <TbBuildingCastle /><span> Memorchilik</span></Link>
+                <Link className='nav-drop-link'><CiInboxIn /> <span>Arxiv jamg'armalari</span></Link>
               </motion.li>
               <motion.li className="dorop-item" onClick={() => { setNum(-100), setOpa(false) }} whileHover={{ x: 15, opacity: 0.5 }} >
                 <Link className='nav-drop-link'> <ImNewspaper /><span>  Matbuot</span></Link>
@@ -102,10 +108,10 @@ export default function Header() {
                 stiffness: 160,
                 damping: 15
               }}></motion.div>
-            <button className='nav-btn'><Link className='nav-btn-link' onClick={() => { setOpa(1.01), setNum(0) }}>Biz haqimizda</Link></button>
-            <button className='nav-btn'><Link className='nav-btn-link' onClick={() => { setOpa(0.7), setNum(142) }}>Yangiliklar</Link></button>
-            <button className='nav-btn'><Link className='nav-btn-link' onClick={() => { setOpa(0.75), setNum(274) }}>Kutubxona</Link></button>
-            <button className='nav-btn'><Link className='nav-btn-link' onClick={() => { setOpa(0.72), setNum(406) }}>Bog'lanish</Link></button>
+            <button className='nav-btn'><Link className='nav-btn-link' onClick={() => { setOpa(0.75), setNum(-10) }}>Kutubxona</Link></button>
+            <button className='nav-btn'><Link className='nav-btn-link' onClick={() => { setOpa(0.7), setNum(122) }}>Yangiliklar</Link></button>
+            <button className='nav-btn'><Link className='nav-btn-link' onClick={() => { setOpa(0.45), setNum(242) }}>Voqea</Link></button>
+            <button className='nav-btn'><Link className='nav-btn-link' onClick={() => { setOpa(1.01), setNum(373) }}>Biz haqimizda</Link></button>
           </div>
         </div>
         <div className="nav-last-item">
