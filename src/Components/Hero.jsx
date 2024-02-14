@@ -10,8 +10,7 @@ export default function Hero() {
       />
       <h2>
         Saytning toʻliq imkoniyatlaridan foydalanish uchun{" "}
-        <a href="#"> Roʻyxatdan oʻting</a>
-        yoki shaxsiy xonaga kiring
+        <a href="#"> Roʻyxatdan oʻting</a> yoki shaxsiy xonaga kiring
       </h2>
       <div class="search_container">
         <form action="/action_page.php">
