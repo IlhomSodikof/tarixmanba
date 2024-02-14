@@ -1,5 +1,6 @@
 import { MapContainer, Marker, Popup, TileLayer, GeoJSON } from "react-leaflet";
 import geojsonData from '../../data/map/countries.json';
+import { motion } from 'framer-motion'
 export default function Map() {
   const position = [41.381166, 64.5735819];
 
@@ -69,22 +70,34 @@ export default function Map() {
     });
   };
   return (
-    <MapContainer className="map"
-      center={position}
-      zoom={6}
-      style={{ height: "500px", width: "1400px" }}
-      attributionControl={false}
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <GeoJSON data={geojsonData} style={style} onEachFeature={onEachFeature} />
-      <Marker position={position}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <motion.div
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1.3 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20
+      }}>
+
+
+      <MapContainer className="map"
+
+        center={position}
+        zoom={6}
+        style={{ height: "500px", width: "1400px" }}
+        attributionControl={false}
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        <GeoJSON data={geojsonData} style={style} onEachFeature={onEachFeature} />
+        <Marker position={position}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker>
+      </MapContainer>
+    </motion.div>
   );
 }

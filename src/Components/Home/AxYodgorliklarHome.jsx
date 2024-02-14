@@ -10,7 +10,7 @@ export default function AxYodgorliklarHome() {
         </div>
         <div className="title-shtamp-card">
           {[1].map((item) =>
-            <MiniCard />
+            <MiniCard key={item} />
           )}
         </div>
       </div >

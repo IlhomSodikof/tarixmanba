@@ -2,6 +2,10 @@
   min-height: 50vh;
   background-color: rgb(236, 213, 171);
   padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:scroll;
+
   .title-shtamp{
     
     display: flex;

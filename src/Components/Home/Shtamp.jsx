@@ -10,7 +10,7 @@ export default function Shtamp() {
         </div>
         <div className="title-shtamp-card">
           {[1, 2,].map((item) =>
-            <MiniCard />
+            <MiniCard key={item} />
           )}
         </div>
       </div >

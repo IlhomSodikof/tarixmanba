@@ -111,8 +111,8 @@ export default function MatbuotHome() {
           nextArrow={<NextArrow />}
           prevArrow={<PrevArrow />}
         >
-          {apiData?.map((item) =>
-            <MiniCard />
+          {apiData?.map((item, id) =>
+            <MiniCard key={id} />
           )}
         </Slider>
       </div>
