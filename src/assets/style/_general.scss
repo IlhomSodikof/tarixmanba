@@ -8,7 +8,18 @@
 .container-layout {
   // padding-top: 100px;
   min-height: 69vh;
- 
+}
+h2 {
+  font-size: 2.4rem;
+  padding: 20px 10px 0 10px;
+  border-top: 1px solid #223b6d;
+  margin-top: 60px;
+  color: #223b6d;
+  width: 100%;
+  span {
+    color: #b71313;
+    font-size: 1.2rem;
+  }
 }
 
 .map-img {
@@ -36,11 +47,11 @@
   }
 }
 
-.map-cotainerssssss{
+.map-cotainerssssss {
   position: relative;
   left: -10px !important;
   width: 800px !important;
-  overflow:auto ;
+  overflow: auto;
   border-radius: 15px;
   object-position: center;
 }

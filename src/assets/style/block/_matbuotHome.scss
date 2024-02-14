@@ -1,53 +1,70 @@
-.shtamp-container{ // matbuotHome  
+.shtamp-container {
+  // matbuotHome
   min-height: 50vh;
   background-color: rgba(173, 216, 230, 0.293);
   padding: 20px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment:scroll;
+  background-attachment: scroll;
 
-
-  .title-shtamp{
-    
+  .title-shtamp {
     display: flex;
     align-items: end;
-    h2{
-      
+    h2 {
       font-size: 30px;
-      span{
+      span {
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
         font-family: sans-serif;
       }
     }
-  
-
-    
-  } 
-   .title-shtamp-card{
-      padding-top: 20px;
-      display: flex;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 15px;
-    }
+  }
+  .title-shtamp-card {
+    padding-top: 20px;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+  }
 }
 
-
-
 //MAtbuotHome Carusel
-.info_carousel{
-  h2{
+.info_carousel {
+  h2 {
     padding: 20px;
     font-size: 30px;
-    span{
+    span {
       font-size: 15px;
       font-weight: 400;
     }
   }
 }
 
+.custom-arrow1 {
+  position: absolute;
+  top: -20px;
+  margin-bottom: 20px;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: rgba(72, 81, 84, 0.732);
+  // border-radius: 50%; /* Shakl */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #fff;
+}
 
+.custom-arrow-left1 {
+  right: 80px;
+  z-index: 1;
+}
+
+.custom-arrow-right1 {
+  right: 25px;
+}
 .slick-list {
   margin: 0 -10px;
 }
@@ -56,9 +73,9 @@
 }
 
 @media screen and (max-width: 566px) {
-  .shtamp-container{
+  .shtamp-container {
     padding: 10px;
-    .title-shtamp-card{
+    .title-shtamp-card {
       padding-top: 20px;
       display: grid;
       grid-template-columns: repeat(1, minmax(300px, 1fr));

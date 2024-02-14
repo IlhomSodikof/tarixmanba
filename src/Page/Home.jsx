@@ -15,6 +15,7 @@ import MiniSpin from "../Components/components/miniSpin";
 // import AxYodgorliklarHome from "../Components/Home/AxYodgorliklarHome";
 import Hero from "../Components/Hero";
 import SliderWebsite from "../Components/SliderWebsite";
+import Library from "../Components/Library";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <MatbuotHome />
         <AxYodgorliklarHome />
         <SliderWebsite />
+        <Library />
         {/* <MiniSpin />
         <HomeLoader /> */}
       </main>

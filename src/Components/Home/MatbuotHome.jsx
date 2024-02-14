@@ -22,19 +22,14 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import MiniCard from '../components/MiniCard'
-
+import MiniCard from "../components/MiniCard";
 
 // import { useNavigate } from "react-router-dom";
 
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
-
-
 export default function MatbuotHome() {
-
-
   var settings = {
     dots: false,
     infinite: true,
@@ -76,13 +71,13 @@ export default function MatbuotHome() {
   };
 
   const NextArrow = ({ onClick }) => (
-    <div className="custom-arrow custom-arrow-right1" onClick={onClick}>
+    <div className="custom-arrow1 custom-arrow-right1" onClick={onClick}>
       <IoIosArrowForward />
     </div>
   );
 
   const PrevArrow = ({ onClick }) => (
-    <div className="custom-arrow custom-arrow-left1" onClick={onClick}>
+    <div className="custom-arrow1 custom-arrow-left1" onClick={onClick}>
       <IoIosArrowBack />
     </div>
   );
@@ -102,7 +97,9 @@ export default function MatbuotHome() {
   return (
     <>
       <div className="info_carousel">
-        <h2 >Matbuot  <span> BARCHASI</span></h2>
+        <h2>
+          Matbuot <span> BARCHASI</span>
+        </h2>
 
         <Slider
           {...settings}
@@ -111,12 +108,11 @@ export default function MatbuotHome() {
           nextArrow={<NextArrow />}
           prevArrow={<PrevArrow />}
         >
-          {apiData?.map((item, id) =>
+          {apiData?.map((item, id) => (
             <MiniCard key={id} />
-          )}
+          ))}
         </Slider>
       </div>
     </>
   );
 }
-
