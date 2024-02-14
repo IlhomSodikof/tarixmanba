@@ -8,23 +8,20 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 export default function App() {
   return (
     <>
       <Swiper
+        slidesPerView={1}
         spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        loop={true}
         pagination={{
-          clickable: false,
+          clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -34,8 +31,6 @@ export default function App() {
               alt=""
             />
             <div className="slide_element_title">
-              <h3>Jadidlar.u</h3>
-              <p>2024-02-14</p>
               <button>Batafsil</button>
             </div>
           </div>
@@ -47,8 +42,6 @@ export default function App() {
               alt=""
             />
             <div className="slide_element_title">
-              <h3>O'zbekiston fanlar akademiyasi Tarix Instituti</h3>
-              <p>2024-02-14</p>
               <button>Batafsil</button>
             </div>
           </div>
