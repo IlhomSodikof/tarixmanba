@@ -115,7 +115,7 @@ export default function Header() {
           </div>
         </div>
         <div className="nav-last-item">
-          <form className="input-wrapper-search">
+          {/* <form className="input-wrapper-search">
 
             <motion.div className='inp-cont'>
               <input placeholder="search.." className="input-search" name="text" type="text" />
@@ -137,7 +137,7 @@ export default function Header() {
               }}>
               <BiSearchAlt />
             </motion.button>
-          </form>
+          </form> */}
           <div className='kabinet' onClick={() => { setOpa(false), setNum(500) }}><Link className='kabinet-link' ><HiUserCircle /></Link></div>
           <motion.div className='dark-mood' onClick={() => { setMoon(!moon), setNum(1000), setOpa(0) }}
             whileTap={{

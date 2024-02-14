@@ -70,7 +70,7 @@ export default function Map() {
     });
   };
   return (
-    <motion.div 
+    <motion.div
       initial={{ scaleX: 0 }}
       animate={{ scaleX: 1.3 }}
       transition={{
