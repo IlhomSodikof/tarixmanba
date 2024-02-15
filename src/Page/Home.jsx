@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <main>
         <Hero />
-        {/* <GlobeComponent /> */}
+        <GlobeComponent />
         <Map />
         <Shtamp />
         <MatbuotHome />
@@ -24,8 +24,8 @@ export default function Home() {
         <MiniSpin />
         <HomeLoader />
         <Library />
-        {/* <MiniSpin />
-        <HomeLoader /> */}
+        <MiniSpin />
+        <HomeLoader />
       </main>
     </>
   );
