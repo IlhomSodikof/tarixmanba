@@ -8,6 +8,7 @@ import AxYodgorliklarHome from "../Components/Home/AxYodgorliklarHome";
 import GlobeComponent from "../Components/Home/GlobeComponent";
 import Hero from "../Components/Hero";
 import SliderWebsite from "../Components/SliderWebsite";
+import Library from "../Components/Library";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
         <SliderWebsite />
         <MiniSpin />
         <HomeLoader />
+        <Library />
+        {/* <MiniSpin />
+        <HomeLoader /> */}
       </main>
     </>
   );
