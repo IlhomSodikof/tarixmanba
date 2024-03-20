@@ -1,9 +1,14 @@
 import React from "react";
+import { IoLocationSharp } from "react-icons/io5";
+import { IoTimeSharp } from "react-icons/io5";
 
 export default function FashionCard() {
   return (
     <>
       <div className="fashion__container">
+        <h1 className="fashion__title">
+          <span>Eng Mashxur </span> Tarixiy Manbalar
+        </h1>
         <div className="fashion__content">
           <div class="card">
             <div class="face front">
@@ -20,8 +25,18 @@ export default function FashionCard() {
                 harum molestiae iste, nihil doloribus fugiat distinctio ducimus
                 maxime totam nulla fuga odio non aperiam eos?
               </p>
+              <div className="fashion__location">
+                <IoLocationSharp />
+
+                <p>Italiya</p>
+              </div>
+              <div className="fashion__time">
+                <IoTimeSharp />
+
+                <p>Friday To Sunday:10 </p>
+              </div>
               <div class="link">
-                <a href="#">Details</a>
+                <a href="#">Ko'proq</a>
               </div>
             </div>
           </div>
@@ -41,8 +56,18 @@ export default function FashionCard() {
                 harum molestiae iste, nihil doloribus fugiat distinctio ducimus
                 maxime totam nulla fuga odio non aperiam eos?
               </p>
+              <div className="fashion__location">
+                <IoLocationSharp />
+
+                <p>Italiya</p>
+              </div>
+              <div className="fashion__time">
+                <IoTimeSharp />
+
+                <p>Friday To Sunday:10 </p>
+              </div>
               <div class="link">
-                <a href="#">Details</a>
+                <a href="#">Ko'proq</a>
               </div>
             </div>
           </div>
@@ -62,8 +87,18 @@ export default function FashionCard() {
                 harum molestiae iste, nihil doloribus fugiat distinctio ducimus
                 maxime totam nulla fuga odio non aperiam eos?
               </p>
+              <div className="fashion__location">
+                <IoLocationSharp />
+
+                <p>Ispaniya </p>
+              </div>
+              <div className="fashion__time">
+                <IoTimeSharp />
+
+                <p>Friday To Sunday:10 </p>
+              </div>
               <div class="link">
-                <a href="#">Details</a>
+                <a href="#">Ko'proq</a>
               </div>
             </div>
           </div>
@@ -73,17 +108,27 @@ export default function FashionCard() {
                 src="https://htmldemo.net/pharaoh/pharaoh/images/event/1.jpg"
                 alt=""
               />
-              <h3>Perú</h3>
+              <h3>Italy</h3>
             </div>
             <div class="face back">
-              <h3>Perú</h3>
+              <h3>Italy</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
                 harum molestiae iste, nihil doloribus fugiat distinctio ducimus
                 maxime totam nulla fuga odio non aperiam eos?
               </p>
+              <div className="fashion__location">
+                <IoLocationSharp />
+
+                <p>Italiya Muzeyi</p>
+              </div>
+              <div className="fashion__time">
+                <IoTimeSharp />
+
+                <p>Friday To Sunday:10 </p>
+              </div>
               <div class="link">
-                <a href="#">Details</a>
+                <a href="#">Ko'proq</a>
               </div>
             </div>
           </div>

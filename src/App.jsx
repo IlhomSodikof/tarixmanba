@@ -11,8 +11,8 @@ export default function App() {
       <Routes>
         <Route path="/" Component={Layout}>
           <Route path="/" Component={Home} />
+          <Route path="/news" Component={News} />
         </Route>
-        <Route path="/news" Component={News} />
       </Routes>
     </div>
   );
