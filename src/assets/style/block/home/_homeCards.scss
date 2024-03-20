@@ -1,5 +1,4 @@
 .card__container {
-  // background: #fafcff;
   max-width: 1450px;
   margin: auto;
   padding: 2rem;
@@ -23,6 +22,9 @@ body {
   // background: var(--light-bg);
   font-family: "Space Grotesk", sans-serif;
   color: var(--dark);
+}
+.home__card__container {
+  margin-top: 45px;
 }
 
 p {
@@ -59,15 +61,17 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  // padding-top: 20px;
+  // border-top: 2px solid #c75652;
   h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 2.8rem;
-    color: #214690;
+    color: #c75652;
   }
   .see_all {
-    border: 0.1vw solid rgba(33, 70, 144, 0.3);
+    border: 1.5px solid #ed4741;
     border-radius: 2vw;
     padding: 15px 20px;
     display: flex;
@@ -79,7 +83,7 @@ a {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2vw;
-    color: #214690;
+    color: #ed4741;
     background: transparent;
   }
 
