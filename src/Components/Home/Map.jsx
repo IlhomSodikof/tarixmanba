@@ -1,6 +1,16 @@
 import { MapContainer, Marker, Popup, TileLayer, GeoJSON } from "react-leaflet";
 import geojsonData from '../Home/data/map/countries.json'
 import { motion } from "framer-motion";
+import { TbBuildingCastle } from "react-icons/tb";
+import { HiUserGroup } from "react-icons/hi2";
+import { MdOutlineHistoryEdu } from "react-icons/md";
+import { GiStamper, GiTwoCoins } from "react-icons/gi";
+import { RiFilePaper2Line } from "react-icons/ri";
+import { LiaBoxOpenSolid } from "react-icons/lia";
+import { CiInboxIn } from "react-icons/ci";
+import { ImNewspaper } from "react-icons/im";
+import { FaPhotoFilm } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 export default function Map() {
   const position = [41.381166, 64.5735819];
 
@@ -35,7 +45,7 @@ export default function Map() {
 
     layer.setStyle({
       weight: 5,
-      color: "#666",
+      color: "#fff",
       dashArray: "",
       fillOpacity: 0.7,
     });
@@ -70,20 +80,49 @@ export default function Map() {
     });
   };
   return (
-    <motion.div
-      initial={{ scaleX: 0 }}
-      animate={{ scaleX: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 260,
-        damping: 20,
-      }}
-    >
+    <div className="map-full">
+
+
+      <motion.ul className="map-menu">
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'> <TbBuildingCastle /><span> Arxealogiya</span></Link>
+        </motion.li>
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'><HiUserGroup /> <span> Xalq og'zaki ijodi</span></Link>
+        </motion.li>
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'><MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span></Link>
+        </motion.li>
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'><GiTwoCoins /> <span> Tangalar</span></Link>
+        </motion.li>
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'><RiFilePaper2Line /> <span> Bitiklar</span></Link>
+        </motion.li>
+
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'>< LiaBoxOpenSolid /> <span> Tarixiy hujatlar</span></Link>
+        </motion.li>
+
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'> <GiStamper /><span> San'at asarlari</span></Link>
+        </motion.li>
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'><CiInboxIn /> <span>Arxiv jamg'armalari</span></Link>
+        </motion.li>
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'> <ImNewspaper /><span>  Matbuot</span></Link>
+        </motion.li>
+        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='nav-drop-link'><FaPhotoFilm /><span>  Foto va video manbalar</span></Link>
+        </motion.li>
+      </motion.ul>
+
       <MapContainer
         className="map"
         center={position}
-        zoom={6}
-        style={{ height: "600px", width: "100%" }}
+        zoom={1}
+        // style={{ height: "600px", width: "100%" }}
         attributionControl={false}
       >
         <TileLayer
@@ -101,6 +140,6 @@ export default function Map() {
           </Popup>
         </Marker>
       </MapContainer>
-    </motion.div>
+    </div>
   );
 }
