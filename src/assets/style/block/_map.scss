@@ -1,3 +1,11 @@
+// .for_light_theme{
+//   --primaryCl:#red;
+// }
+
+// .for_black_them{
+//   --primaryCl:#black;
+
+// }
 * {
   padding: 0;
   margin: 0;
@@ -23,31 +31,45 @@ h2 {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ccc;
-  padding-top:40px ;
+  border-bottom: 1px solid #ccc;
+  padding:50px 20px;
+  // <div class="leaflet-popup-tip-container"><div class="leaflet-popup-tip"></div></div>
   .map{
-  width: 70%;
-  height: 400px;
+  width: 75%;
+  height: 520px;
   border-radius: 5px;
   padding: 5px;
   border: 2px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .popapa{
+   width: max-content;
+    // min-height: 200px;
+    // background-color: blue;
+    *{
+      background-color: rgb(26, 26, 132);
+      color: yellow !important;
+    }
+    .leaflet-popup-tip-container{
+      background-color: transparent;
+    }
+
+  }
 }
 
-.menu-drop {
-  position: absolute;
-  z-index: 10000 !important;
-  background-color: #fff;
+.map-menu {
+ 
+  background-color:var(--primaryCl);
   border-radius: 5px;
-  padding: 20px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   top: 130px;
   align-items: flex-start;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 0px 8px;
-  .dorop-item {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .map-item {
     font-size: 27px;
-    .nav-drop-link {
+    .map-link {
       display: flex;
       align-items: center;
       gap: 5px;

@@ -33,11 +33,13 @@ export default function Header() {
   const [maxDrop, setMaxDrop] = useState(false);
   const [loginDrop, setLoginDrop] = useState(false);
 
+
   const handleClickOutside = (event) => {
     if (valRef.current && !valRef.current.contains(event.target)) {
       setDrop(false);
     }
   };
+
 
   const handleClickOutsideLogin = (event) => {
     if (valRefLogin.current && !valRefLogin.current.contains(event.target)) {

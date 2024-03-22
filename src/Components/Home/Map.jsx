@@ -11,8 +11,32 @@ import { CiInboxIn } from "react-icons/ci";
 import { ImNewspaper } from "react-icons/im";
 import { FaPhotoFilm } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 export default function Map() {
-  const position = [41.381166, 64.5735819];
+  const position = [41.304987, 69.283384];
+  const position1 = [41.488801, 69.5857077];
+
+  const [num, setNum] = useState(0)
+
+
+
+  const cordinat = [
+    [
+      { id: 1, lan: [41.304987, 69.283384], title: "Tarix unversityfdsfsdfdsfdsfdfdfdsfsdfdsfsdfdsfdsfdfsd", title2: "arix unversityfdsfsdfdsfdsfdfdfdsfsdfdsfsdfdsfdsfdfsd" },
+      { id: 2, lan: [41.488801, 69.5857077], title: "Chirchiq unversity" },
+      { id: 3, lan: [38.841450, 65.789686], title: "Qishloq unver" },
+      { id: 4, lan: [41.568854, 64.202113], title: "matem unversity" },
+
+    ],
+    [
+      { id: 1, lan: [39.654403, 66.975837], title: "Smarqand unversity" },
+      { id: 2, lan: [40.103060, 65.373973], title: "Navoiy unversity" },
+
+    ],
+
+  ]
+
+  console.log(cordinat);
 
   const getColor = (value) => {
     return value > 100
@@ -34,7 +58,7 @@ export default function Map() {
       fillColor: getColor(value),
       weight: 2,
       opacity: 1,
-      color: "white",
+      color: "blue",
       dashArray: "3",
       fillOpacity: 0.7,
     };
@@ -81,47 +105,47 @@ export default function Map() {
   };
   return (
     <div className="map-full">
-
-
       <motion.ul className="map-menu">
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'> <TbBuildingCastle /><span> Arxealogiya</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} onClick={() => setNum(0)} >
+          <Link className='map-link'> <TbBuildingCastle /><span> Arxealogiya</span></Link>
         </motion.li>
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'><HiUserGroup /> <span> Xalq og'zaki ijodi</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} onClick={() => setNum(1)} >
+          <Link className='map-link'><HiUserGroup /> <span> Xalq og'zaki ijodi</span></Link>
         </motion.li>
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'><MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='map-link'><MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span></Link>
         </motion.li>
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'><GiTwoCoins /> <span> Tangalar</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='map-link'><GiTwoCoins /> <span> Tangalar</span></Link>
         </motion.li>
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'><RiFilePaper2Line /> <span> Bitiklar</span></Link>
-        </motion.li>
-
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'>< LiaBoxOpenSolid /> <span> Tarixiy hujatlar</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='map-link'><RiFilePaper2Line /> <span> Bitiklar</span></Link>
         </motion.li>
 
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'> <GiStamper /><span> San'at asarlari</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='map-link'>< LiaBoxOpenSolid /> <span> Tarixiy hujatlar</span></Link>
         </motion.li>
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'><CiInboxIn /> <span>Arxiv jamg'armalari</span></Link>
+
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='map-link'> <GiStamper /><span> San'at asarlari</span></Link>
         </motion.li>
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'> <ImNewspaper /><span>  Matbuot</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='map-link'><CiInboxIn /> <span>Arxiv jamg'armalari</span></Link>
         </motion.li>
-        <motion.li className="dorop-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='nav-drop-link'><FaPhotoFilm /><span>  Foto va video manbalar</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='map-link'> <ImNewspaper /><span>  Matbuot</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
+          <Link className='map-link'><FaPhotoFilm /><span>  Foto va video manbalar</span></Link>
         </motion.li>
       </motion.ul>
 
       <MapContainer
         className="map"
         center={position}
-        zoom={1}
+        center2={position1}
+
+        zoom={5}
         // style={{ height: "600px", width: "100%" }}
         attributionControl={false}
       >
@@ -134,11 +158,25 @@ export default function Map() {
           style={style}
           onEachFeature={onEachFeature}
         />
-        <Marker position={position}>
+        {cordinat[num]?.map((e) => (
+
+          <Marker key={e.id} position={e.lan}>
+            <Popup className="popapa">
+              {e.title} <br /> {e.title2}
+            </Popup>
+          </Marker>
+        ))
+        }
+        {/* <Marker position={position1}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
+        <Marker position={position}>
+          <Popup>
+            Nodirning  yashash manzili: <br /> Yerning a***
+          </Popup>
+        </Marker> */}
       </MapContainer>
     </div>
   );

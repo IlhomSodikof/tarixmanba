@@ -8,6 +8,8 @@ $defaultSeconds: 3s;
   display: flex;
   justify-content: center;
   padding: 15px;
+ 
+
   @media screen and (max-width: 768px) {
     padding: 10px;
     height: 105vh;
@@ -28,10 +30,11 @@ $defaultSeconds: 3s;
   position: absolute;
   top: 100px;
   height: 55vh;
-  width: 100%;
+  width: 90%;
   display: -webkit-flex; /* Safari */
   display: flex;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 90%;
@@ -43,11 +46,12 @@ $defaultSeconds: 3s;
 .flex-title {
   color: #f1f1f1;
   position: relative;
-  font-size: 2vw;
+  font-size:1vw;
   margin: auto;
   text-align: center;
   transform: rotate(90deg);
-  top: 35px;
+  top: 190px;
+  left: -30px;
   // left:-150px;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -115,10 +119,13 @@ $defaultSeconds: 3s;
   // -webkit-flex-grow: 6;
   flex-grow: 6;
   transform: rotate(0deg);
+  font-size: 1.5vw;
 }
 .flex-slide:hover > .flex-title {
   -webkit-flex-grow: 6;
   flex-grow: 6;
+  font-size: 2vw;
+
   transform: rotate(0deg);
 }
 .home {

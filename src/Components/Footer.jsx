@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import Logo from '../../img/Group 8 (2).svg'
 // import { fotorlogo } from "../../react/Group 8 (2).svg"
 
 export default function Footer() {
@@ -16,7 +17,7 @@ export default function Footer() {
       <div className="footer-bottom-box">
         <div className="footer-icons">
           <div className="footer-logos">
-            <img className='logo-footer' src="./Group 8 (2).svg" alt="Logo" />
+            <img className='logo-footer' src={Logo} />
           </div>
           <div className="footer-icons-box">
             {/* <p className='footer-title'> Bizni  ichtimoiy tarmoqlarda kuzating:</p> */}
