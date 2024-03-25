@@ -6,22 +6,19 @@ import ViewKop from "../Components/Home/ViewKop";
 import FashionCard from "../Components/Home/FashionCard";
 import Acardion from "../Components/Home/Acardion";
 import Map from "../Components/Home/Map";
-import ParticlesComponent from '../Components/component/Anime';
 
 export default function Home() {
-
-
   return (
     <>
       <main className="card__container">
-        <ParticlesComponent id='particles' style={{
+        {/* <ParticlesComponent id='particles' style={{
           zIndex: -10, // Z-index value
           position: 'absolute',
           top: 0,
           left: 0,
           width: '100%',
           height: '100%'
-        }} />
+        }} /> */}
         <Acardion />
         <Map />
         <FashionCard />
