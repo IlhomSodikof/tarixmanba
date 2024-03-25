@@ -4,7 +4,7 @@ export default function Acardion() {
   return (
 
     <div className='acardions'>
-      <h1 className='acardion-title'>Tarixiy obidalar va nodir tipilmalar</h1>
+      <h1 className='acardion-title'>Tarixiy obidalar va nodir topilmalar</h1>
       <div class="flex-container">
 
         <div className="flex-slide home">

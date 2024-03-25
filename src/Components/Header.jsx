@@ -25,6 +25,47 @@ import { CgDarkMode } from "react-icons/cg"; // darkmods
 import Logo from "../../img/Group 8.svg";
 
 export default function Header() {
+  const [primaryColor, setPrimaryColor] = useState('blue');
+
+  const handleClick = () => {
+    // Yangi rangni tanlash uchun logika
+    const background = '#fff'; // Masalan, yangi rang
+    const color = "#000";
+    const card = '#fff'
+
+    document.documentElement.style.setProperty('--background', background);
+    document.documentElement.style.setProperty('--text-color', color);
+    document.documentElement.style.setProperty('--card-back-color', card);
+    // --primary-color atamasini yangi rangga o'zgartiramiz
+    setPrimaryColor(background)
+  };
+
+  const handleClick1 = () => {
+    // Yangi rangni tanlash uchun logika
+    const background = '#000'; // Masalan, yangi rang
+    const color = "blue";
+
+    document.documentElement.style.setProperty('--background', background);
+    document.documentElement.style.setProperty('--text-color', color);
+
+    // --primary-color atamasini yangi rangga o'zgartiramiz
+    setPrimaryColor(background)
+  };
+  const handleClick2 = () => {
+
+    const background = '#000'; // Masalan, yangi rang
+    const color = "#fff";
+    const card = '#333333'
+
+    document.documentElement.style.setProperty('--background', background);//'--text-color', color
+    document.documentElement.style.setProperty('--text-color', color);
+    document.documentElement.style.setProperty('--card-back-color', card);
+    // --primary-color atamasini yangi rangga o'zgartiramiz
+    setPrimaryColor(background)
+  };
+
+
+
   const valRef = useRef(null);
   const valRefLogin = useRef(null);
   const valRefMax = useRef(null);
@@ -68,7 +109,7 @@ export default function Header() {
     <>
       <header>
         <div className="header-top-box">
-          <Link className="logo-box">
+          <Link className="logo-box" to="/">
             <img className="logo" src={Logo} alt="Logo" />
           </Link>
           <div className="search-box-bigs">
@@ -91,7 +132,7 @@ export default function Header() {
                   setMaxDrop(!maxDrop);
                 }}
               >
-                <GiSunglasses /> <span>Maxsus imkonyatlar</span>
+                <GiSunglasses />
                 <motion.ul
                   className={maxDrop ? "max-imkonyat" : ""}
                   ref={valRefMax}
@@ -104,9 +145,9 @@ export default function Header() {
                   }}
                 >
                   <motion.li className="max-item">
-                    <div className="colors blue"> A </div>
-                    <div className="colors grey"> A </div>
-                    <div className="colors black"> A </div>
+                    <div className="colors blue" onClick={handleClick}> A1 </div>
+                    <div className="colors grey" onClick={handleClick1}> A2 </div>
+                    <div className="colors black" onClick={handleClick2}> A3 </div>
                   </motion.li>
                 </motion.ul>
               </div>
@@ -152,7 +193,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to='/archive'>
                     {" "}
                     <TbBuildingCastle />
                     <span> Arxealogiya</span>

@@ -1,7 +1,19 @@
+:root{
+ 
+  --background:white;
+  --text-color:#000000;
+  --border-color:#eee;
+  --card-back-color:white;
+  --border-color2:#000;
+}
+
+
 .card__container {
   max-width: 1350px;
   margin: auto;
   padding: 2rem;
+  background-color: var(--background);
+  
 }
 
 :root {

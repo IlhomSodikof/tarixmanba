@@ -1,4 +1,14 @@
-
+:root{
+  // --primary-color:yellow;
+  --background:white;
+  --text-color:#000000;
+  --border-color:#eee;
+  --card-back-color:white;
+  --border-color2:#000;
+}
+.root{
+  background-color: var(--background);
+}
 * {
   padding: 0;
   margin: 0;
@@ -7,9 +17,12 @@
 }
 
 .container-layout {
+  background-image: url('https://media.istockphoto.com/id/146057381/photo/oriental-uzbekistan-blue-tiles.jpg?s=612x612&w=0&k=20&c=0QG6BuOAtwvrrZBzRXcnGfUdo8uBJXupFHMcxO-jpng=');
   // padding-top: 100px;
   min-height: 69vh;
-  background-color:blue!important;
+  background-color: var(--background);
+
+  
 
 }
 h2 {
@@ -56,3 +69,11 @@ h2 {
   border-radius: 15px;
   object-position: center;
 }
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+

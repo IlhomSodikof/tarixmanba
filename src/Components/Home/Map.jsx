@@ -24,8 +24,7 @@ export default function Map() {
     [
       { id: 1, lan: [41.304987, 69.283384], title: "Tarix unversityfdsfsdfdsfdsfdfdfdsfsdfdsfsdfdsfdsfdfsd", title2: "arix unversityfdsfsdfdsfdsfdfdfdsfsdfdsfsdfdsfdsfdfsd" },
       { id: 2, lan: [41.488801, 69.5857077], title: "Chirchiq unversity" },
-      { id: 3, lan: [38.841450, 65.789686], title: "Qishloq unver" },
-      { id: 4, lan: [41.568854, 64.202113], title: "matem unversity" },
+
 
     ],
     [
@@ -33,6 +32,27 @@ export default function Map() {
       { id: 2, lan: [40.103060, 65.373973], title: "Navoiy unversity" },
 
     ],
+    [
+      { id: 1, lan: [41.000444, 69.301236], title: "Tuyabo'g'iz" },
+      { id: 2, lan: [41.044758, 69.354838], title: "To'y tepa" },
+
+    ], [
+      { id: 1, lan: [39.654403, 66.975837], title: "Smarqand unversity" },
+      { id: 2, lan: [40.103060, 65.373973], title: "Navoiy unversity" },
+
+    ],
+    [
+      { id: 3, lan: [41.177084, 69.223716], title: "Ota masjidi" },
+      { id: 4, lan: [41.345579, 69.207417], title: "Beruniy" }
+    ],
+    [
+      { id: 3, lan: [41.361278, 69.395646], title: "Ota masjidi" },
+      { id: 4, lan: [41.388757, 69.457620], title: "Beruniy" }
+    ],
+    [
+      { id: 3, lan: [41.439714, 69.361677], title: "Ota masjidi" },
+      { id: 4, lan: [41.430995, 69.490318], title: "Beruniy" }
+    ]
 
   ]
 
@@ -106,37 +126,37 @@ export default function Map() {
   return (
     <div className="map-full">
       <motion.ul className="map-menu">
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} onClick={() => setNum(0)} >
-          <Link className='map-link'> <TbBuildingCastle /><span> Arxealogiya</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(0)} >
+          <Link className='map-link'> <div><TbBuildingCastle /></div> <span> Arxealogiya</span></Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} onClick={() => setNum(1)} >
-          <Link className='map-link'><HiUserGroup /> <span> Xalq og'zaki ijodi</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(5)} >
+          <Link className='map-link'> <div><HiUserGroup /></div> <span> Xalq og'zaki ijodi</span></Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='map-link'><MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(2)} >
+          <Link className='map-link'> <div><MdOutlineHistoryEdu /></div> <span> Qo'lyozmalar</span></Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='map-link'><GiTwoCoins /> <span> Tangalar</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(3)}>
+          <Link className='map-link'> <div><GiTwoCoins /></div> <span> Tangalar</span></Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='map-link'><RiFilePaper2Line /> <span> Bitiklar</span></Link>
-        </motion.li>
-
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='map-link'>< LiaBoxOpenSolid /> <span> Tarixiy hujatlar</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(4)}>
+          <Link className='map-link'> <div><RiFilePaper2Line /></div> <span> Bitiklar</span></Link>
         </motion.li>
 
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='map-link'> <GiStamper /><span> San'at asarlari</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(5)}>
+          <Link className='map-link'> <div>< LiaBoxOpenSolid /></div> <span> Tarixiy hujatlar</span></Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='map-link'><CiInboxIn /> <span>Arxiv jamg'armalari</span></Link>
+
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(6)}>
+          <Link className='map-link'> <div> <GiStamper /></div><span> San'at asarlari</span></Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='map-link'> <ImNewspaper /><span>  Matbuot</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 55 }} >
+          <Link className='map-link'> <div><CiInboxIn /></div> <span>Arxiv jamg'armalari</span></Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 15, opacity: 0.5 }} >
-          <Link className='map-link'><FaPhotoFilm /><span>  Foto va video manbalar</span></Link>
+        <motion.li className="map-item" whileHover={{ x: 55 }} >
+          <Link className='map-link'> <div><ImNewspaper /></div> <span>  Matbuot</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 55 }} >
+          <Link className='map-link'> <div><FaPhotoFilm /></div><span>  Foto va video manbalar</span></Link>
         </motion.li>
       </motion.ul>
 
@@ -145,7 +165,7 @@ export default function Map() {
         center={position}
         center2={position1}
 
-        zoom={5}
+        zoom={3}
         // style={{ height: "600px", width: "100%" }}
         attributionControl={false}
       >
@@ -163,21 +183,16 @@ export default function Map() {
           <Marker key={e.id} position={e.lan}>
             <Popup className="popapa">
               {e.title} <br /> {e.title2}
+              <button className="popapa-btn">
+                Batafsil
+              </button>
             </Popup>
           </Marker>
         ))
         }
-        {/* <Marker position={position1}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
-        <Marker position={position}>
-          <Popup>
-            Nodirning  yashash manzili: <br /> Yerning a***
-          </Popup>
-        </Marker> */}
+
       </MapContainer>
     </div>
   );
 }
+
