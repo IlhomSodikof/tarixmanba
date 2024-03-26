@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @import "./block/home/homeCards";
 @import "./block/home/acardion.scss";
 @import "./block/home/news";
