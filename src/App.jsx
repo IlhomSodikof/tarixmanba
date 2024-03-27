@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import News from "./Page/News";
 
 import Shablon from "./Page/ShablonManba";
+import LibraryCatigory from "./Components/LibraryCatigory";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" Component={Layout}>
           <Route path="/" Component={Home} />
           <Route path="/news" Component={News} />
+          <Route path="/library" Component={LibraryCatigory} />
 
           <Route path="/archive" Component={Shablon} />
         </Route>

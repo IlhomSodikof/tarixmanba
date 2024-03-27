@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
+@import "./block/wather";
 @import "./block/home/homeCards";
 @import "./block/home/acardion.scss";
 @import "./block/home/news";
@@ -14,4 +13,8 @@
 @import "./block/fashionCard";
 @import "./block/filter";
 @import "./block/bigCard";
+@import "./block/bigCard";
+@import "./block/libraryCatigory";
+@import "./general";
+
 

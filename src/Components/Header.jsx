@@ -23,6 +23,7 @@ import { CiInboxIn } from "react-icons/ci";
 import { CgDarkMode } from "react-icons/cg"; // darkmods
 
 import Logo from "../../img/Group 8.svg";
+import Wather from "./component/Wather";
 
 export default function Header() {
   const [primaryColor, setPrimaryColor] = useState('blue');
@@ -116,7 +117,7 @@ export default function Header() {
             <div className="search-box">
               <input
                 className="search-inp"
-                type="search"
+                type="text"
                 placeholder="Search"
                 required
               />{" "}
@@ -125,7 +126,7 @@ export default function Header() {
               </span>
             </div>
             <div className="functionale">
-              <div className="ob-havo">Toshkent 18+ ... 20+ C</div>
+              <Wather />
               <div
                 className="dark-m"
                 onClick={() => {
@@ -203,7 +204,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to='/archive'>
                     <HiUserGroup /> <span> Xalq og'zaki ijodi</span>
                   </Link>
                 </motion.li>
@@ -211,7 +212,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to='/archive'>
                     <MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span>
                   </Link>
                 </motion.li>
@@ -219,7 +220,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to='/archive'>
                     <GiTwoCoins /> <span> Tangalar</span>
                   </Link>
                 </motion.li>
@@ -281,7 +282,7 @@ export default function Header() {
               </motion.ul>
             </div>
             <div className="nav-menu">
-              <Link className="link">Kutubxona</Link>
+              <Link to='/library' className="link">Kutubxona</Link>
             </div>
             <div className="nav-menu">
               <Link to="/news" className="link">
@@ -342,7 +343,17 @@ export default function Header() {
           </div>
         </nav>
         {/* <img className='header-bottom-img' src="./Screenshot 2024-03-17 224153.png" alt="imgs" /> */}
-        <div className="header-img-pattern">{/* back-img */}</div>
+        <div className="header-img-pattern">
+
+        </div>
+        {/* <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+
+          </div>
+        </div> */}
       </header>
     </>
   );
