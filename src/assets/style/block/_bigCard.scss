@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 30px;
   .shablon-card{
-    width: 800px;
+    width: 900px;
     position: relative;
     border-radius: 10px;
     // background-color: #2f2f2d;
@@ -48,10 +48,11 @@
     }
     .card-filter{
       display: flex !important;
-      gap:20px;
+      gap:60px;
       padding: 20px 20px 10px;
       border-radius: 10px;
       width: 100%;
+      
       .media{
         display: flex;
         flex-direction: column;

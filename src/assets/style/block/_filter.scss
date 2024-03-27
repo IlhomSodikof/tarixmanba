@@ -1,23 +1,29 @@
 .shablon-container{
-  display: flex !important;
-  gap: 100px;
-  padding: 50px !important;
+  position: relative;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  
+  
   
 
 }
   .sidebar-filter{
+    position: sticky !important;
+    top: 60px;
     display: flex;
     flex-direction: column;
-    // gap: 25px;
+    
     width:max-content;
-    min-width: 260px;
+    // height: 500px;
+    min-width: 340px;
     .sidebar-title{
       padding: 5px 20px;
       font-size: 22px;
       text-align: center;
     }
     .filter-box{
-      background-color: aliceblue;
+      // background-color: aliceblue;
       h3{
         font-size: 16px;
         font-weight: bold;

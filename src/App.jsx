@@ -7,6 +7,7 @@ import News from "./Page/News";
 
 import Shablon from "./Page/ShablonManba";
 import LibraryCatigory from "./Components/LibraryCatigory";
+import Login from "./Components/Login";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/" Component={Home} />
           <Route path="/news" Component={News} />
           <Route path="/library" Component={LibraryCatigory} />
+          <Route path="/login" Component={Login} />
 
           <Route path="/archive" Component={Shablon} />
         </Route>

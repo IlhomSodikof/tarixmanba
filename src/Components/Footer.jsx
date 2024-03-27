@@ -27,7 +27,7 @@ export default function Footer() {
       s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
             </defs>
             <g>
-              <use xlinkHref="#wave" opacity=".3">
+              <use className='use' xlinkHref="#wave" opacity=".3">
                 <animateTransform
                   attributeName="transform"
                   attributeType="XML"
@@ -86,3 +86,5 @@ export default function Footer() {
     </>
   )
 }
+
+
