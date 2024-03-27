@@ -1,10 +1,19 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 export default function Acardion() {
   return (
 
     <div className='acardions'>
-      <h1 className='acardion-title'>Tarixiy obidalar va nodir topilmalar</h1>
+      <motion.h1 className='acardion-title'
+        initial={{ scale: 1, x: 0 }}
+        animate={{ x: 250, scale: 1.1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 80
+        }}
+      >Tarixiy obidalar va nodir topilmalar</motion.h1>
       <div class="flex-container">
 
         <div className="flex-slide home">
@@ -27,9 +36,7 @@ export default function Acardion() {
         <div className="flex-slide about">
           <div className="flex-title">Qipchoq</div>
         </div>
-        <div className="flex-slide home">
-          <div className="flex-title flex-title-home">Techik qala</div>
-        </div>
+
       </div >
     </div>
   )

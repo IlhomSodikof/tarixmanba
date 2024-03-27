@@ -1,17 +1,23 @@
 import React from 'react'
 import { IoBookOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent } from "framer-motion";
+import { useScroll } from "framer-motion"
 
 
 
 export default function () {
+  const { scrollY } = useScroll()
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    console.log("Page scroll: ", latest)
+  })
   return (
     <>
       <div className="libraryCont">
 
         <div className="backGroundLib">
-          <motion.h1
+          <motion.h1 className='loders-h1'
             initial={{ scale: 1, x: 0 }}
             animate={{ x: 250, scale: 1.1 }}
             transition={{
