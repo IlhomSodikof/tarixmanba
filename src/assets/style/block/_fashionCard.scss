@@ -112,7 +112,9 @@
   padding: 15px 0 0 0;
   color: #c32a26;
   font-size: 20px;
-  text-align: center;
+  i {
+    margin-left: 20px !important;
+  }
   p {
     font-weight: 600;
     line-height: 2px;
