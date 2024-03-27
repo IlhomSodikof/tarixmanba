@@ -49,7 +49,7 @@ export default function App() {
               <div className="box-top">
                 <img
                   className="box-image"
-                  src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85"
+                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
                   alt="Girl Eating Pizza"
                 />
                 <div className="title-flex">
@@ -72,7 +72,7 @@ export default function App() {
               <div className="box-top">
                 <img
                   className="box-image"
-                  src="https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxNjA1MA&ixlib=rb-1.2.1&q=85"
+                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
                   alt="Girl Eating Pizza"
                 />
                 <div className="title-flex">
@@ -95,7 +95,7 @@ export default function App() {
               <div className="box-top">
                 <img
                   className="box-image"
-                  src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85"
+                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
                   alt="Girl Eating Pizza"
                 />
                 <div className="title-flex">
@@ -118,7 +118,7 @@ export default function App() {
               <div className="box-top">
                 <img
                   className="box-image"
-                  src="https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxNjA1MA&ixlib=rb-1.2.1&q=85"
+                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
                   alt="Girl Eating Pizza"
                 />
                 <div className="title-flex">
@@ -141,7 +141,7 @@ export default function App() {
               <div className="box-top">
                 <img
                   className="box-image"
-                  src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85"
+                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
                   alt="Girl Eating Pizza"
                 />
                 <div className="title-flex">
@@ -164,7 +164,7 @@ export default function App() {
               <div className="box-top">
                 <img
                   className="box-image"
-                  src="https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxNjA1MA&ixlib=rb-1.2.1&q=85"
+                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
                   alt="Girl Eating Pizza"
                 />
                 <div className="title-flex">
