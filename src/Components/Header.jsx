@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import Marquee from "react-fast-marquee";
 // import { IoGlassesSharp } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -23,8 +24,47 @@ import { CiInboxIn } from "react-icons/ci";
 import { CgDarkMode } from "react-icons/cg"; // darkmods
 
 import Logo from "../../img/Group 8.svg";
+import Wather from "./component/Wather";
 
 export default function Header() {
+  const [primaryColor, setPrimaryColor] = useState("blue");
+
+  const handleClick = () => {
+    // Yangi rangni tanlash uchun logika
+    const background = "#fff"; // Masalan, yangi rang
+    const color = "#000";
+    const card = "#fff";
+
+    document.documentElement.style.setProperty("--background", background);
+    document.documentElement.style.setProperty("--text-color", color);
+    document.documentElement.style.setProperty("--card-back-color", card);
+    // --primary-color atamasini yangi rangga o'zgartiramiz
+    setPrimaryColor(background);
+  };
+
+  const handleClick1 = () => {
+    // Yangi rangni tanlash uchun logika
+    const background = "#000"; // Masalan, yangi rang
+    const color = "blue";
+
+    document.documentElement.style.setProperty("--background", background);
+    document.documentElement.style.setProperty("--text-color", color);
+
+    // --primary-color atamasini yangi rangga o'zgartiramiz
+    setPrimaryColor(background);
+  };
+  const handleClick2 = () => {
+    const background = "#000"; // Masalan, yangi rang
+    const color = "#fff";
+    const card = "#333333";
+
+    document.documentElement.style.setProperty("--background", background); //'--text-color', color
+    document.documentElement.style.setProperty("--text-color", color);
+    document.documentElement.style.setProperty("--card-back-color", card);
+    // --primary-color atamasini yangi rangga o'zgartiramiz
+    setPrimaryColor(background);
+  };
+
   const valRef = useRef(null);
   const valRefLogin = useRef(null);
   const valRefMax = useRef(null);
@@ -66,14 +106,14 @@ export default function Header() {
     <>
       <header>
         <div className="header-top-box">
-          <Link to="/" className="logo-box">
+          <Link className="logo-box" to="/">
             <img className="logo" src={Logo} alt="Logo" />
           </Link>
           <div className="search-box-bigs">
             <div className="search-box">
               <input
                 className="search-inp"
-                type="search"
+                type="text"
                 placeholder="Search"
                 required
               />{" "}
@@ -82,14 +122,14 @@ export default function Header() {
               </span>
             </div>
             <div className="functionale">
-              <div className="ob-havo">Toshkent 18+ ... 20+ C</div>
+              <Wather />
               <div
                 className="dark-m"
                 onClick={() => {
                   setMaxDrop(!maxDrop);
                 }}
               >
-                <GiSunglasses /> <span>Maxsus imkonyatlar</span>
+                <GiSunglasses />
                 <motion.ul
                   className={maxDrop ? "max-imkonyat" : ""}
                   ref={valRefMax}
@@ -102,9 +142,18 @@ export default function Header() {
                   }}
                 >
                   <motion.li className="max-item">
-                    <div className="colors blue"> A </div>
-                    <div className="colors grey"> A </div>
-                    <div className="colors black"> A </div>
+                    <div className="colors blue" onClick={handleClick}>
+                      {" "}
+                      A1{" "}
+                    </div>
+                    <div className="colors grey" onClick={handleClick1}>
+                      {" "}
+                      A2{" "}
+                    </div>
+                    <div className="colors black" onClick={handleClick2}>
+                      {" "}
+                      A3{" "}
+                    </div>
                   </motion.li>
                 </motion.ul>
               </div>
@@ -150,7 +199,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to="/archive">
                     {" "}
                     <TbBuildingCastle />
                     <span> Arxealogiya</span>
@@ -160,7 +209,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to="/archive">
                     <HiUserGroup /> <span> Xalq og'zaki ijodi</span>
                   </Link>
                 </motion.li>
@@ -168,7 +217,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to="/archive">
                     <MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span>
                   </Link>
                 </motion.li>
@@ -176,7 +225,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to="/archive">
                     <GiTwoCoins /> <span> Tangalar</span>
                   </Link>
                 </motion.li>
@@ -238,7 +287,9 @@ export default function Header() {
               </motion.ul>
             </div>
             <div className="nav-menu">
-              <Link className="link">Kutubxona</Link>
+              <Link to="/library" className="link">
+                Kutubxona
+              </Link>
             </div>
             <div className="nav-menu">
               <Link to="/news" className="link">
@@ -299,7 +350,31 @@ export default function Header() {
           </div>
         </nav>
         {/* <img className='header-bottom-img' src="./Screenshot 2024-03-17 224153.png" alt="imgs" /> */}
-        <div className="header-img-pattern">{/* back-img */}</div>
+        <Marquee>
+          <div className="header-img-pattern">
+            <img
+              src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
+              alt=""
+            />
+            <img
+              src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
+              alt=""
+            />
+            <img
+              src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
+              alt=""
+            />
+          </div>
+        </Marquee>
+
+        {/* <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+
+          </div>
+        </div> */}
       </header>
     </>
   );

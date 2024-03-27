@@ -2,123 +2,121 @@ import React from "react";
 
 export default function News() {
   return (
-    <div className="news__container">
-      <div className="card__container">
-        <h1 className="page__name">
-          <span>Eng so'ngi </span> Yangiliklar va Voqealar
-        </h1>
-        <div className="news__content">
-          <div className="news__card">
-            <a href="" className="news__author">
-              Missy Kelly
-            </a>
-            <div className="news__text">
-              <h2 className="news_name">Yangiliklar nomi uchun</h2>
-              <p className="news_des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quo deleniti assumenda eum consequuntur dolores, ipsa doloremque
-                corporis voluptatem ducimus.
-              </p>
-            </div>
-            <span className="news__create">01.01.2024</span>
+    <div className="card__container">
+      <h1>Tarixiy manbaga oid eng so'ngi yangiliklar</h1>
+      <div className="news__wrap">
+        <div className="news__card">
+          <img
+            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
+            alt=""
+          />
+          <div className="news__detail">
+            <h2>News name </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis nulla aliquid magnam, consequatur hic architecto?
+            </p>
+            <button className="button">
+              Batafsil
+              <div class="arrow-wrapper">
+                <div class="arrow"></div>
+              </div>
+            </button>
           </div>
-          <div className="news__card">
-            <a href="" className="news__author">
-              Missy Kelly
-            </a>
-            <div className="news__text">
-              <h2 className="news_name">Yangiliklar nomi uchun </h2>
-              <p className="news_des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quo deleniti assumenda eum consequuntur dolores, ipsa doloremque
-                corporis voluptatem ducimus.
-              </p>
-            </div>
-            <span className="news__create">01.01.2024</span>
+        </div>
+        <div className="news__card">
+          <img
+            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
+            alt=""
+          />
+          <div className="news__detail">
+            <h2>News name </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis nulla aliquid magnam, consequatur hic architecto?
+            </p>
+            <button className="button">
+              Batafsil
+              <div class="arrow-wrapper">
+                <div class="arrow"></div>
+              </div>
+            </button>
           </div>
-          <div className="news__card">
-            <a href="" className="news__author">
-              Missy Kelly
-            </a>
-            <div className="news__text">
-              <h2 className="news_name">Yangiliklar nomi uchun</h2>
-              <p className="news_des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quo deleniti assumenda eum consequuntur dolores, ipsa doloremque
-                corporis voluptatem ducimus.
-              </p>
-            </div>
-            <span className="news__create">01.01.2024</span>
+        </div>
+        <div className="news__card">
+          <img
+            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
+            alt=""
+          />
+          <div className="news__detail">
+            <h2>News name </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis nulla aliquid magnam, consequatur hic architecto?
+            </p>
+            <button className="button">
+              Batafsil
+              <div class="arrow-wrapper">
+                <div class="arrow"></div>
+              </div>
+            </button>
           </div>
-          <div className="news__card">
-            <a href="" className="news__author">
-              Missy Kelly
-            </a>
-            <div className="news__text">
-              <h2 className="news_name">Yangiliklar nomi uchun</h2>
-              <p className="news_des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quo deleniti assumenda eum consequuntur dolores, ipsa doloremque
-                corporis voluptatem ducimus.
-              </p>
-            </div>
-            <span className="news__create">01.01.2024</span>
+        </div>
+        <div className="news__card">
+          <img
+            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
+            alt=""
+          />
+          <div className="news__detail">
+            <h2>News name </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis nulla aliquid magnam, consequatur hic architecto?
+            </p>
+            <button className="button">
+              Batafsil
+              <div class="arrow-wrapper">
+                <div class="arrow"></div>
+              </div>
+            </button>
           </div>
-          <div className="news__card">
-            <a href="" className="news__author">
-              Missy Kelly
-            </a>
-            <div className="news__text">
-              <h2 className="news_name">Yangiliklar nomi uchun</h2>
-              <p className="news_des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quo deleniti assumenda eum consequuntur dolores, ipsa doloremque
-                corporis voluptatem ducimus.
-              </p>
-            </div>
-            <span className="news__create">01.01.2024</span>
+        </div>
+        <div className="news__card">
+          <img
+            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
+            alt=""
+          />
+          <div className="news__detail">
+            <h2>News name </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis nulla aliquid magnam, consequatur hic architecto?
+            </p>
+            <button className="button">
+              Batafsil
+              <div class="arrow-wrapper">
+                <div class="arrow"></div>
+              </div>
+            </button>
           </div>
-          <div className="news__card">
-            <a href="" className="news__author">
-              Missy Kelly
-            </a>
-            <div className="news__text">
-              <h2 className="news_name">Yangiliklar nomi uchun</h2>
-              <p className="news_des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quo deleniti assumenda eum consequuntur dolores, ipsa doloremque
-                corporis voluptatem ducimus.
-              </p>
-            </div>
-            <span className="news__create">01.01.2024</span>
-          </div>
-          <div className="news__card">
-            <a href="" className="news__author">
-              Missy Kelly
-            </a>
-            <div className="news__text">
-              <h2 className="news_name">Yangiliklar nomi uchun</h2>
-              <p className="news_des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quo deleniti assumenda eum consequuntur dolores, ipsa doloremque
-                corporis voluptatem ducimus.
-              </p>
-            </div>
-            <span className="news__create">01.01.2024</span>
-          </div>
-          <div className="news__card">
-            <a href="" className="news__author">
-              Missy Kelly
-            </a>
-            <div className="news__text">
-              <h2 className="news_name">Yangiliklar nomi uchun</h2>
-              <p className="news_des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quo deleniti assumenda eum consequuntur dolores, ipsa doloremque
-                corporis voluptatem ducimus.
-              </p>
-            </div>
-            <span className="news__create">01.01.2024</span>
+        </div>
+        <div className="news__card">
+          <img
+            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
+            alt=""
+          />
+          <div className="news__detail">
+            <h2>News name </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis nulla aliquid magnam, consequatur hic architecto?
+            </p>
+            <button className="button">
+              Batafsil
+              <div class="arrow-wrapper">
+                <div class="arrow"></div>
+              </div>
+            </button>
           </div>
         </div>
       </div>

@@ -1,8 +1,62 @@
 import { MapContainer, Marker, Popup, TileLayer, GeoJSON } from "react-leaflet";
 import geojsonData from '../Home/data/map/countries.json'
 import { motion } from "framer-motion";
+import { TbBuildingCastle } from "react-icons/tb";
+import { HiUserGroup } from "react-icons/hi2";
+import { MdOutlineHistoryEdu } from "react-icons/md";
+import { GiStamper, GiTwoCoins } from "react-icons/gi";
+import { RiFilePaper2Line } from "react-icons/ri";
+import { LiaBoxOpenSolid } from "react-icons/lia";
+import { CiInboxIn } from "react-icons/ci";
+import { ImNewspaper } from "react-icons/im";
+import { FaPhotoFilm } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 export default function Map() {
-  const position = [41.381166, 64.5735819];
+  const position = [41.304987, 69.283384];
+  const position1 = [41.488801, 69.5857077];
+
+  const [num, setNum] = useState(0)
+
+
+
+  const cordinat = [
+    [
+      { id: 1, lan: [41.304987, 69.283384], title: "Tarix unversityfdsfsdfdsfdsfdfdfdsfsdfdsfsdfdsfdsfdfsd", title2: "arix unversityfdsfsdfdsfdsfdfdfdsfsdfdsfsdfdsfdsfdfsd" },
+      { id: 2, lan: [41.488801, 69.5857077], title: "Chirchiq unversity" },
+
+
+    ],
+    [
+      { id: 1, lan: [39.654403, 66.975837], title: "Smarqand unversity" },
+      { id: 2, lan: [40.103060, 65.373973], title: "Navoiy unversity" },
+
+    ],
+    [
+      { id: 1, lan: [41.000444, 69.301236], title: "Tuyabo'g'iz" },
+      { id: 2, lan: [41.044758, 69.354838], title: "To'y tepa" },
+
+    ], [
+      { id: 1, lan: [39.654403, 66.975837], title: "Smarqand unversity" },
+      { id: 2, lan: [40.103060, 65.373973], title: "Navoiy unversity" },
+
+    ],
+    [
+      { id: 3, lan: [41.177084, 69.223716], title: "Ota masjidi" },
+      { id: 4, lan: [41.345579, 69.207417], title: "Beruniy" }
+    ],
+    [
+      { id: 3, lan: [41.361278, 69.395646], title: "Ota masjidi" },
+      { id: 4, lan: [41.388757, 69.457620], title: "Beruniy" }
+    ],
+    [
+      { id: 3, lan: [41.439714, 69.361677], title: "Ota masjidi" },
+      { id: 4, lan: [41.430995, 69.490318], title: "Beruniy" }
+    ]
+
+  ]
+
+  console.log(cordinat);
 
   const getColor = (value) => {
     return value > 100
@@ -24,7 +78,7 @@ export default function Map() {
       fillColor: getColor(value),
       weight: 2,
       opacity: 1,
-      color: "white",
+      color: "blue",
       dashArray: "3",
       fillOpacity: 0.7,
     };
@@ -35,7 +89,7 @@ export default function Map() {
 
     layer.setStyle({
       weight: 5,
-      color: "#666",
+      color: "#fff",
       dashArray: "",
       fillOpacity: 0.7,
     });
@@ -70,20 +124,49 @@ export default function Map() {
     });
   };
   return (
-    <motion.div
-      initial={{ scaleX: 0 }}
-      animate={{ scaleX: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 260,
-        damping: 20,
-      }}
-    >
+    <div className="map-full">
+      <motion.ul className="map-menu">
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(0)} >
+          <Link className='map-link'> <div><TbBuildingCastle /></div> <span> Arxealogiya</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(5)} >
+          <Link className='map-link'> <div><HiUserGroup /></div> <span> Xalq og'zaki ijodi</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(2)} >
+          <Link className='map-link'> <div><MdOutlineHistoryEdu /></div> <span> Qo'lyozmalar</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(3)}>
+          <Link className='map-link'> <div><GiTwoCoins /></div> <span> Tangalar</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(4)}>
+          <Link className='map-link'> <div><RiFilePaper2Line /></div> <span> Bitiklar</span></Link>
+        </motion.li>
+
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(5)}>
+          <Link className='map-link'> <div>< LiaBoxOpenSolid /></div> <span> Tarixiy hujatlar</span></Link>
+        </motion.li>
+
+        <motion.li className="map-item" whileHover={{ x: 55 }} onClick={() => setNum(6)}>
+          <Link className='map-link'> <div> <GiStamper /></div><span> San'at asarlari</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 55 }} >
+          <Link className='map-link'> <div><CiInboxIn /></div> <span>Arxiv jamg'armalari</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 55 }} >
+          <Link className='map-link'> <div><ImNewspaper /></div> <span>  Matbuot</span></Link>
+        </motion.li>
+        <motion.li className="map-item" whileHover={{ x: 55 }} >
+          <Link className='map-link'> <div><FaPhotoFilm /></div><span>  Foto va video manbalar</span></Link>
+        </motion.li>
+      </motion.ul>
+
       <MapContainer
         className="map"
         center={position}
-        zoom={6}
-        style={{ height: "600px", width: "100%" }}
+        center2={position1}
+
+        zoom={3}
+        // style={{ height: "600px", width: "100%" }}
         attributionControl={false}
       >
         <TileLayer
@@ -95,12 +178,21 @@ export default function Map() {
           style={style}
           onEachFeature={onEachFeature}
         />
-        <Marker position={position}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
+        {cordinat[num]?.map((e) => (
+
+          <Marker key={e.id} position={e.lan}>
+            <Popup className="popapa">
+              {e.title} <br /> {e.title2}
+              <button className="popapa-btn">
+                Batafsil
+              </button>
+            </Popup>
+          </Marker>
+        ))
+        }
+
       </MapContainer>
-    </motion.div>
+    </div>
   );
 }
+

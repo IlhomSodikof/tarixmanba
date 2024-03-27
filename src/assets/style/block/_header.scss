@@ -5,19 +5,27 @@
   list-style-type: none;
   text-decoration: none;
 }
-
+:root {
+  // --primary-color:yellow;
+  --background: white;
+  --text-color: #000000;
+  --border-color: #eee;
+  --card-back-color: white;
+  --border-color2: #000;
+  --shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
 header {
+  position: relative;
+  z-index: 10;
   transition: 0.5s ease;
-  // background-color: #efebeb;
   padding: 10px 0px 0px;
-  // border-bottom: 1px solid #eee;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-color: blue;
+  background-color: var(--background);
   .header-top-box {
-    // border-bottom: 1px solid #eee;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -32,7 +40,7 @@ header {
       width: 340px;
       .search-inp {
         border-radius: 5px;
-        border: 1px solid #ccc;
+        border: 1px solid var(--border-color);
         width: 100%;
         outline: none;
         padding: 5px 20px;
@@ -43,6 +51,7 @@ header {
         right: 10px;
         cursor: pointer;
         top: 4px;
+        color: var(--text-color);
       }
     }
     .search-box-bigs {
@@ -57,9 +66,10 @@ header {
         gap: 50px;
         align-items: center;
         font-size: 18px;
-        // .ob-havo{
-        //   // width: 260px;
-        // }
+        .ob-havo {
+          // width: 260px;
+          color: var(--text-color);
+        }
 
         /////////////////////
         .dark-m {
@@ -68,12 +78,15 @@ header {
           cursor: pointer;
           align-items: center;
           font-size: 50px;
+          color: var(--text-color);
+
           span {
             font-size: 20px;
             font-weight: 700;
             font-family: system-ui, -apple-system, BlinkMacSystemFont,
               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
               "Helvetica Neue", sans-serif;
+            color: var(--text-color);
           }
           ul {
             display: none;
@@ -89,7 +102,7 @@ header {
           .max-imkonyat {
             position: absolute;
             z-index: 10000 !important;
-            background-color: #fff;
+            background-color: var(--card-back-color);
             border-radius: 5px;
             padding: 20px;
             display: flex;
@@ -97,8 +110,9 @@ header {
             gap: 20px;
             top: 130px;
             align-items: flex-start;
-            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-              rgba(17, 17, 26, 0.1) 0px 0px 8px;
+            box-shadow: var(--shadow);
+            color: var(--text-color);
+
             .max-item {
               display: flex;
               gap: 2px;
@@ -110,7 +124,7 @@ header {
                 font-size: 15px;
                 font-family: sans-serif;
                 // color: $lightBackTex;
-                color: #000;
+                color: var(--text-color);
                 // @media screen and (max-width: 768px) {
                 //   font-size: 20px;
 
@@ -118,14 +132,14 @@ header {
               }
 
               .colors {
-                border: 2px solid black;
+                border: 2px solid var(--border-color2);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 34px;
                 height: 34px;
                 font-size: 18px;
-                color: white;
+                color: var(--text-color);
               }
               .blue {
                 background-color: #4267b2;
@@ -147,6 +161,7 @@ header {
           // display: flex;
           align-items: center;
           justify-content: center;
+          color: var(--text-color);
         }
       }
     }
@@ -156,7 +171,10 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #eee;
+    font-weight: 500;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+
     background-image: url("https://www.worldhistory.org/template/images/bg_timeline.png");
     .nav-box {
       padding: 15px;
@@ -208,7 +226,7 @@ header {
         .menu-login {
           position: absolute;
           z-index: 10000 !important;
-          background-color: #fff;
+          background-color: var(--card-back-color);
           border-radius: 5px;
           padding: 20px;
           display: flex;
@@ -216,8 +234,7 @@ header {
           gap: 20px;
           top: 130px;
           align-items: flex-start;
-          box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-            rgba(17, 17, 26, 0.1) 0px 0px 8px;
+          box-shadow: var(--shadow);
           .login-item {
             // font-size: 17px;
             .nav-login-link {
@@ -227,7 +244,7 @@ header {
               font-size: 10px;
               font-family: sans-serif;
               // color: $lightBackTex;
-              color: #000;
+              color: var(--text-color);
               // @media screen and (max-width: 768px) {
               //   font-size: 20px;
 
@@ -260,7 +277,7 @@ header {
         .menu-drop {
           position: absolute;
           z-index: 10000 !important;
-          background-color: #fff;
+          background-color: var(--card-back-color);
           border-radius: 5px;
           padding: 20px;
           display: flex;
@@ -268,8 +285,7 @@ header {
           gap: 10px;
           top: 130px;
           align-items: flex-start;
-          box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-            rgba(17, 17, 26, 0.1) 0px 0px 8px;
+          box-shadow: var(--shadow);
           .dorop-item {
             font-size: 17px;
             .nav-drop-link {
@@ -279,7 +295,7 @@ header {
               font-size: 25px;
               font-family: sans-serif;
               // color: $lightBackTex;
-              color: #000;
+              color: var(--text-color);
               @media screen and (max-width: 768px) {
                 font-size: 20px;
               }
@@ -298,12 +314,14 @@ header {
     }
   }
   .header-img-pattern {
+    display: flex;
     height: 75px;
     width: 100%;
     border: none !important;
-    background-image: url(https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg);
+    // background-image: url(https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg);
     background-repeat: repeat-x;
     background-size: contain;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     @media screen and (max-width: 500px) {
       height: 75px;
@@ -312,6 +330,9 @@ header {
       height: 55px;
     }
   }
+}
+.header-img-pattern img {
+  height: 100%;
 }
 
 @media (max-width: 1385px) {
@@ -421,6 +442,7 @@ header {
           width: max-content !important;
           font-size: 15px;
           display: none;
+          color: var(--text-color) !important;
         }
         .dark-m {
           display: none !important;
