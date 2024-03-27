@@ -66,7 +66,7 @@ export default function Header() {
     <>
       <header>
         <div className="header-top-box">
-          <Link className="logo-box">
+          <Link to="/" className="logo-box">
             <img className="logo" src={Logo} alt="Logo" />
           </Link>
           <div className="search-box-bigs">
