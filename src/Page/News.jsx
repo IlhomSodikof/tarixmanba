@@ -3,120 +3,157 @@ import React from "react";
 export default function News() {
   return (
     <div className="card__container">
-      <h1>Tarixiy manbaga oid eng so'ngi yangiliklar</h1>
-      <div className="news__wrap">
-        <div className="news__card">
-          <img
-            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
-            alt=""
-          />
-          <div className="news__detail">
-            <h2>News name </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis nulla aliquid magnam, consequatur hic architecto?
-            </p>
-            <button className="button">
-              Batafsil
-              <div class="arrow-wrapper">
-                <div class="arrow"></div>
-              </div>
-            </button>
-          </div>
+      <div class="news__container">
+        <div class="section-title">
+          <h1>Css Image Hover Effect</h1>
         </div>
-        <div className="news__card">
-          <img
-            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
-            alt=""
-          />
-          <div className="news__detail">
-            <h2>News name </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis nulla aliquid magnam, consequatur hic architecto?
-            </p>
-            <button className="button">
-              Batafsil
-              <div class="arrow-wrapper">
-                <div class="arrow"></div>
+
+        <div class="row">
+          <div class="column">
+            <div class="effect">
+              <div class="effect-img">
+                <img
+                  src="https://thumbs.dreamstime.com/b/news-woodn-dice-depicting-letters-bundle-small-newspapers-leaning-left-dice-34802664.jpg"
+                  alt=""
+                />
               </div>
-            </button>
+              <div class="effect-text">
+                <div class="inner">
+                  <h2>This is heading</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quaerat velit qui quos repellat nulla soluta exceptu
+                  </p>
+                  <div class="effect-btn">
+                    <a href="#" class="btn">
+                      <i class="fa fa-eye"></i> Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="news__card">
-          <img
-            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
-            alt=""
-          />
-          <div className="news__detail">
-            <h2>News name </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis nulla aliquid magnam, consequatur hic architecto?
-            </p>
-            <button className="button">
-              Batafsil
-              <div class="arrow-wrapper">
-                <div class="arrow"></div>
+
+          <div class="column">
+            <div class="effect">
+              <div class="effect-img">
+                <img
+                  src="https://thumbs.dreamstime.com/b/news-woodn-dice-depicting-letters-bundle-small-newspapers-leaning-left-dice-34802664.jpg"
+                  alt=""
+                />
               </div>
-            </button>
+              <div class="effect-text">
+                <div class="inner">
+                  <h2>This is heading</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quaerat velit qui quos repellat nulla cum soluta exceptu
+                  </p>
+                  <div class="effect-btn">
+                    <a href="#" class="btn">
+                      <i class="fa fa-eye"></i> Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="news__card">
-          <img
-            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
-            alt=""
-          />
-          <div className="news__detail">
-            <h2>News name </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis nulla aliquid magnam, consequatur hic architecto?
-            </p>
-            <button className="button">
-              Batafsil
-              <div class="arrow-wrapper">
-                <div class="arrow"></div>
+          <div class="column">
+            <div class="effect">
+              <div class="effect-img">
+                <img
+                  src="https://thumbs.dreamstime.com/b/news-woodn-dice-depicting-letters-bundle-small-newspapers-leaning-left-dice-34802664.jpg"
+                  alt=""
+                />
               </div>
-            </button>
+              <div class="effect-text">
+                <div class="inner">
+                  <h2>This is heading</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quaerat velit qui quos repellat nulla cum soluta exceptu
+                  </p>
+                  <div class="effect-btn">
+                    <a href="#" class="btn">
+                      <i class="fa fa-eye"></i> Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="news__card">
-          <img
-            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
-            alt=""
-          />
-          <div className="news__detail">
-            <h2>News name </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis nulla aliquid magnam, consequatur hic architecto?
-            </p>
-            <button className="button">
-              Batafsil
-              <div class="arrow-wrapper">
-                <div class="arrow"></div>
+          <div class="column">
+            <div class="effect">
+              <div class="effect-img">
+                <img
+                  src="https://thumbs.dreamstime.com/b/news-woodn-dice-depicting-letters-bundle-small-newspapers-leaning-left-dice-34802664.jpg"
+                  alt=""
+                />
               </div>
-            </button>
+              <div class="effect-text">
+                <div class="inner">
+                  <h2>This is heading</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quaerat velit qui quos repellat nulla cum soluta exceptu
+                  </p>
+                  <div class="effect-btn">
+                    <a href="#" class="btn">
+                      <i class="fa fa-eye"></i> Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="news__card">
-          <img
-            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.jpg"
-            alt=""
-          />
-          <div className="news__detail">
-            <h2>News name </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis nulla aliquid magnam, consequatur hic architecto?
-            </p>
-            <button className="button">
-              Batafsil
-              <div class="arrow-wrapper">
-                <div class="arrow"></div>
+          <div class="column">
+            <div class="effect">
+              <div class="effect-img">
+                <img
+                  src="https://thumbs.dreamstime.com/b/news-woodn-dice-depicting-letters-bundle-small-newspapers-leaning-left-dice-34802664.jpg"
+                  alt=""
+                />
               </div>
-            </button>
+              <div class="effect-text">
+                <div class="inner">
+                  <h2>This is heading</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quaerat velit qui quos repellat nulla cum soluta exceptu
+                  </p>
+                  <div class="effect-btn">
+                    <a href="#" class="btn">
+                      <i class="fa fa-eye"></i> Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="effect">
+              <div class="effect-img">
+                <img
+                  src="https://thumbs.dreamstime.com/b/news-woodn-dice-depicting-letters-bundle-small-newspapers-leaning-left-dice-34802664.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="effect-text">
+                <div class="inner">
+                  <h2>This is heading</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quaerat velit qui quos repellat nulla cum soluta exceptu
+                  </p>
+                  <div class="effect-btn">
+                    <a href="#" class="btn">
+                      <i class="fa fa-eye"></i> Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
