@@ -17,8 +17,8 @@ import { Link } from "react-router-dom";
 export default function App() {
   return (
     <div className="home__card__container">
-      <div className="wrap">
-        <div className="cards__title">
+      <div className="home__wrapper">
+        <div className="home__cards__title">
           <h1>Muxrlar</h1>
 
           <button className="see_all">
@@ -46,141 +46,93 @@ export default function App() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="box">
-              <div className="box-top">
-                <img
-                  className="box-image"
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/3eYwBbTfDinfxgoqeHJl81y5FTs48aQEjQ5ZNjFQ.png"
-                  alt="Girl Eating Pizza"
-                />
-                <div className="title-flex">
-                  <h3 className="box-title">Kelsie Meyer</h3>
-                  <p className="user-follow-info">17 Projects</p>
-                </div>
-                {/* <p className="description">
-                  Whipped steamed roast cream beans macchiato skinny grinder
-                  café. Iced grinder go mocha steamed grounds cultivar panna
-                  aroma.
-                </p> */}
+            <div class="home__card">
+              <img src="images/img1.jpg" alt="" />
+              <div class="home__info">
+                <h1>Horseshoe Bend, Arizona</h1>
+                <p>
+                  Lorem ipsum is simply dummy text from the printing and typing
+                  industry
+                </p>
+                <a href="#" class="home__btn">
+                  Read More
+                </a>
               </div>
-              <a href="#" className="button">
-                Batafsil
-              </a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="box">
-              <div className="box-top">
-                <img
-                  className="box-image"
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/3eYwBbTfDinfxgoqeHJl81y5FTs48aQEjQ5ZNjFQ.png"
-                  alt="Girl Eating Pizza"
-                />
-                <div className="title-flex">
-                  <h3 className="box-title">Kelsie Meyer</h3>
-                  <p className="user-follow-info">17 Projects</p>
-                </div>
-                {/* <p className="description">
-                  Whipped steamed roast cream beans macchiato skinny grinder
-                  café. Iced grinder go mocha steamed grounds cultivar panna
-                  aroma.
-                </p> */}
+            <div class="home__card">
+              <img src="images/img1.jpg" alt="" />
+              <div class="home__info">
+                <h1>Horseshoe Bend, Arizona</h1>
+                <p>
+                  Lorem ipsum is simply dummy text from the printing and typing
+                  industry
+                </p>
+                <a href="#" class="home__btn">
+                  Read More
+                </a>
               </div>
-              <a href="#" className="button">
-                Batafsil
-              </a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="box">
-              <div className="box-top">
-                <img
-                  className="box-image"
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/3eYwBbTfDinfxgoqeHJl81y5FTs48aQEjQ5ZNjFQ.png"
-                  alt="Girl Eating Pizza"
-                />
-                <div className="title-flex">
-                  <h3 className="box-title">Kelsie Meyer</h3>
-                  <p className="user-follow-info">17 Projects</p>
-                </div>
-                {/* <p className="description">
-                  Whipped steamed roast cream beans macchiato skinny grinder
-                  café. Iced grinder go mocha steamed grounds cultivar panna
-                  aroma.
-                </p> */}
+            <div class="card">
+              <img src="images/img2.jpg" alt="" />
+              <div class="info">
+                <h1>Travel</h1>
+                <p>
+                  Lorem ipsum is simply dummy text from the printing and typing
+                  industry
+                </p>
+                <a href="#" class="btn">
+                  Read More
+                </a>
               </div>
-              <a href="#" className="button">
-                Batafsil
-              </a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="box">
-              <div className="box-top">
-                <img
-                  className="box-image"
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/3eYwBbTfDinfxgoqeHJl81y5FTs48aQEjQ5ZNjFQ.png"
-                  alt="Girl Eating Pizza"
-                />
-                <div className="title-flex">
-                  <h3 className="box-title">Kelsie Meyer</h3>
-                  <p className="user-follow-info">17 Projects</p>
-                </div>
-                {/* <p className="description">
-                  Whipped steamed roast cream beans macchiato skinny grinder
-                  café. Iced grinder go mocha steamed grounds cultivar panna
-                  aroma.
-                </p> */}
+            <div class="home__card">
+              <img src="images/img1.jpg" alt="" />
+              <div class="home__info">
+                <h1>Horseshoe Bend, Arizona</h1>
+                <p>
+                  Lorem ipsum is simply dummy text from the printing and typing
+                  industry
+                </p>
+                <a href="#" class="home__btn">
+                  Read More
+                </a>
               </div>
-              <a href="#" className="button">
-                Batafsil
-              </a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="box">
-              <div className="box-top">
-                <img
-                  className="box-image"
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/3eYwBbTfDinfxgoqeHJl81y5FTs48aQEjQ5ZNjFQ.png"
-                  alt="Girl Eating Pizza"
-                />
-                <div className="title-flex">
-                  <h3 className="box-title">Kelsie Meyer</h3>
-                  <p className="user-follow-info">17 Projects</p>
-                </div>
-                {/* <p className="description">
-                  Whipped steamed roast cream beans macchiato skinny grinder
-                  café. Iced grinder go mocha steamed grounds cultivar panna
-                  aroma.
-                </p> */}
+            <div class="home__card">
+              <img src="images/img1.jpg" alt="" />
+              <div class="home__info">
+                <h1>Horseshoe Bend, Arizona</h1>
+                <p>
+                  Lorem ipsum is simply dummy text from the printing and typing
+                  industry
+                </p>
+                <a href="#" class="home__btn">
+                  Read More
+                </a>
               </div>
-              <a href="#" className="button">
-                Batafsil
-              </a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="box">
-              <div className="box-top">
-                <img
-                  className="box-image"
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/3eYwBbTfDinfxgoqeHJl81y5FTs48aQEjQ5ZNjFQ.png"
-                  alt="Girl Eating Pizza"
-                />
-                <div className="title-flex">
-                  <h3 className="box-title">Kelsie Meyer</h3>
-                  <p className="user-follow-info">17 Projects</p>
-                </div>
-                {/* <p className="description">
-                  Whipped steamed roast cream beans macchiato skinny grinder
-                  café. Iced grinder go mocha steamed grounds cultivar panna
-                  aroma.
-                </p> */}
+            <div class="home__card">
+              <img src="images/img1.jpg" alt="" />
+              <div class="home__info">
+                <h1>Horseshoe Bend, Arizona</h1>
+                <p>
+                  Lorem ipsum is simply dummy text from the printing and typing
+                  industry
+                </p>
+                <a href="#" class="home__btn">
+                  Read More
+                </a>
               </div>
-              <a href="#" className="button">
-                Batafsil
-              </a>
             </div>
           </SwiperSlide>
           <div className="swiper-button-next"></div>
