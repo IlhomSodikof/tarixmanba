@@ -5,15 +5,15 @@ export default function Acardion() {
   return (
 
     <div className='acardions'>
-      <motion.h1 className='acardion-title'
+      <motion.h1 id='acardion-title'
         initial={{ scale: 1, x: 0 }}
-        animate={{ x: 170, scale: 1 }}
+        animate={{ x: 280, scale: 1 }}
         transition={{
           type: "spring",
           stiffness: 260,
           damping: 80
         }}
-      >Tarixiy obidalar va nodir topilmalar</motion.h1>
+      >TARIXY`` OBIDALAR VA NODIR tOPILMALAR</motion.h1>
       <div class="flex-container">
 
         <div className="flex-slide home">
