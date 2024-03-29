@@ -37,7 +37,7 @@ function WeatherSide({ t }) {
       });
   }, []);
   return (
-    <div className="row" style={{ width: 300, marginRight: 30 }}>
+    <div className="weather__row" style={{ width: 300, marginRight: 30 }}>
       <div className="col-lg-12" style={{ justifyContent: "flex-end" }}>
         <Swiper
           // direction="vertical"
@@ -76,16 +76,16 @@ function WeatherSide({ t }) {
                     {Math.floor(res?.air_t_min) > 0
                       ? "+" + Math.floor(res?.air_t_min) + "°"
                       : Math.floor(res?.air_t_min) < 0
-                        ? `${Math.floor(res?.air_t_min)}°`
-                        : Math.floor(res?.air_t_min) + "°"}
+                      ? `${Math.floor(res?.air_t_min)}°`
+                      : Math.floor(res?.air_t_min) + "°"}
                   </p>
                   <p>...</p>
                   <p>
                     {Math.floor(res?.air_t_max) > 0
                       ? "+" + Math.floor(res?.air_t_max) + "°"
                       : Math.floor(res?.air_t_max) < 0
-                        ? `${Math.floor(res?.air_t_max)}°`
-                        : Math.floor(res?.air_t_max) + "°"}
+                      ? `${Math.floor(res?.air_t_max)}°`
+                      : Math.floor(res?.air_t_max) + "°"}
                   </p>
                 </div>
               </div>

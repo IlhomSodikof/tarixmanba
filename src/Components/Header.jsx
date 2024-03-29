@@ -337,7 +337,9 @@ export default function Header() {
                   className="login-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-login-link" to='/login'>Login</Link>
+                  <Link className="nav-login-link" to="/login">
+                    Login
+                  </Link>
                 </motion.li>
                 <motion.li
                   className="login-item"

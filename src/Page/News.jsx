@@ -5,7 +5,7 @@ export default function News() {
     <div className="card__container">
       <div class="news__container">
         <div class="section-title">
-          <h1>Css Image Hover Effect</h1>
+          <h1>Tarixga oid eng so'ngi yangiliklar</h1>
         </div>
 
         <div class="row">
