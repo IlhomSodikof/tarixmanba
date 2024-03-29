@@ -38,7 +38,7 @@ export default function App() {
               spaceBetween: 20,
             },
             1075: {
-              slidesPerView: 3,
+              slidesPerView: 4,
               spaceBetween: 40,
             },
           }}
@@ -47,7 +47,10 @@ export default function App() {
         >
           <SwiperSlide>
             <div class="home__card">
-              <img src="images/img1.jpg" alt="" />
+              <img
+                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
+                alt=""
+              />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -62,37 +65,10 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="images/img1.jpg" alt="" />
-              <div class="home__info">
-                <h1>Horseshoe Bend, Arizona</h1>
-                <p>
-                  Lorem ipsum is simply dummy text from the printing and typing
-                  industry
-                </p>
-                <a href="#" class="home__btn">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="card">
-              <img src="images/img2.jpg" alt="" />
-              <div class="info">
-                <h1>Travel</h1>
-                <p>
-                  Lorem ipsum is simply dummy text from the printing and typing
-                  industry
-                </p>
-                <a href="#" class="btn">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="home__card">
-              <img src="images/img1.jpg" alt="" />
+              <img
+                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
+                alt=""
+              />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -107,7 +83,10 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="images/img1.jpg" alt="" />
+              <img
+                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
+                alt=""
+              />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -122,7 +101,10 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="images/img1.jpg" alt="" />
+              <img
+                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
+                alt=""
+              />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -135,8 +117,44 @@ export default function App() {
               </div>
             </div>
           </SwiperSlide>
-          <div className="swiper-button-next"></div>
-          <div className="swiper-button-prev"></div>
+          <SwiperSlide>
+            <div class="home__card">
+              <img
+                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
+                alt=""
+              />
+              <div class="home__info">
+                <h1>Horseshoe Bend, Arizona</h1>
+                <p>
+                  Lorem ipsum is simply dummy text from the printing and typing
+                  industry
+                </p>
+                <a href="#" class="home__btn">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div class="home__card">
+              <img
+                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
+                alt=""
+              />
+              <div class="home__info">
+                <h1>Horseshoe Bend, Arizona</h1>
+                <p>
+                  Lorem ipsum is simply dummy text from the printing and typing
+                  industry
+                </p>
+                <a href="#" class="home__btn">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          {/* <div className="swiper-button-next"></div>
+          <div className="swiper-button-prev"></div> */}
         </Swiper>
       </div>
     </div>
