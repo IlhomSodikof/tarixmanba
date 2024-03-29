@@ -7,7 +7,7 @@ export default function Acardion() {
     <div className='acardions'>
       <motion.h1 className='acardion-title'
         initial={{ scale: 1, x: 0 }}
-        animate={{ x: 250, scale: 1.1 }}
+        animate={{ x: 170, scale: 1 }}
         transition={{
           type: "spring",
           stiffness: 260,
