@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HomeCardMatbuot from "../Components/Home/HomeCardsMatbuot";
 import HomeCardMuxr from "../Components/Home/HomeCardsMuxr";
 import HomeCardArchi from "../Components/Home/HomeCardsArchi";
@@ -6,12 +6,27 @@ import ViewKop from "../Components/Home/ViewKop";
 import FashionCard from "../Components/Home/FashionCard";
 import Acardion from "../Components/Home/Acardion";
 import Map from "../Components/Home/Map";
+// import Modal from "../Components/component/Modal";
 // import Background, { AuroraBackgroundDemo } from '../Components/component/AuroraBackgroundDemo';
 
 export default function Home() {
+  const videoRef = useRef(null);
+  const [autos, setAutos] = useState(true)
+
+  useEffect(() => {
+    // Component monte edildiğinde videoyu başlat
+    videoRef.current.play();
+  }, []);
+  useEffect(() => {
+    // Component monte edildiğinde videoyu başlat
+    videoRef.current.play();
+  }, [autos]);
   return (
     <>
       <main className="card__container">
+        <video className="video-make" data-testid="video-asset" style={{ "width": "100%", }} alt="Numismatics. Old collectible coins on the table. Ancient Stock Footage Video" playbackRate={0.5} controlslist="nodownload" ref={videoRef} autoPlay="true" loop={true} aria-valuemax>
+          <source type="video/mp4" src="https://uploads.actionvfx.com/video/d14c7c0d-52ac-48c7-8530-4d4de285e7c7/mp4/Fire+Embers.mp4" />
+        </video>
         {/* <AuroraBackgroundDemo /> */}
         {/* <ParticlesComponent id='particles' style={{
           zIndex: -10, // Z-index value

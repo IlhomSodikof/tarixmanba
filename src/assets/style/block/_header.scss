@@ -24,12 +24,18 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--text-color);
   background-color: var(--background);
   .header-top-box {
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    
+    @media screen and (max-width: 1085px) {
+      justify-content: space-between;
+      padding: 0 20px;
+    }
     .logo {
       width: 190px;
       height: 80px;
@@ -38,6 +44,9 @@ header {
     .search-box {
       position: relative;
       width: 340px;
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
       .search-inp {
         border-radius: 5px;
         border: 1px solid var(--border-color);
@@ -56,9 +65,15 @@ header {
     }
     .search-box-bigs {
       display: flex;
-      justify-content: space-between;
-      width: 56%;
+      gap: 10px;
       align-items: center;
+      @media screen and (max-width: 1000px) {
+        width: 70%;
+        justify-content: end;
+
+
+        
+      }
       .functionale {
         // width: 370px;
         display: flex;
@@ -66,19 +81,23 @@ header {
         gap: 50px;
         align-items: center;
         font-size: 18px;
-        .ob-havo {
-          // width: 260px;
-          color: var(--text-color);
+        @media screen and (max-width: 1000px) {
+          gap: 5px;
         }
+  
 
         /////////////////////
         .dark-m {
           display: flex;
+          position: relative;
           gap: 5px;
           cursor: pointer;
           align-items: center;
-          font-size: 50px;
+          font-size: 30px;
           color: var(--text-color);
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
 
           span {
             font-size: 20px;
@@ -108,7 +127,8 @@ header {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            top: 130px;
+            top: 100px;
+            right: 5px;
             align-items: flex-start;
             box-shadow: var(--shadow);
             color: var(--text-color);
@@ -116,19 +136,13 @@ header {
             .max-item {
               display: flex;
               gap: 2px;
-              // font-size: 17px;
               .nav-max-link {
                 display: flex;
                 align-items: center;
                 gap: 5px;
                 font-size: 15px;
                 font-family: sans-serif;
-                // color: $lightBackTex;
                 color: var(--text-color);
-                // @media screen and (max-width: 768px) {
-                //   font-size: 20px;
-
-                // }
               }
 
               .colors {
@@ -150,6 +164,36 @@ header {
               .black {
                 background-color: #000000;
               }
+
+              
+            }
+            .lenguage{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                // font-size: 15px;
+                .lan-icon{
+                  display: flex;
+                  align-items: center;
+                  gap:10px;
+                  font-size: 14px;
+                  padding-bottom: 5px;
+                  .icon-lan{
+                    font-size: 20px;
+                  }
+                }
+                .lang-item{
+                  display: none;
+                  font-size: 15px;
+                }
+                .lang-item:hover{
+                  color: #00000097;
+                }
+              }
+            .lenguage:hover{
+              .lang-item{
+                display: block;
+              }
             }
           }
         }
@@ -158,10 +202,13 @@ header {
           display: none;
           font-size: 33px;
           cursor: pointer;
-          // display: flex;
           align-items: center;
           justify-content: center;
           color: var(--text-color);
+          @media screen and (max-width: 900px) {
+            display: block;
+          }
+          
         }
       }
     }
@@ -189,9 +236,12 @@ header {
       justify-content: space-between;
       .nav-drop,
       .nav-menu {
-        font-weight: 900;
+        font-weight: 900 !important;
+  font-family: 'FoglihtenNo06' !important;
+        
         display: flex;
         align-items: center;
+        
         .arr {
           font-size: 10px;
           @media screen and (max-width: 768px) {
@@ -211,7 +261,7 @@ header {
         border: none;
         background: transparent;
         // color: $navTexColor;
-        font-size: 17px;
+        // font-size: 17px;
         ul {
           display: none;
         }
@@ -243,12 +293,9 @@ header {
               gap: 5px;
               font-size: 10px;
               font-family: sans-serif;
-              // color: $lightBackTex;
+             
               color: var(--text-color);
-              // @media screen and (max-width: 768px) {
-              //   font-size: 20px;
-
-              // }
+          
             }
           }
         }
@@ -261,8 +308,6 @@ header {
         align-items: center;
         border: none;
         background: transparent;
-        // color: $navTexColor;
-        font-size: 17px;
         ul {
           display: none;
         }
@@ -318,7 +363,6 @@ header {
     height: 75px;
     width: 100%;
     border: none !important;
-    // background-image: url(https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg);
     background-repeat: repeat-x;
     background-size: contain;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -335,77 +379,51 @@ header {
   height: 100%;
 }
 
-@media (max-width: 1385px) {
-  header {
-    .search-box {
-      width: 300px !important;
-    }
-    .search-box-bigs {
-      width: 60% !important;
-    }
-  }
-}
+// @media (max-width: 1385px) {
+//   header {
+//     .search-box {
+//       width: 300px !important;
+//     }
+//     .search-box-bigs {
+//       width: 60% !important;
+//     }
+//   }
+// }
 
-@media (max-width: 1265px) {
-  header {
-    .search-box {
-      width: 270px !important;
-    }
-    .search-box-bigs {
-      width: 60% !important;
-    }
-  }
-}
+// @media (max-width: 1265px) {
+//   header {
+//     .search-box {
+//       width: 270px !important;
+//     }
+//     .search-box-bigs {
+//       width: 60% !important;
+//     }
+//   }
+// }
 
 @media (max-width: 1185px) {
   header {
-    .search-box {
-      width: 260px !important;
-    }
-    .search-box-bigs {
-      width: 65% !important;
-    }
 
     nav {
       display: flex;
       .nav-box {
         width: 60%;
-        // .nav-drop{
-        //   letter-spacing: 0.5px !important;
-        //   font-size: 13px;
+        .nav-drop{
+          letter-spacing: 0.5px !important;
+          font-size: 13px;
 
-        // }
-        // .nav-menu{
-        //   letter-spacing: 0.5px !important;
-        //   font-size: 13px;
+        }
+        .nav-menu{
+          letter-spacing: 0.5px !important;
+          font-size: 13px;
 
-        // }
+        }
       }
     }
   }
 }
 
-@media (max-width: 1085px) {
-  header {
-    .search-box {
-      width: 230px !important;
-    }
-    .search-box-bigs {
-      width: 65% !important;
-    }
-  }
-}
 
-@media (max-width: 1025px) {
-  header {
-    .search-box {
-      width: 200px !important;
-    }
-    .search-box-bigs {
-      width: 67% !important;
-    }
-  }
-}
 
 @media (max-width: 1005px) {
   header {
@@ -414,45 +432,13 @@ header {
         width: 70%;
       }
     }
-    .search-box {
-      width: 190px !important;
-    }
+   
   }
 }
 
 @media (max-width: 915px) {
   header {
-    .header-top-box {
-      // background-color: black;
-      .search-box {
-        width: 240px !important;
-      }
-
-      .search-box-bigs {
-        width: 50% !important;
-      }
-      .functionale {
-        width: max-content !important;
-        display: flex;
-        justify-content: center !important;
-        // background-color: rebeccapurple;
-
-        gap: 15px;
-        .ob-havo {
-          width: max-content !important;
-          font-size: 15px;
-          display: none;
-          color: var(--text-color) !important;
-        }
-        .dark-m {
-          display: none !important;
-        }
-
-        .ham-menu {
-          display: flex !important;
-        }
-      }
-    }
+   
 
     nav {
       display: flex;
@@ -482,24 +468,13 @@ header {
         width: 70%;
       }
     }
-    .search-box {
-      width: 190px !important;
-    }
+  
   }
 }
 
 @media (max-width: 630px) {
   header {
-    .header-top-box {
-      justify-content: space-between !important;
-
-      .search-box-bigs {
-        width: min-content !important;
-      }
-      .search-box {
-        display: none;
-      }
-    }
+   
     nav {
       display: none;
     }
