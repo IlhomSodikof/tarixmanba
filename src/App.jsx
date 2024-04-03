@@ -20,7 +20,6 @@ export default function App() {
           <Route path="/news" Component={News} />
           <Route path="/library" Component={LibraryCatigory} />
           <Route path="/login" Component={Login} />
-
           <Route path="/archive" Component={Shablon} />
         </Route>
       </Routes>
