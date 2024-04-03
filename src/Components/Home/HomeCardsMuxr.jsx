@@ -46,10 +46,7 @@ export default function App() {
         >
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
-                alt=""
-              />
+              <img src="../../../img/photo_2024-03-27_17-37-09.jpg" alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -64,10 +61,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
-                alt=""
-              />
+              <img src="../../../img/photo_2024-03-27_17-37-09.jpg " alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -82,10 +76,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
-                alt=""
-              />
+              <img src="../../../img/photo_2024-03-27_17-36-00.jpg" alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -100,10 +91,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
-                alt=""
-              />
+              <img src="../../../img/photo_2024-03-27_17-36-20.jpg" alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -118,10 +106,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
-                alt=""
-              />
+              <img src="../../../img/photo_2024-03-27_17-36-41.jpg" alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -136,10 +121,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/CmtE0P5nydJwsaxw524AfqQ7imAeRydAMh5tjlAG.png"
-                alt=""
-              />
+              <img src="../../../img/photo_2024-03-27_17-37-09.jpg" alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
