@@ -17,15 +17,28 @@ import { FaEnvelope } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { IoIosClose } from "react-icons/io";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCube, Pagination } from 'swiper/modules';// Import Swiper styles
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { EffectCube, Pagination } from 'swiper/modules';// Import Swiper styles
 
+// import 'swiper/css';
+// import 'swiper/css/effect-cube';
+// import 'swiper/css/pagination';
+
+// import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 
+// import './styles.css';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 
+import Swal from 'sweetalert2';
 export default function BigCacdFilter() {
 
   const [modal, setModal] = useState({ key: "", value: false });
@@ -68,6 +81,33 @@ export default function BigCacdFilter() {
     //   // case "map":setModal({ key: e, value: modal.key == e ? !modal.value : `map${e}` });break;
     //   // case "3d":setModal({ key: e, value: modal.key == e ? !modal.value : `3d${e}` });break;
     // }
+  };
+
+
+
+
+  const [inputValue, setInputValue] = useState('');
+
+  const handleButtonClick = async () => {
+    const { value: text } = await Swal.fire({
+      title: 'Bu card saqlansinmi ',
+
+
+      showCancelButton: "Saqlandi",
+      inputValidator: (value) => {
+        if (!value) {
+          return 'You need to write something!';
+        }
+      }
+    });
+
+    if (text) {
+
+      Swal.fire({
+        title: 'Saqlandi',
+        icon: 'success'
+      });
+    }
   };
 
   return (
@@ -194,7 +234,7 @@ export default function BigCacdFilter() {
 
                       <IoIosClose onClick={() => onChangeModal(e, "close")} />
                     </div>
-                    <Swiper
+                    {/* <Swiper
                       effect={'cube'}
                       grabCursor={true}
                       cubeEffect={{
@@ -218,7 +258,7 @@ export default function BigCacdFilter() {
                       </SwiperSlide>
                       <SwiperSlide>
                         <h3 className="photo-title-h3">PHOTO NOMI</h3>
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        
                       </SwiperSlide>
                       <SwiperSlide>
                         <h3 className="photo-title-h3">PHOTO NOMI</h3>
@@ -228,7 +268,29 @@ export default function BigCacdFilter() {
                         <h3 className="photo-title-h3">PHOTO NOMI</h3>
                         <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
                       </SwiperSlide>
+                    </Swiper> */}
+
+
+
+
+
+                    <Swiper
+                      pagination={{
+                        dynamicBullets: true,
+                      }}
+                      modules={[Pagination]}
+                      className="mySwiper1"
+                    >
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+
                     </Swiper>
+
+
+
 
                   </div>
 
@@ -274,7 +336,7 @@ export default function BigCacdFilter() {
 
 
                 <div className="item-iconic save-icon">
-                  <MdBookmark />
+                  <MdBookmark onClick={handleButtonClick} />
                   <span class="tooltiptext">Save</span>
                 </div>
               </li>

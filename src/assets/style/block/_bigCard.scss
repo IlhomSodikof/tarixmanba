@@ -8,7 +8,16 @@
   --shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
+.swal2-styled{
+  background-color:rgb(66, 178, 11) !important;
 
+  cursor: pointer !important;
+}
+.swal2-cancel{
+  background-color: rgb(255, 6, 6) !important;
+  cursor: pointer !important;
+  
+}
 
 // https://t4.ftcdn.net/jpg/01/00/22/75/240_F_100227567_VJ0utCXtFQPaWnbMXJ1iqZ8DzkwVz6EL.jpg
 .card-container-shablon{
@@ -381,29 +390,36 @@
               align-items: center;
               z-index: 1010;
             
-              .photo-title-h3{
-                background: transparent;
-                color: white;
+              .swiper {
+                width: 100%;
+                height: 100%;
               }
-
+              
               .swiper-slide {
-                background-position: center;
-                background-size: cover;
-                background-color:transparent;
-                // background-color: red;
-
-                
-
-                // width: 500px;
+                position: relative;
+                text-align: center;
+                font-size: 18px;
+                background: #ffffff00;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1{
+                  position:absolute;
+                  top: 0px;
+                  background: transparent;
+                  color: #eee;
+                  text-transform: capitalize;
+                }
               }
               
               .swiper-slide img {
                 display: block;
-                // object-fit:fill;
                 width: 100%;
-                height: 91%;
-            
+                height: 100%;
+                object-fit: cover;
               }
+              
              
             }
           }

@@ -13,7 +13,7 @@ export default function Acardion() {
           stiffness: 260,
           damping: 80
         }}
-      >TARIXY`` OBIDALAR VA NODIR tOPILMALAR</motion.h1>
+      >TARIXY OBIDALAR VA NODIR tOPILMALAR</motion.h1>
       <div class="flex-container">
 
         <div className="flex-slide home">

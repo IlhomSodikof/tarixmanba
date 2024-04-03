@@ -11,7 +11,8 @@
   max-width: 1350px;
   margin: auto;
   padding: 2rem;
-  background-color: var(--background);
+  // background-color: var(--background);
+  background:transparent;
 
   .video-make{
     width: 100%;
@@ -20,6 +21,7 @@
       position: fixed;
       top: 0;
       left: 0;
+      z-index: -1;
   }
 }
 

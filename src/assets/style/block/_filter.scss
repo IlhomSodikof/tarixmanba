@@ -1,14 +1,14 @@
 .shablon-container {
-  
-  // position: relative;
-  display: flex;
-  justify-content: center;
-  padding: 50px 0px !important;
-  .filt-cont-shablonmanba{ 
   position: relative;
   display: flex;
-  gap: 100px;
-  }
+  justify-content: center;
+  padding: 50px 0px 
+  !important;gap: 100px;
+  // .filt-cont-shablonmanba{ 
+  //   // position: absolute;
+  //   display: flex;
+    
+  // }
 }
 .sidebar-filter {
   position: sticky !important;
