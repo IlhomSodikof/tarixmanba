@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 $defaultSeconds: 3s;
-:root{
+:root {
   // --primary-color:yellow;
-  --background:white;
-  --text-color:#000000;
-  --border-color:#eee;
-  --card-back-color:white;
-  --border-color2:#000;
+  --background: white;
+  --text-color: #000000;
+  --border-color: #eee;
+  --card-back-color: white;
+  --border-color2: #000;
 }
 
 // body{
 //   background-color:var(--background);
 // }
 .acardions {
-  position:relative ;
-  background:transparent;
+  position: relative;
+  background: transparent;
   // background-color: red !important;
   // z-index: 1000000;
   // width: 200vh;
@@ -31,7 +31,7 @@ $defaultSeconds: 3s;
   }
 }
 
-#acardion-title{
+#acardion-title {
   position: absolute;
   // display:none;
   left: 0;
@@ -39,10 +39,10 @@ $defaultSeconds: 3s;
   // color: var(--text-color);
   // color: #000 !important  ;
   font-size: 36px;
-  font-family: 'FoglihtenNo06' !important;
+  font-family: "FoglihtenNo06" !important;
   text-transform: capitalize !important;
-  font-weight:bold !important;
-  transition: .3s;
+  font-weight: bold !important;
+  transition: 0.3s;
   @media screen and (max-width: 768px) {
     font-size: 25px;
   }
@@ -51,17 +51,17 @@ $defaultSeconds: 3s;
   }
 }
 
-#acardion-title{
+#acardion-title {
   // font-size: 150px;
   background-image: linear-gradient(135deg, #000000 50%, transparent 50%);
   background-size: 300% 100%;
   -webkit-text-stroke-color: rgb(11, 9, 9);
   -webkit-text-stroke-width: 0.001em;
   -webkit-text-fill-color: transparent;
-   -webkit-background-clip: text;
+  -webkit-background-clip: text;
   // font-family: "Oswald", sans-serif;
-    text-transform: capitalize;
-  animation: fill 4s linear ;
+  text-transform: capitalize;
+  animation: fill 4s linear;
   z-index: 1000000;
 }
 .flex-container {
@@ -74,7 +74,7 @@ $defaultSeconds: 3s;
   display: flex;
   overflow: hidden;
   // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 90%;
@@ -86,7 +86,7 @@ $defaultSeconds: 3s;
 .flex-title {
   color: #f1f1f1;
   position: relative;
-  font-size:1vw;
+  font-size: 1vw;
   margin: auto;
   text-align: center;
   transform: rotate(90deg);
@@ -140,7 +140,8 @@ $defaultSeconds: 3s;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
--webkit-animation:kenburns-bottom-left 5s ease-out both;animation:kenburns-bottom-left 5s ease-out both;
+  -webkit-animation: kenburns-bottom-left 5s ease-out both;
+  animation: kenburns-bottom-left 5s ease-out both;
   @media screen and (max-width: 768px) {
     overflow: auto;
     overflow-x: hidden;
@@ -153,18 +154,42 @@ $defaultSeconds: 3s;
 }
 .flex-slide ul li {
   @media screen and (max-width: 768px) {
-   
-
   }
 }
-@-webkit-keyframes kenburns-bottom-left{0%{-webkit-transform:scale(1) translate(0,0);transform:scale(1) translate(0,0);-webkit-transform-origin:16% 84%;transform-origin:16% 84%}100%{-webkit-transform:scale(1.25) translate(-20px,15px);transform:scale(1.25) translate(-20px,15px);-webkit-transform-origin:left bottom;transform-origin:left bottom}}@keyframes kenburns-bottom-left{0%{-webkit-transform:scale(1) translate(0,0);transform:scale(1) translate(0,0);-webkit-transform-origin:16% 84%;transform-origin:16% 84%}100%{-webkit-transform:scale(1.25) translate(-20px,15px);transform:scale(1.25) translate(-20px,15px);-webkit-transform-origin:left bottom;transform-origin:left bottom}}
+@-webkit-keyframes kenburns-bottom-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 84%;
+    transform-origin: 16% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+}
+@keyframes kenburns-bottom-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 84%;
+    transform-origin: 16% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+}
 
 .flex-slide:hover {
   // -webkit-flex-grow: 6;
   flex-grow: 6;
   transform: rotate(0deg);
   font-size: 1.5vw;
-  
 }
 .flex-slide:hover > .flex-title {
   -webkit-flex-grow: 6;
@@ -173,9 +198,9 @@ $defaultSeconds: 3s;
 
   transform: rotate(0deg);
 }
-.home {
+.acc_img1 {
   // height: 100vh;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/lake-macquarie-71208_1920.jpg);
+  background: url("../../../../../img/ichanqala.jpeg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -244,8 +269,8 @@ $defaultSeconds: 3s;
   }
 }
 
-.about {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/beach-2089959_1280.jpg);
+.acc_img2 {
+  background: url("../../../../../img/acc_img2.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -259,15 +284,29 @@ input {
 textarea {
   width: 100%;
 }
-.contact {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/lake-696098_1920.jpg);
+.acc_img3 {
+  background: url("../../../../../img/acc_img3.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
-.work {
+.acc_img4 {
   // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/forest-208517_1280.jpg);
+  background: url("../../../../../img/acc_img4.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.acc_img5 {
+  // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: url("../../../../../img/ichanqala.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.acc_img6 {
+  // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: url("../../../../../img/acc_img2.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -344,7 +383,3 @@ textarea {
     -webkit-transform: rotate(-360deg);
   }
 }
-
-
-
- 
