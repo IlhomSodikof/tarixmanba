@@ -142,8 +142,6 @@ export default function Header() {
                     damping: 20,
                   }}
                 >
-
-
                   <motion.li className="max-item">
                     <div className="colors blue" onClick={handleClick}>
                       {" "}
@@ -159,7 +157,9 @@ export default function Header() {
                     </div>
                   </motion.li>
                   <motion.li className="lenguage">
-                    <span className="lan-icon"><IoLanguage className="icon-lan" /> Til</span>
+                    <span className="lan-icon">
+                      <IoLanguage className="icon-lan" /> Til
+                    </span>
                     <span className="lang-item">O'zbek</span>
                     <span className="lang-item">English</span>
                     <span className="lang-item">Rus</span>
@@ -208,7 +208,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/archive">
+                  <Link className="nav-drop-link" to="/sources/archive">
                     {" "}
                     <TbBuildingCastle />
                     <span> Arxealogiya</span>
@@ -218,7 +218,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/archive">
+                  <Link className="nav-drop-link" to="/sources/society">
                     <HiUserGroup /> <span> Xalq og'zaki ijodi</span>
                   </Link>
                 </motion.li>
@@ -226,7 +226,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/archive">
+                  <Link className="nav-drop-link" to="/sources/manuscript">
                     <MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span>
                   </Link>
                 </motion.li>
@@ -234,7 +234,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/archive">
+                  <Link className="nav-drop-link" to="/sources/coins">
                     <GiTwoCoins /> <span> Tangalar</span>
                   </Link>
                 </motion.li>
@@ -242,7 +242,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to="/sources/coins">
                     <RiFilePaper2Line /> <span> Bitiklar</span>
                   </Link>
                 </motion.li>
