@@ -170,12 +170,12 @@ export default function News() {
             </div>
           </div>
         </div>
-        <div className="pattern">
+        {/* <div className="pattern">
           <img
             src="https://png.pngtree.com/png-clipart/20220909/original/pngtree-luxury-mandala-circle-frame-transparent-with-vintage-gold-circular-pattern-png-image_8503769.png"
             alt=""
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
