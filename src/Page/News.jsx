@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function News() {
   return (
@@ -25,9 +26,11 @@ export default function News() {
                     Quaerat velit qui quos repellat nulla soluta exceptu
                   </p>
                   <div class="effect-btn">
-                    <a href="#" class="btn">
-                      <i class="fa fa-eye"></i> Read More
-                    </a>
+                    <Link to="/newsDetail">
+                      <a href="#" class="btn">
+                        <i class="fa fa-eye"></i> Read More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -50,9 +53,11 @@ export default function News() {
                     Quaerat velit qui quos repellat nulla cum soluta exceptu
                   </p>
                   <div class="effect-btn">
-                    <a href="#" class="btn">
-                      <i class="fa fa-eye"></i> Read More
-                    </a>
+                    <Link to="/newsDetail">
+                      <a href="#" class="btn">
+                        <i class="fa fa-eye"></i> Read More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -74,9 +79,11 @@ export default function News() {
                     Quaerat velit qui quos repellat nulla cum soluta exceptu
                   </p>
                   <div class="effect-btn">
-                    <a href="#" class="btn">
-                      <i class="fa fa-eye"></i> Read More
-                    </a>
+                    <Link to="/newsDetail">
+                      <a href="#" class="btn">
+                        <i class="fa fa-eye"></i> Read More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -98,9 +105,11 @@ export default function News() {
                     Quaerat velit qui quos repellat nulla cum soluta exceptu
                   </p>
                   <div class="effect-btn">
-                    <a href="#" class="btn">
-                      <i class="fa fa-eye"></i> Read More
-                    </a>
+                    <Link to="/newsDetail">
+                      <a href="#" class="btn">
+                        <i class="fa fa-eye"></i> Read More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -122,9 +131,11 @@ export default function News() {
                     Quaerat velit qui quos repellat nulla cum soluta exceptu
                   </p>
                   <div class="effect-btn">
-                    <a href="#" class="btn">
-                      <i class="fa fa-eye"></i> Read More
-                    </a>
+                    <Link to="/newsDetail">
+                      <a href="#" class="btn">
+                        <i class="fa fa-eye"></i> Read More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -147,9 +158,11 @@ export default function News() {
                     Quaerat velit qui quos repellat nulla cum soluta exceptu
                   </p>
                   <div class="effect-btn">
-                    <a href="#" class="btn">
-                      <i class="fa fa-eye"></i> Read More
-                    </a>
+                    <Link to="/newsDetail">
+                      <a href="#" class="btn">
+                        <i class="fa fa-eye"></i> Read More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -28,7 +28,6 @@ export default function App() {
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
-          // navigation={true}
           pagination={{
             clickable: true,
           }}
