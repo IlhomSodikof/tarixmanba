@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { IoIosEye } from "react-icons/io";
 import { IoMdHeart } from "react-icons/io";
 import { BiSolidMessageRounded } from "react-icons/bi";
@@ -16,13 +16,99 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { IoIosClose } from "react-icons/io";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { EffectCube, Pagination } from 'swiper/modules';// Import Swiper styles
 
+// import 'swiper/css';
+// import 'swiper/css/effect-cube';
+// import 'swiper/css/pagination';
+
+// import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import './styles.css';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+
+import Swal from 'sweetalert2';
 export default function BigCacdFilter() {
+
+  const [modal, setModal] = useState({ key: "", value: false });
   const [val, setVal] = useState({ key: "", value: false });
   const onChange = (e) => {
     setVal({ key: e, value: val.key == e ? !val.value : true });
   };
-  console.log(val);
+
+
+
+
+  const onChangeModal = (e, id) => {
+    // setModal({ key: e, value: modal.key == e ? !modal.value : true });
+    if (id == "audio") {
+      setModal({ key: e, value: modal.key == e ? !modal.value : `audio${e}` });
+    }
+    if (id == "text") {
+      setModal({ key: e, value: modal.key == e ? !modal.value : `text${e}` });
+    }
+    if (id == "video") {
+      setModal({ key: e, value: modal.key == e ? !modal.value : `video${e}` });
+    }
+
+    if (id == "photo") {
+      setModal({ key: e, value: modal.key == e ? !modal.value : `photo${e}` });
+    }
+
+    document.querySelector("body").style.overflow = e == modal.key ? "auto" : "hidden";
+    if (id == "close") {
+      setModal({ key: "", value: false })
+    }
+
+    // switch (id) {
+    //   case "audio": setModal({ key: e, value: modal.key == e ? !modal.value : `audio${e}` }); break;
+    //   case "text": setModal({ key: e, value: modal.key == e ? !modal.value : `text${e}` }); break;
+    //   case "video": setModal({ key: e, value: modal.key == e ? !modal.value : `video${e}` }); break;
+
+    //   case "photo": setModal({ key: e, value: modal.key == e ? !modal.value : `photo${e}` }); break;
+    //   case "close": setModal({ key: e, value: modal.key == e ? !modal.value : `close${e}` }); break;
+    //   // case "map":setModal({ key: e, value: modal.key == e ? !modal.value : `map${e}` });break;
+    //   // case "3d":setModal({ key: e, value: modal.key == e ? !modal.value : `3d${e}` });break;
+    // }
+  };
+
+
+
+
+  const [inputValue, setInputValue] = useState('');
+
+  const handleButtonClick = async () => {
+    const { value: text } = await Swal.fire({
+      title: 'Bu card saqlansinmi ',
+
+
+      showCancelButton: "Saqlandi",
+      inputValidator: (value) => {
+        if (!value) {
+          return 'You need to write something!';
+        }
+      }
+    });
+
+    if (text) {
+
+      Swal.fire({
+        title: 'Saqlandi',
+        icon: 'success'
+      });
+    }
+  };
 
   return (
     <div className="card-container-shablon">
@@ -32,7 +118,7 @@ export default function BigCacdFilter() {
       {/* //map-end */}
       {[1, 2, 3, 4, 5, 56, 6, 7, 8].map((e) => (
         <div className="shablon-card" key={e}>
-          <div className="share-card" onClick={() => onChange(e)}>
+          <div className="share-card" onClick={() => onChange(e)} >
             {/* <CiMenuKebab /> */}
             <FaShare />
             <motion.div
@@ -90,41 +176,180 @@ export default function BigCacdFilter() {
                 avvalgi 90-40 mingyillik
               </li>
               <li className="item-icons">
-                <div className="item-iconic audio-icon">
-                  <AiFillAudio />
+
+                <div className="item-iconic audio-icon" id="audio">
+                  <AiFillAudio onClick={() => onChangeModal(e, "audio")} />
                   <span class="tooltiptext">Audio</span>
+                  <div
+                    className={modal.key == e ? (modal.value == `audio${e}` ? "modal-overlay div" : "div") : "div"}
+                  >
+
+                    <div className="close-modal">
+                      <IoIosClose onClick={() => onChangeModal(e, "close")} />
+                    </div>
+                    <div className="modal-item">
+                      <img className={modal.value == `audio${e}` ? "exe" : ""} src="../../../img/orn2.png" alt="" />
+                      <h3 className="media-audio-title">MEDIA FILE NOMI </h3>
+                      <audio src="" controls></audio>
+                    </div>
+                  </div>
                 </div>
+
+
                 <div className="item-iconic book-icon">
-                  <IoBook />
+                  <IoBook onClick={() => onChangeModal(e, "text")} />
                   <span class="tooltiptext">Text</span>
+
+                  <div
+                    className={modal.key == e ? (modal.value == `text${e}` ? "text-modal-download div" : "div") : "div"}
+                  >
+                    <div className="download-card">
+                      <div className="close-modal">
+                        <IoIosClose onClick={() => onChangeModal(e, "close")} />
+                      </div>
+
+                      <h3>Tekst va Fayillar</h3>
+
+                      <div className="download-item">
+                        <img id="dynamic-image" style={{ "width": "50px" }} alt="" src="../../../img/download.gif"></img>
+                        <p className="dwn-title">Yuklanayotgan fayl nomi yoki kitob nomi bo'ladi</p>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
+
+
                 <div className="item-iconic _3d-cion">
                   <AiOutlineCodeSandbox />
                   <span class="tooltiptext">3D</span>
                 </div>{" "}
                 {/* mediada yo'qolishi kere*/}
                 <div className="item-iconic foto-icon">
-                  <MdPhotoCamera />
+                  <MdPhotoCamera onClick={() => onChangeModal(e, "photo")} />
                   <span class="tooltiptext">Foto</span>
+
+                  <div className={modal.key == e ? (modal.value == `photo${e}` ? "modal-photo" : "div") : "div"}>
+                    <div className="close-modal">
+
+                      <IoIosClose onClick={() => onChangeModal(e, "close")} />
+                    </div>
+                    {/* <Swiper
+                      effect={'cube'}
+                      grabCursor={true}
+                      cubeEffect={{
+                        shadow: true,
+                        slideShadows: true,
+                        shadowOffset: 20,
+                        shadowScale: 0.94,
+                      }}
+                      pagination={true}
+                      modules={[EffectCube, Pagination]}
+                      className="mySwiper1"
+                    >
+
+                      <SwiperSlide>
+                        <h3 className="photo-title-h3">PHOTO NOMI</h3>
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <h3 className="photo-title-h3">PHOTO NOMI</h3>
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <h3 className="photo-title-h3">PHOTO NOMI</h3>
+                        
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <h3 className="photo-title-h3">PHOTO NOMI</h3>
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <h3 className="photo-title-h3">PHOTO NOMI</h3>
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                      </SwiperSlide>
+                    </Swiper> */}
+
+
+
+
+
+                    <Swiper
+                      pagination={{
+                        dynamicBullets: true,
+                      }}
+                      modules={[Pagination]}
+                      className="mySwiper1"
+                    >
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+                      <SwiperSlide><h1>Surat haqida ma'lumot</h1><img src="https://img.freepik.com/premium-photo/courtyard-kalyan-mosque-sunset-bukhara-uzbekistan-world-heritage_196911-11.jpg" /></SwiperSlide>
+
+                    </Swiper>
+
+
+
+
+                  </div>
+
+
+
                 </div>
+
+
+
                 <div className="item-iconic map-icon">
                   {" "}
                   <SiOpenstreetmap />
                   <span class="tooltiptext">Map</span>
                 </div>
+
+
                 <div className="item-iconic video-icon">
-                  <IoVideocam />
+                  <IoVideocam onClick={() => onChangeModal(e, "video")} />
                   <span class="tooltiptext">Video</span>
+
+                  <div
+                    className={modal.key == e ? (modal.value == `video${e}` ? "modal-video div" : "div") : "div"}
+                  >
+
+                    <div className="close-modal">
+                      <IoIosClose onClick={() => onChangeModal(e, "close")} />
+                    </div>
+                    <h3 className="media-audio-title">MEDIA FILE NOMI </h3>
+                    <div className="modal-item">
+
+
+                      <video data-testid="video-asset" style={{ "width": "100%", }} alt="Numismatics. Old collectible coins on the table. Ancient Stock Footage Video" controls controlslist="nodownload" autoplay={true} loop={true} aria-valuemax>
+                        <source type="video/mp4" src="https://uploads.actionvfx.com/video/cb785ef5-7e71-4459-8c58-b4acee163e82/mp4/Burning+Steel+Wool.mp4" />
+                      </video>
+                      {/* <video src="https://uploads.actionvfx.com/video/cb785ef5-7e71-4459-8c58-b4acee163e82/mp4/Burning+Steel+Wool.mp4" playsinline="" preload="none" loop="" data-testid="collectionVideoPreview" class="hidden" style="width: 100%; height: 100%; object-fit: cover;"></video> */}
+                      {/* <video src="https://uploads.actionvfx.com/video/d14c7c0d-52ac-48c7-8530-4d4de285e7c7/mp4/Fire+Embers.mp4" playsinline="" preload="none" loop="" data-testid="collectionVideoPreview" class="hidden" style="width: 100%; height: 100%; object-fit: cover;"></video> */}
+
+                    </div>
+                  </div>
+
+
                 </div>
+
+
                 <div className="item-iconic save-icon">
-                  <MdBookmark />
+                  <MdBookmark onClick={handleButtonClick} />
                   <span class="tooltiptext">Save</span>
                 </div>
               </li>
             </ul>
+
           </div>
+
         </div>
       ))}
+
+
+
     </div>
   );
 }
+

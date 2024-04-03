@@ -22,6 +22,7 @@ import { ImNewspaper } from "react-icons/im";
 import { CiInboxIn } from "react-icons/ci";
 
 import { CgDarkMode } from "react-icons/cg"; // darkmods
+import { IoLanguage } from "react-icons/io5";
 
 import Logo from "../../img/Group 8.svg";
 import Wather from "./component/Wather";
@@ -31,7 +32,7 @@ export default function Header() {
 
   const handleClick = () => {
     // Yangi rangni tanlash uchun logika
-    const background = "#fff"; // Masalan, yangi rang
+    const background = "#263d73"; // Masalan, yangi rang
     const color = "#000";
     const card = "#fff";
 
@@ -129,7 +130,7 @@ export default function Header() {
                   setMaxDrop(!maxDrop);
                 }}
               >
-                <GiSunglasses />
+                <CgMenuRightAlt />
                 <motion.ul
                   className={maxDrop ? "max-imkonyat" : ""}
                   ref={valRefMax}
@@ -141,6 +142,8 @@ export default function Header() {
                     damping: 20,
                   }}
                 >
+
+
                   <motion.li className="max-item">
                     <div className="colors blue" onClick={handleClick}>
                       {" "}
@@ -154,6 +157,12 @@ export default function Header() {
                       {" "}
                       A3{" "}
                     </div>
+                  </motion.li>
+                  <motion.li className="lenguage">
+                    <span className="lan-icon"><IoLanguage className="icon-lan" /> Til</span>
+                    <span className="lang-item">O'zbek</span>
+                    <span className="lang-item">English</span>
+                    <span className="lang-item">Rus</span>
                   </motion.li>
                 </motion.ul>
               </div>

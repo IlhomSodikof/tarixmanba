@@ -1,9 +1,18 @@
 .shablon-container {
-  display: flex !important;
-  gap: 100px;
-  // padding: 50px !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 
+  !important;gap: 100px;
+  // .filt-cont-shablonmanba{ 
+  //   // position: absolute;
+  //   display: flex;
+    
+  // }
 }
 .sidebar-filter {
+  position: sticky !important;
+  top: 40px !important;
   display: flex;
   flex-direction: column;
   // gap: 25px;

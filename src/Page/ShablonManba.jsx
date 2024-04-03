@@ -7,8 +7,9 @@ export default function ShablonManba() {
 
     <div className="shablon-container">
 
-      <div>
+      <div className='filt-cont-shablonmanba'>
         <Filter />
+
       </div>
       <BigCacdFilter />
 
