@@ -1,0 +1,27 @@
+// body {
+//   margin: 0;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #f0f0f0;
+// }
+// .pattern {
+//   position: relative;
+// }
+.circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: relative;
+  animation: circleAnimation 12s infinite linear;
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

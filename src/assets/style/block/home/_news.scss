@@ -1,18 +1,3 @@
-// * Coding With Nick */
-// *,
-// *::before,
-// *::after{
-//     box-sizing: border-box;
-// }
-// html{
-//     line-height: 1.15;
-// }
-// body{
-//     font-family: 'roboto', sans-serif;
-//     color: #454545;
-//     font-weight: 400;
-//     background: #ffffff;
-// }
 a {
   color: #333333;
   font-weight: 400;
@@ -21,6 +6,7 @@ a {
   transition: 0.5s;
 }
 .news__container {
+  position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -175,6 +161,23 @@ a {
   padding: 7px 15px;
   color: #333333;
   background: #ffffff;
+}
+.pattern {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: relative;
+  animation: circleAnimation 12s infinite linear;
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media (min-width: 576px) {
   .container {

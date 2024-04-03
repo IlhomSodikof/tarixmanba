@@ -7,14 +7,15 @@ import FashionCard from "../Components/Home/FashionCard";
 import Acardion from "../Components/Home/Acardion";
 import Map from "../Components/Home/Map";
 import Videos from "../assets/videoHome.mp4";
+import Pattern from "../Components/component/Pattern";
 
 export default function Home() {
   const videoRef = useRef();
-  const [autos, setAutos] = useState(true);
+  // const [autos, setAutos] = useState(true);
 
-  useEffect(() => {
-    videoRef.current.play();
-  }, []);
+  // useEffect(() => {
+  //   videoRef.current.play();
+  // }, []);
   // useEffect(() => {
   //   // Component monte edildiğinde videoyu başlat
   //   videoRef.current.play();
@@ -22,7 +23,7 @@ export default function Home() {
   return (
     <>
       <main className="card__container">
-        <video
+        {/* <video
           autoPlay
           muted
           loop
@@ -31,7 +32,7 @@ export default function Home() {
           ref={videoRef}
           style={{ width: "100%" }}
           src={Videos}
-        />
+        /> */}
 
         {/* <video
           className="video-make"
