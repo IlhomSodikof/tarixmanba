@@ -24,8 +24,16 @@ import { CiInboxIn } from "react-icons/ci";
 import { CgDarkMode } from "react-icons/cg"; // darkmods
 import { IoLanguage } from "react-icons/io5";
 
-import Logo from "../assets/img/Group 8.svg";
 import Wather from "./component/Wather";
+
+// import image
+import Logo from "../assets/img/Group 8.svg";
+import lenta1 from "../assets/img/lenta1.png";
+import lenta2 from "../assets/img/lenta2.png";
+import lenta3 from "../assets/img/lenta3.png";
+import lenta4 from "../assets/img/lenta4.png";
+import lenta5 from "../assets/img/lenta5.png";
+import lenta6 from "../assets/img/lenta6.png";
 
 export default function Header() {
   const [primaryColor, setPrimaryColor] = useState("blue");
@@ -158,7 +166,7 @@ export default function Header() {
                   </motion.li>
                   <motion.li className="lenguage">
                     <span className="lan-icon">
-                      <IoLanguage className="icon-lan" /> Tila
+                      <IoLanguage className="icon-lan" /> Til
                     </span>
                     <span className="lang-item">O'zbek</span>
                     <span className="lang-item">English</span>
@@ -208,7 +216,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/archive">
+                  <Link className="nav-drop-link" to="/sources/archive">
                     {" "}
                     <TbBuildingCastle />
                     <span> Arxealogiya</span>
@@ -218,7 +226,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/archive">
+                  <Link className="nav-drop-link" to="/sources/society">
                     <HiUserGroup /> <span> Xalq og'zaki ijodi</span>
                   </Link>
                 </motion.li>
@@ -226,7 +234,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/archive">
+                  <Link className="nav-drop-link" to="/sources/manuscript">
                     <MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span>
                   </Link>
                 </motion.li>
@@ -234,7 +242,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/archive">
+                  <Link className="nav-drop-link" to="/sources/coins">
                     <GiTwoCoins /> <span> Tangalar</span>
                   </Link>
                 </motion.li>
@@ -242,7 +250,7 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link">
+                  <Link className="nav-drop-link" to="/sources/coins">
                     <RiFilePaper2Line /> <span> Bitiklar</span>
                   </Link>
                 </motion.li>
@@ -375,11 +383,24 @@ export default function Header() {
               src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
               alt=""
             /> */}
-            <img
-              src="https://lh3.googleusercontent.com/proxy/XvhwskwynVwhFyINp0P1M0j4ynOaBB1zgEfPT64QobBzpNtoT0Ig3fjaFwBfpopG9YlG1FsL4udhwCL1OHFoe3PM27FxZiXjccnS5NglhDfsmPSRkn5MTDs"
-              alt=""
-            />
-            <img src="" alt="" />
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta5} alt="" />
+            <img src={lenta6} alt="" />
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta5} alt="" />
+            <img src={lenta6} alt="" />
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta5} alt="" />
+            <img src={lenta6} alt="" />
           </div>
         </Marquee>
 
