@@ -2,17 +2,20 @@ import React, { useRef, useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import "./styles.css";
-
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+// import image
+import muhr1 from "../../assets/img/photo_2024-03-27_17-35-54.jpg";
+import muhr3 from "../../assets/img/photo_2024-03-27_17-36-00.jpg";
+import muhr4 from "../../assets/img/photo_2024-03-27_17-36-00.jpg";
+import muhr2 from "../../assets/img/photo_2024-03-27_17-35-57.jpg";
+import muhr5 from "../../assets/img/photo_2024-03-27_17-36-41.jpg";
+import muhr6 from "../../assets/img/photo_2024-03-27_17-37-09.jpg";
 
 export default function App() {
   return (
@@ -46,7 +49,7 @@ export default function App() {
         >
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/photo_2024-03-27_17-37-09.jpg" alt="" />
+              <img src={muhr1} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -61,7 +64,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/photo_2024-03-27_17-37-09.jpg " alt="" />
+              <img src={muhr2} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -76,7 +79,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/photo_2024-03-27_17-36-00.jpg" alt="" />
+              <img src={muhr3} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -91,7 +94,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/photo_2024-03-27_17-36-20.jpg" alt="" />
+              <img src={muhr4} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -106,7 +109,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/photo_2024-03-27_17-36-41.jpg" alt="" />
+              <img src={muhr5} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -121,7 +124,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/photo_2024-03-27_17-37-09.jpg" alt="" />
+              <img src={muhr6} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>

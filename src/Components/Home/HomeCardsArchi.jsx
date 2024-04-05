@@ -2,17 +2,20 @@ import React, { useRef, useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import "./styles.css";
-
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+// import image
+import archi1 from "../../assets/img/archi1.jpg";
+import archi2 from "../../assets/img/archi2.jpg";
+import archi3 from "../../assets/img/archi3.jpg";
+import archi4 from "../../assets/img/archi4.jpg";
+import archi5 from "../../assets/img/archi5.jpg";
+import archi6 from "../../assets/img/archi6.jpg";
 
 export default function App() {
   return (
@@ -47,7 +50,7 @@ export default function App() {
         >
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/archi1.jpg" alt="" />
+              <img src={archi1} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -62,7 +65,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/archi2.jpg" alt="" />
+              <img src={archi2} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -77,7 +80,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/archi3.jpg" alt="" />
+              <img src={archi3} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -92,7 +95,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/archi4.jpg" alt="" />
+              <img src={archi4} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -107,7 +110,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/archi5.jpg" alt="" />
+              <img src={archi5} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -122,7 +125,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img src="../../../img/archi6.jpg" alt="" />
+              <img src={archi6} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>

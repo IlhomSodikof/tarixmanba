@@ -7,11 +7,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useEffect, useState } from "react";
 import { withTranslation } from "react-i18next";
-import weather_cloud from "../../../img/weather-cloude-sun.svg";
-import rain from "../../../img/rain-16.png";
-import sun from "../../../img/weather-cloude-sun.svg";
-import cloud from "../../../img/cloud.png";
-import snow from "../../../img/snow.png";
+import weather_cloud from "../../assets/img/weather-cloude-sun.svg";
+import rain from "../../assets/img/rain-16.png";
+import sun from "../../assets/img/weather-cloude-sun.svg";
+import cloud from "../../assets/img/cloud.png";
+import snow from "../../assets/img/snow.png";
 
 function WeatherSide({ t }) {
   const [city, setCity] = useState();

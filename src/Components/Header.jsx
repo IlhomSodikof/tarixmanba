@@ -24,7 +24,7 @@ import { CiInboxIn } from "react-icons/ci";
 import { CgDarkMode } from "react-icons/cg"; // darkmods
 import { IoLanguage } from "react-icons/io5";
 
-import Logo from "../../img/Group 8.svg";
+import Logo from "../assets/img/Group 8.svg";
 import Wather from "./component/Wather";
 
 export default function Header() {
@@ -142,8 +142,6 @@ export default function Header() {
                     damping: 20,
                   }}
                 >
-
-
                   <motion.li className="max-item">
                     <div className="colors blue" onClick={handleClick}>
                       {" "}
@@ -159,7 +157,9 @@ export default function Header() {
                     </div>
                   </motion.li>
                   <motion.li className="lenguage">
-                    <span className="lan-icon"><IoLanguage className="icon-lan" /> Til</span>
+                    <span className="lan-icon">
+                      <IoLanguage className="icon-lan" /> Tila
+                    </span>
                     <span className="lang-item">O'zbek</span>
                     <span className="lang-item">English</span>
                     <span className="lang-item">Rus</span>
@@ -363,7 +363,7 @@ export default function Header() {
         {/* <img className='header-bottom-img' src="./Screenshot 2024-03-17 224153.png" alt="imgs" /> */}
         <Marquee>
           <div className="header-img-pattern">
-            <img
+            {/* <img
               src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
               alt=""
             />
@@ -374,7 +374,12 @@ export default function Header() {
             <img
               src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
               alt=""
+            /> */}
+            <img
+              src="https://lh3.googleusercontent.com/proxy/XvhwskwynVwhFyINp0P1M0j4ynOaBB1zgEfPT64QobBzpNtoT0Ig3fjaFwBfpopG9YlG1FsL4udhwCL1OHFoe3PM27FxZiXjccnS5NglhDfsmPSRkn5MTDs"
+              alt=""
             />
+            <img src="" alt="" />
           </div>
         </Marquee>
 
