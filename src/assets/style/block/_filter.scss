@@ -24,7 +24,7 @@
     text-align: center;
   }
   .filter-box {
-    background-color: aliceblue;
+    background-color: rgba(63, 106, 202, 0.08);
     h3 {
       font-size: 16px;
       font-weight: bold;
@@ -36,8 +36,8 @@
       border-bottom: 1px solid #eee;
     }
     h3:hover {
-      background-color: #223b6d;
-      color: white;
+      // background-color: rgba(63, 107, 202, 0.562);
+      color: rgb(55, 39, 206);
     }
     ul {
       display: none;
@@ -61,9 +61,9 @@
         }
       }
       .list-item-show:hover {
-        background-color: #223b6dae;
-        color: white;
-        transition: 0.2s ease-out;
+        background-color: rgba(63, 107, 202, 0.192);
+        color: rgb(15, 76, 208);
+        transition: 1.01s ease;
       }
     }
   }
