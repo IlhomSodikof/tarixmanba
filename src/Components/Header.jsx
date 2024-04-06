@@ -394,6 +394,12 @@ export default function Header() {
             <img src={lenta6} alt="" />
             <img src={lenta7} alt="" />
             <img src={lentaRight} alt="" />
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta6} alt="" />
+            <img src={lenta7} alt="" />
             <img src={lentaLeft} alt="" />
             <img src={lenta1} alt="" />
             <img src={lenta2} alt="" />
@@ -402,6 +408,12 @@ export default function Header() {
             <img src={lenta6} alt="" />
             <img src={lenta7} alt="" />
             <img src={lentaRight} alt="" />
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta6} alt="" />
+            <img src={lenta7} alt="" />
             <img src={lentaLeft} alt="" />
             <img src={lenta1} alt="" />
             <img src={lenta2} alt="" />
@@ -410,6 +422,12 @@ export default function Header() {
             <img src={lenta6} alt="" />
             <img src={lenta7} alt="" />
             <img src={lentaRight} alt="" />
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta6} alt="" />
+            <img src={lenta7} alt="" />
           </div>
         </Marquee>
 
