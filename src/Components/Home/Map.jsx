@@ -13,6 +13,7 @@ import { FaPhotoFilm } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import markerIconSVG from "../../assets/marker.svg";
+
 export default function Map() {
   const position = [41.304987, 69.283384];
   const position1 = [41.488801, 69.5857077];
@@ -61,12 +62,12 @@ export default function Map() {
     return value > 100
       ? "#800026"
       : value > 50
-      ? "#BD0026"
-      : value > 20
-      ? "#E31A1C"
-      : value > 10
-      ? "#FC4E2A"
-      : "#FFEDA0";
+        ? "#BD0026"
+        : value > 20
+          ? "#E31A1C"
+          : value > 10
+            ? "#FC4E2A"
+            : "#FFEDA0";
   };
 
   const style = (feature) => {
@@ -142,6 +143,7 @@ export default function Map() {
     popupAnchor: [-0, -0],
     iconSize: [32, 45],
   });
+
 
   return (
     <div className="map-full">
