@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+=======
+import React from "react";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+>>>>>>> 25c953b658437f2c68ce8b885d9d11943b01f007
 import { Outlet } from "react-router";
 
 export default function Layout() {

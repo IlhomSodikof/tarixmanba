@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+// import image
+import acc_img1 from "../../assets/img/ichanqala.jpeg";
 
 export default function Acardion() {
   return (
@@ -28,7 +30,7 @@ export default function Acardion() {
           <div className="flex-title">Oxak tepa</div>
         </div>
         <div className="flex-slide acc_img4">
-          <div className="flex-title">Igna makon</div>
+          <div className="flex-title">Registon</div>
         </div>
         <div className="flex-slide acc_img5">
           <div className="flex-title" style={{ paddingTop: 25 }}>

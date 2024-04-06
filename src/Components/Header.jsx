@@ -24,8 +24,16 @@ import { CiInboxIn } from "react-icons/ci";
 import { CgDarkMode } from "react-icons/cg"; // darkmods
 import { IoLanguage } from "react-icons/io5";
 
-import Logo from "../../img/Group 8.svg";
 import Wather from "./component/Wather";
+
+// import image
+import Logo from "../assets/img/Group 8.svg";
+import lenta1 from "../assets/img/lenta1.png";
+import lenta2 from "../assets/img/lenta2.png";
+import lenta3 from "../assets/img/lenta3.png";
+import lenta4 from "../assets/img/lenta4.png";
+import lenta5 from "../assets/img/lenta5.png";
+import lenta6 from "../assets/img/lenta6.png";
 
 export default function Header() {
   const [primaryColor, setPrimaryColor] = useState("blue");
@@ -363,7 +371,7 @@ export default function Header() {
         {/* <img className='header-bottom-img' src="./Screenshot 2024-03-17 224153.png" alt="imgs" /> */}
         <Marquee>
           <div className="header-img-pattern">
-            <img
+            {/* <img
               src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
               alt=""
             />
@@ -374,7 +382,25 @@ export default function Header() {
             <img
               src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
               alt=""
-            />
+            /> */}
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta5} alt="" />
+            <img src={lenta6} alt="" />
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta5} alt="" />
+            <img src={lenta6} alt="" />
+            <img src={lenta1} alt="" />
+            <img src={lenta2} alt="" />
+            <img src={lenta3} alt="" />
+            <img src={lenta4} alt="" />
+            <img src={lenta5} alt="" />
+            <img src={lenta6} alt="" />
           </div>
         </Marquee>
 

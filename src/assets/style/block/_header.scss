@@ -31,7 +31,7 @@ header {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    
+
     @media screen and (max-width: 1085px) {
       justify-content: space-between;
       padding: 0 20px;
@@ -70,9 +70,6 @@ header {
       @media screen and (max-width: 1000px) {
         width: 70%;
         justify-content: end;
-
-
-        
       }
       .functionale {
         // width: 370px;
@@ -84,7 +81,6 @@ header {
         @media screen and (max-width: 1000px) {
           gap: 5px;
         }
-  
 
         /////////////////////
         .dark-m {
@@ -164,34 +160,32 @@ header {
               .black {
                 background-color: #000000;
               }
-
-              
             }
-            .lenguage{
+            .lenguage {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              // font-size: 15px;
+              .lan-icon {
                 display: flex;
-                flex-direction: column;
-                gap: 5px;
-                // font-size: 15px;
-                .lan-icon{
-                  display: flex;
-                  align-items: center;
-                  gap:10px;
-                  font-size: 14px;
-                  padding-bottom: 5px;
-                  .icon-lan{
-                    font-size: 20px;
-                  }
-                }
-                .lang-item{
-                  display: none;
-                  font-size: 15px;
-                }
-                .lang-item:hover{
-                  color: #00000097;
+                align-items: center;
+                gap: 10px;
+                font-size: 14px;
+                padding-bottom: 5px;
+                .icon-lan {
+                  font-size: 20px;
                 }
               }
-            .lenguage:hover{
-              .lang-item{
+              .lang-item {
+                display: none;
+                font-size: 15px;
+              }
+              .lang-item:hover {
+                color: #00000097;
+              }
+            }
+            .lenguage:hover {
+              .lang-item {
                 display: block;
               }
             }
@@ -208,7 +202,6 @@ header {
           @media screen and (max-width: 900px) {
             display: block;
           }
-          
         }
       }
     }
@@ -237,11 +230,11 @@ header {
       .nav-drop,
       .nav-menu {
         font-weight: 900 !important;
-  font-family: 'FoglihtenNo06' !important;
-        
+        font-family: "FoglihtenNo06" !important;
+
         display: flex;
         align-items: center;
-        
+
         .arr {
           font-size: 10px;
           @media screen and (max-width: 768px) {
@@ -293,9 +286,8 @@ header {
               gap: 5px;
               font-size: 10px;
               font-family: sans-serif;
-             
+
               color: var(--text-color);
-          
             }
           }
         }
@@ -363,8 +355,8 @@ header {
     height: 75px;
     width: 100%;
     border: none !important;
-    background-repeat: repeat-x;
-    background-size: contain;
+    background: transparent;
+    object-fit: cover;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     @media screen and (max-width: 500px) {
@@ -403,27 +395,22 @@ header {
 
 @media (max-width: 1185px) {
   header {
-
     nav {
       display: flex;
       .nav-box {
         width: 60%;
-        .nav-drop{
+        .nav-drop {
           letter-spacing: 0.5px !important;
           font-size: 13px;
-
         }
-        .nav-menu{
+        .nav-menu {
           letter-spacing: 0.5px !important;
           font-size: 13px;
-
         }
       }
     }
   }
 }
-
-
 
 @media (max-width: 1005px) {
   header {
@@ -432,14 +419,11 @@ header {
         width: 70%;
       }
     }
-   
   }
 }
 
 @media (max-width: 915px) {
   header {
-   
-
     nav {
       display: flex;
       .nav-box {
@@ -468,13 +452,11 @@ header {
         width: 70%;
       }
     }
-  
   }
 }
 
 @media (max-width: 630px) {
   header {
-   
     nav {
       display: none;
     }
