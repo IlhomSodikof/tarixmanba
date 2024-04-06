@@ -32,8 +32,11 @@ import lenta1 from "../assets/img/lenta1.png";
 import lenta2 from "../assets/img/lenta2.png";
 import lenta3 from "../assets/img/lenta3.png";
 import lenta4 from "../assets/img/lenta4.png";
-import lenta5 from "../assets/img/lenta5.png";
+// import lenta5 from "../assets/img/lenta5.png";
 import lenta6 from "../assets/img/lenta6.png";
+import lenta7 from "../assets/img/lenta7.png";
+import lentaLeft from "../assets/img/lenta_left.png";
+import lentaRight from "../assets/img/lenta_right.png";
 
 export default function Header() {
   const [primaryColor, setPrimaryColor] = useState("blue");
@@ -383,24 +386,30 @@ export default function Header() {
               src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
               alt=""
             /> */}
+            <img src={lentaLeft} alt="" />
             <img src={lenta1} alt="" />
             <img src={lenta2} alt="" />
             <img src={lenta3} alt="" />
             <img src={lenta4} alt="" />
-            <img src={lenta5} alt="" />
             <img src={lenta6} alt="" />
+            <img src={lenta7} alt="" />
+            <img src={lentaRight} alt="" />
+            <img src={lentaLeft} alt="" />
             <img src={lenta1} alt="" />
             <img src={lenta2} alt="" />
             <img src={lenta3} alt="" />
             <img src={lenta4} alt="" />
-            <img src={lenta5} alt="" />
             <img src={lenta6} alt="" />
+            <img src={lenta7} alt="" />
+            <img src={lentaRight} alt="" />
+            <img src={lentaLeft} alt="" />
             <img src={lenta1} alt="" />
             <img src={lenta2} alt="" />
             <img src={lenta3} alt="" />
             <img src={lenta4} alt="" />
-            <img src={lenta5} alt="" />
             <img src={lenta6} alt="" />
+            <img src={lenta7} alt="" />
+            <img src={lentaRight} alt="" />
           </div>
         </Marquee>
 
