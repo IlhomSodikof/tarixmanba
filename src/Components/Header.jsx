@@ -37,6 +37,7 @@ import lenta6 from "../assets/img/lenta6.png";
 import lenta7 from "../assets/img/lenta7.png";
 import lentaLeft from "../assets/img/lenta_left.png";
 import lentaRight from "../assets/img/lenta_right.png";
+import lentaBg from "../assets/img/lentaBg.jpg";
 
 export default function Header() {
   const [primaryColor, setPrimaryColor] = useState("blue");
@@ -373,7 +374,10 @@ export default function Header() {
         </nav>
         {/* <img className='header-bottom-img' src="./Screenshot 2024-03-17 224153.png" alt="imgs" /> */}
         <Marquee>
-          <div className="header-img-pattern">
+          <div
+            className="header-img-pattern"
+            style={{ backgroundImage: { lentaBg } }}
+          >
             {/* <img
               src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
               alt=""
