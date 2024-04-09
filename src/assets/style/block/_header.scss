@@ -360,8 +360,11 @@ header {
     height: 75px;
     width: 100%;
     border: none !important;
-    background: transparent;
-    object-fit: cover;
+    background-image: url("../../../../src/assets/img/lentaBg.jpg") !important;
+    background-size: contain;
+    // background-repeat: repeat-x;
+    // background: #2b2e63;
+    // object-fit: cover;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     @media screen and (max-width: 500px) {
