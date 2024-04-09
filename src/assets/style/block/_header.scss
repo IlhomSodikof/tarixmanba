@@ -81,6 +81,11 @@ header {
         @media screen and (max-width: 1000px) {
           gap: 5px;
         }
+        .ob-havo{
+          @media screen and (max-width:900px) {
+            display: none !important;
+          }
+        }
 
         /////////////////////
         .dark-m {
@@ -313,7 +318,7 @@ header {
         }
         .menu-drop {
           position: absolute;
-          z-index: 10000 !important;
+          z-index: 10000000 !important;
           background-color: var(--card-back-color);
           border-radius: 5px;
           padding: 20px;

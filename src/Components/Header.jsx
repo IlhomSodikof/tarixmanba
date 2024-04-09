@@ -131,7 +131,10 @@ export default function Header() {
               </span>
             </div>
             <div className="functionale">
-              <Wather />
+
+              <div className="ob-havo">
+                <Wather />
+              </div>
               <div
                 className="dark-m"
                 onClick={() => {
