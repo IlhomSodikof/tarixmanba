@@ -374,10 +374,10 @@ export default function Header() {
         </nav>
         {/* <img className='header-bottom-img' src="./Screenshot 2024-03-17 224153.png" alt="imgs" /> */}
         <Marquee>
-          <div
-            className="header-img-pattern"
-            style={{ backgroundImage: { lentaBg } }}
-          >
+          {/* <div className="header-img-pattern-bgImg">
+            <img src={lentaBg} alt="" />
+          </div> */}
+          <div className="header-img-pattern">
             {/* <img
               src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
               alt=""
