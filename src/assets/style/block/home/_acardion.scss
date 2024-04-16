@@ -32,8 +32,7 @@ $defaultSeconds: 3s;
 }
 
 #acardion-title {
-  position: absolute;
-  z-index: 1 !important;
+  // position: absolute;
   font-size: 36px;
   font-family: "FoglihtenNo06" !important;
   text-transform: capitalize !important;
@@ -48,7 +47,7 @@ $defaultSeconds: 3s;
   -webkit-background-clip: text;
   text-transform: capitalize;
   animation: fill 4s linear;
-  z-index: 1000000;
+  // z-index: 1000000;
   ////
 
 

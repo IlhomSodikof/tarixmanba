@@ -63,12 +63,12 @@ export default function Home() {
         {/* <video data-testid="video-asset" style={{ width: "675px", maxWidth: "100%" }} src="https://media.istockphoto.com/id/950253426/video/close-up-of-very-old-coins.mp4?s=mp4-640x640-is&amp;k=20&amp;c=kHvhxNg1Hli6PCpJyRthVCGtzrXHDNKhE0T2jO49xy8=" alt="Close up of very old coins Coins From Various Countries 4K Resolution Stock Footage Video" controls controlslist="nodownload" autoplay={true} loop></video> */}
         <Acardion />
         <Map />
-        <FashionCard />
+        {/* <FashionCard />// */}
 
-        <HomeCardMuxr />
-        <HomeCardMatbuot />
+        {/* <HomeCardMuxr /> */}
+        {/* <HomeCardMatbuot />
         <HomeCardArchi />
-        <ViewKop />
+        <ViewKop /> */}
       </main>
     </>
   );

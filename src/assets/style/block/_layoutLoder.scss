@@ -11,6 +11,11 @@
     width: 800px !important;
     // background-color: red;
     height: 500px;
+    @media screen and (max-width: 768px) {
+      width: 250px !important;
+      height: 270px !important;
+    }
+    
   }
   }
 
