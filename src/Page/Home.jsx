@@ -64,7 +64,6 @@ export default function Home() {
         <Acardion />
         <Map />
         <FashionCard />
-
         <HomeCardMuxr />
         <HomeCardMatbuot />
         <HomeCardArchi />

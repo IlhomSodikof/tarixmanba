@@ -10,16 +10,33 @@ $defaultSeconds: 3s;
   --border-color2: #000;
 }
 
-// body{
-//   background-color:var(--background);
-// }
+.accardion_pattern {
+  top: -100px;
+  left: -150px;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  // filter: grayscale(50%);
+  opacity: 0.5;
+  animation: circleAnimation 15s infinite linear;
+}
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .acardions {
+  z-index: 1;
   position: relative;
   background: transparent;
   // background-color: red !important;
   // z-index: 1000000;
   // width: 200vh;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   padding: 15px;
@@ -32,37 +49,30 @@ $defaultSeconds: 3s;
 }
 
 #acardion-title {
-  position: absolute;
-  // display:none;
-  left: 0;
-  z-index: 1 !important;
-  // color: var(--text-color);
-  // color: #000 !important  ;
+  // position: absolute;
   font-size: 36px;
   font-family: "FoglihtenNo06" !important;
   text-transform: capitalize !important;
   font-weight: bold !important;
   transition: 0.3s;
-  @media screen and (max-width: 768px) {
-    font-size: 25px;
-  }
-  @media screen and (max-width: 400px) {
-    font-size: 20px;
-  }
-}
-
-#acardion-title {
-  // font-size: 150px;
+  //////
   background-image: linear-gradient(135deg, #000000 50%, transparent 50%);
   background-size: 300% 100%;
   -webkit-text-stroke-color: rgb(11, 9, 9);
   -webkit-text-stroke-width: 0.001em;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  // font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   animation: fill 4s linear;
-  z-index: 1000000;
+  // z-index: 1000000;
+  ////
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 570px) {
+    font-size: 15px;
+  }
 }
 .flex-container {
   border-radius: 12px;

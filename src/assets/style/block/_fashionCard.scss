@@ -1,3 +1,23 @@
+.fashion_pattern {
+  top: 1000px;
+  right: 0;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  filter: grayscale(50%);
+  opacity: 0.2;
+  z-index: -1;
+  animation: circleAnimation 15s infinite linear;
+}
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .fashion__container {
   margin-top: 45px;
   .fashion__title {

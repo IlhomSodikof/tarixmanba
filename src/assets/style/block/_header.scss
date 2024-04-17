@@ -81,6 +81,11 @@ header {
         @media screen and (max-width: 1000px) {
           gap: 5px;
         }
+        .ob-havo {
+          @media screen and (max-width: 900px) {
+            display: none !important;
+          }
+        }
 
         /////////////////////
         .dark-m {
@@ -193,6 +198,7 @@ header {
         }
 
         .ham-menu {
+          position: relative;
           display: none;
           font-size: 33px;
           cursor: pointer;
@@ -201,6 +207,152 @@ header {
           color: var(--text-color);
           @media screen and (max-width: 900px) {
             display: block;
+          }
+          .drop-bar-menu {
+            width: 340px;
+            height: 100%;
+            background-color: rgb(255, 255, 255) !important;
+            position: fixed;
+            z-index: 10000000;
+            right: 0;
+            top: 0;
+            overflow-y: auto;
+            .bar-menu-list {
+              * {
+                transition: all 1s;
+              }
+              font-size: 15px;
+              padding: 10px;
+              .close-drop-bar-menu {
+                padding: 0px 15px 5px;
+                font-size: 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .user {
+                  font-size: 15px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 5px;
+                  border: 1px solid #eee;
+                  border-radius: 6px;
+                  background-color: #eee;
+                  padding: 5px;
+                }
+              }
+              .search-item-cont {
+                text-align: center;
+                padding-bottom: 10px;
+                form {
+                  #search-bar {
+                    background-color: #eee;
+                    width: 70%;
+                    padding: 5px 10px;
+                    font-size: 15px;
+                    border-radius: 6px;
+                    outline: none;
+                  }
+                  .bar-src-btn {
+                    font-size: 15px;
+                    background-color: #eee;
+                    padding: 5px 10px;
+                    border-radius: 6px;
+                  }
+                }
+              }
+              .wather-item-cont {
+                // position: absolute;
+                padding-bottom: 5px;
+                display: flex;
+                align-items: center;
+                bottom: 0;
+              }
+              .bar-list-item-max {
+                padding: 0 15px 10px;
+                display: flex;
+                gap: 5px;
+                .ln-btn {
+                  font-size: 15px;
+                  position: relative;
+                  font-weight: 700;
+                  background-color: #eee;
+                  width: 30%;
+                  border-radius: 5px;
+                  padding: 5px;
+                }
+                .max-btn {
+                  font-size: 15px;
+                  position: relative;
+                  font-weight: 700;
+                  // background-color: #eee;
+                  width: 70%;
+                  border-radius: 5px;
+                  // padding: 5px;
+                  display: flex;
+                  justify-content: center;
+                  gap: 5px;
+
+                  .color-max {
+                    background-color: rgb(241, 237, 237);
+                    width: 33%;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                  .one {
+                    background-color: #4267b2;
+                  }
+                  .two {
+                    background-color: #00000088;
+                    color: white;
+                  }
+                  .there {
+                    background-color: #000000;
+                    color: white;
+                  }
+                }
+              }
+              .bar-list-item-manba {
+                padding: 0px 15px;
+                .manba-bar-drop {
+                  background-color: #eee;
+                  border-radius: 6px;
+                  padding: 5px;
+                  li {
+                    .bar-drop-link {
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      font-size: 16px;
+                    }
+                  }
+                }
+              }
+              .ln-container {
+                padding: 5px 15px;
+
+                .ln-list {
+                  background-color: #eee;
+                  border-radius: 6px;
+                  .ln-list-item {
+                    padding: 5px 10px;
+                  }
+                  .ln-list-item:hover {
+                    background-color: #c3c1c1;
+                  }
+                }
+              }
+              .bar-list-item-menu {
+                padding: 6px 20px;
+                font-weight: 600;
+                letter-spacing: 4px;
+              }
+              .bar-list-item-menu:hover {
+                color: #383535;
+              }
+            }
           }
         }
       }
@@ -313,7 +465,7 @@ header {
         }
         .menu-drop {
           position: absolute;
-          z-index: 10000 !important;
+          z-index: 1000;
           background-color: var(--card-back-color);
           border-radius: 5px;
           padding: 20px;
@@ -350,16 +502,15 @@ header {
       ////////
     }
   }
-  .header-img-pattern {
+  .header_img_pattern {
     display: flex;
     height: 75px;
     width: 100%;
     border: none !important;
-    background-image: url(../../img/lentaBg.jpg) !important;
+    background-image: url("../../img/lentaBg.jpg") !important;
     background-size: contain;
-    // background-repeat: repeat-x;
+    background-repeat: repeat-x;
     // background: #2b2e63;
-    // object-fit: cover;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     @media screen and (max-width: 500px) {

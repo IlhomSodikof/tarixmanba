@@ -2,6 +2,9 @@ import React from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoTimeSharp } from "react-icons/io5";
 
+// imaga import
+import fashionPattern from "../../assets/img/fashion_pattern.png";
+
 export default function FashionCard() {
   return (
     <>
@@ -133,6 +136,9 @@ export default function FashionCard() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="fashion_pattern">
+        <img src={fashionPattern} alt="" />
       </div>
     </>
   );

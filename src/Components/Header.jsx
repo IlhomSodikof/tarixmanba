@@ -18,12 +18,13 @@ import { TbBuildingCastle } from "react-icons/tb";
 import { GiStamper } from "react-icons/gi";
 import { FaPhotoFilm } from "react-icons/fa6";
 import { ImNewspaper } from "react-icons/im";
-
+import { FaUserAlt } from "react-icons/fa";
 import { CiInboxIn } from "react-icons/ci";
 
 import { CgDarkMode } from "react-icons/cg"; // darkmods
 import { IoLanguage } from "react-icons/io5";
-
+import { IoClose } from "react-icons/io5";
+import { VscColorMode } from "react-icons/vsc";
 import Wather from "./component/Wather";
 
 // import image
@@ -41,6 +42,12 @@ import lentaBg from "../assets/img/lentaBg.jpg";
 
 export default function Header() {
   const [primaryColor, setPrimaryColor] = useState("blue");
+  const [showLn, setShowLn] = useState(false);
+  const [showDRB, setShowDRB] = useState(false);
+  const [showManba, setshowManba] = useState(false);
+  useEffect(() => {
+    document.querySelector("body").style.overflow = showDRB ? "hidden" : "auto";
+  }, [showDRB]);
 
   const handleClick = () => {
     // Yangi rangni tanlash uchun logika
@@ -135,7 +142,9 @@ export default function Header() {
               </span>
             </div>
             <div className="functionale">
-              <Wather />
+              <div className="ob-havo">
+                <Wather />
+              </div>
               <div
                 className="dark-m"
                 onClick={() => {
@@ -174,13 +183,197 @@ export default function Header() {
                     </span>
                     <span className="lang-item">O'zbek</span>
                     <span className="lang-item">English</span>
-                    <span className="lang-item">Rus</span>
+                    <span className="lang-item">Pусский</span>
                   </motion.li>
                 </motion.ul>
               </div>
               <div className="ham-menu">
-                <CgMenuRightAlt className="hamburger" />
-              </div>
+                {" "}
+                {/* menu bar  */}
+                <CgMenuRightAlt
+                  className="hamburger"
+                  onClick={() => setShowDRB(!showDRB)}
+                />
+                <motion.div
+                  className="drop-bar-menu"
+                  style={{ display: showDRB ? "block" : "none" }}
+                  initial={{ scale: 0, x: 150 }}
+                  animate={{ scale: 1, x: showDRB ? 0 : 500 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 70,
+                  }}
+                >
+                  <ul className="bar-menu-list">
+                    <li className="close-drop-bar-menu">
+                      <IoClose onClick={() => setShowDRB(!showDRB)} />
+                      <div className="user">
+                        <FaUserAlt /> Shaxsiy kabinet
+                      </div>
+                    </li>
+
+                    <li className="bar-list-item wather-item-cont">
+                      <Wather />
+                    </li>
+                    <li className="bar-list-item-max">
+                      <button
+                        className="ln-btn"
+                        onClick={() => setShowLn(!showLn)}
+                      >
+                        Til
+                      </button>
+                      <div className="max-btn">
+                        <span className="color-max one">A1</span>
+                        <span className="color-max two">A2</span>
+                        <span className="color-max there">A3</span>
+                      </div>
+                    </li>
+
+                    <li
+                      className="bar-list-item ln-container"
+                      style={{ display: showLn ? "block" : "none" }}
+                    >
+                      <ul className="ln-list">
+                        <li className="ln-list-item">English</li>
+                        <li className="ln-list-item">Pусский</li>
+                        <li className="ln-list-item">O'zbek</li>
+                      </ul>
+                    </li>
+                    <li className="bar-list-item search-item-cont">
+                      <form>
+                        <input
+                          placeholder="izlash"
+                          type="text"
+                          name="search"
+                          id="search-bar"
+                        />{" "}
+                        <button className="bar-src-btn">Qidruv</button>
+                      </form>
+                    </li>
+
+                    <li
+                      className="bar-list-item-menu"
+                      onClick={() => setshowManba(!showManba)}
+                    >
+                      Manbalar
+                    </li>
+                    <motion.li
+                      className="bar-list-item-manba"
+                      style={{ display: showManba ? "block" : "none" }}
+                      // initial={{ scale: 0 }}
+                      animate={{ x: showManba ? 0 : 100 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 60000,
+                        damping: 190,
+                      }}
+                    >
+                      <ul className="manba-bar-drop">
+                        <li>
+                          <Link
+                            className="bar-drop-link"
+                            to="/sources/archive"
+                            onClick={() => setShowDRB(!showDRB)}
+                          >
+                            {" "}
+                            <TbBuildingCastle />
+                            <span> Arxealogiya</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="bar-drop-link"
+                            to="/sources/society"
+                            onClick={() => setShowDRB(!showDRB)}
+                          >
+                            <HiUserGroup /> <span> Xalq og'zaki ijodi</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="bar-drop-link"
+                            to="/sources/manuscript"
+                            onClick={() => setShowDRB(!showDRB)}
+                          >
+                            <MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="bar-drop-link" to="/sources/coins">
+                            <GiTwoCoins /> <span> Tangalar</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="bar-drop-link"
+                            to="/sources/coins"
+                            onClick={() => setShowDRB(!showDRB)}
+                          >
+                            <RiFilePaper2Line /> <span> Bitiklar</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="bar-drop-link"
+                            onClick={() => setShowDRB(!showDRB)}
+                          >
+                            <LiaBoxOpenSolid /> <span> Tarixiy hujatlar</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="bar-drop-link">
+                            {" "}
+                            <GiStamper />
+                            <span> San'at asarlari</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="bar-drop-link"
+                            onClick={() => setShowDRB(!showDRB)}
+                          >
+                            <CiInboxIn /> <span>Arxiv jamg'armalari</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="bar-drop-link"
+                            onClick={() => setShowDRB(!showDRB)}
+                          >
+                            {" "}
+                            <ImNewspaper />
+                            <span> Matbuot</span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="bar-drop-link"
+                            onClick={() => setShowDRB(!showDRB)}
+                          >
+                            <FaPhotoFilm />
+                            <span> Foto va video manbalar</span>
+                          </Link>
+                        </li>
+                      </ul>
+                    </motion.li>
+                    <li className="bar-list-item-menu">
+                      <Link to="/library">Kutubxona</Link>
+                    </li>
+                    <li className="bar-list-item-menu">
+                      <Link to="/news">Yangiliklar</Link>{" "}
+                    </li>
+                    <li className="bar-list-item-menu">
+                      <Link>Voqea</Link>{" "}
+                    </li>
+                    <li className="bar-list-item-menu">Bizhaqimizda</li>
+                    <li className="bar-list-item-menu" to="/login">
+                      Login
+                    </li>
+                  </ul>
+                </motion.div>
+              </div>{" "}
+              {/* menu bar- end  */}
             </div>
           </div>
         </div>
@@ -372,24 +565,8 @@ export default function Header() {
             </div>
           </div>
         </nav>
-        {/* <img className='header-bottom-img' src="./Screenshot 2024-03-17 224153.png" alt="imgs" /> */}
         <Marquee>
-          {/* <div className="header-img-pattern-bgImg">
-            <img src={lentaBg} alt="" />
-          </div> */}
-          <div className="header-img-pattern">
-            {/* <img
-              src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
-              alt=""
-            />
-            <img
-              src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
-              alt=""
-            />
-            <img
-              src="https://www.worldhistory.org/template/images/header/subject_headers/mesopotamia_shadow.jpg"
-              alt=""
-            /> */}
+          <div className="header_img_pattern">
             <img src={lentaLeft} alt="" />
             <img src={lenta1} alt="" />
             <img src={lenta2} alt="" />
@@ -434,15 +611,6 @@ export default function Header() {
             <img src={lenta7} alt="" />
           </div>
         </Marquee>
-
-        {/* <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-            </div>
-
-          </div>
-        </div> */}
       </header>
     </>
   );

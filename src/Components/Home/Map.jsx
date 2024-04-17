@@ -13,6 +13,7 @@ import { FaPhotoFilm } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import markerIconSVG from "../../assets/marker.svg";
+import markerIconPng from "../../assets/img/coin (4) 1.svg";
 
 export default function Map() {
   const position = [41.304987, 69.283384];
@@ -25,8 +26,8 @@ export default function Map() {
       {
         id: 1,
         lan: [41.304987, 69.283384],
-        title: "Tarix unversityfdsfsdfdsfdsfdfdfdsfsdfdsfsdfdsfdsfdfsd",
-        title2: "arix unversityfdsfsdfdsfdsfdfdfdsfsdfdsfsdfdsfdsfdfsd",
+        title: "Tarix ddsdf",
+
       },
       { id: 2, lan: [41.488801, 69.5857077], title: "Chirchiq unversity" },
     ],
@@ -138,8 +139,8 @@ export default function Map() {
     });
   };
   const markerIcon = new L.Icon({
-    iconUrl: markerIconSVG,
-    iconRetinaUrl: markerIconSVG,
+    iconUrl: markerIconPng,
+    iconRetinaUrl: markerIconPng,
     popupAnchor: [-0, -0],
     iconSize: [32, 45],
   });
@@ -155,9 +156,10 @@ export default function Map() {
         >
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <TbBuildingCastle />
-            </div>{" "}
+              <span className="hover-toltip">Arxealogiya</span>
+            </button>{" "}
             <span> Arxealogiya</span>
           </Link>
         </motion.li>
@@ -168,9 +170,10 @@ export default function Map() {
         >
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <HiUserGroup />
-            </div>{" "}
+              <span className="hover-toltip">Xalq og'zaki ijodi</span>
+            </button>{" "}
             <span> Xalq og'zaki ijodi</span>
           </Link>
         </motion.li>
@@ -181,9 +184,11 @@ export default function Map() {
         >
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <MdOutlineHistoryEdu />
-            </div>{" "}
+              <span className="hover-toltip">Qo'lyozmalar</span>
+
+            </button>{" "}
             <span> Qo'lyozmalar</span>
           </Link>
         </motion.li>
@@ -194,9 +199,11 @@ export default function Map() {
         >
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <GiTwoCoins />
-            </div>{" "}
+              <span className="hover-toltip">Tangalar</span>
+
+            </button>{" "}
             <span> Tangalar</span>
           </Link>
         </motion.li>
@@ -207,9 +214,11 @@ export default function Map() {
         >
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <RiFilePaper2Line />
-            </div>{" "}
+              <span className="hover-toltip">Bitiklar</span>
+
+            </button>{" "}
             <span> Bitiklar</span>
           </Link>
         </motion.li>
@@ -221,9 +230,11 @@ export default function Map() {
         >
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <LiaBoxOpenSolid />
-            </div>{" "}
+              <span className="hover-toltip">Tarixiy hujatla</span>
+
+            </button>{" "}
             <span> Tarixiy hujatlar</span>
           </Link>
         </motion.li>
@@ -235,37 +246,45 @@ export default function Map() {
         >
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               {" "}
               <GiStamper />
-            </div>
+              <span className="hover-toltip">San'at asarlari</span>
+
+            </button>
             <span> San'at asarlari</span>
           </Link>
         </motion.li>
         <motion.li className="map-item" whileHover={{ x: 55 }}>
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <CiInboxIn />
-            </div>{" "}
+              <span className="hover-toltip">Arxiv jamg'armalari</span>
+
+            </button>{" "}
             <span>Arxiv jamg'armalari</span>
           </Link>
         </motion.li>
         <motion.li className="map-item" whileHover={{ x: 55 }}>
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <ImNewspaper />
-            </div>{" "}
+              <span className="hover-toltip">Matbuot</span>
+
+            </button>{" "}
             <span> Matbuot</span>
           </Link>
         </motion.li>
         <motion.li className="map-item" whileHover={{ x: 55 }}>
           <Link className="map-link">
             {" "}
-            <div>
+            <button>
               <FaPhotoFilm />
-            </div>
+              <span className="hover-toltip">Foto va video manbalar</span>
+
+            </button>
             <span> Foto va video manbalar</span>
           </Link>
         </motion.li>

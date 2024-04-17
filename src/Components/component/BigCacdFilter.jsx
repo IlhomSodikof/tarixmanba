@@ -39,7 +39,7 @@ import { Pagination } from 'swiper/modules';
 
 
 import Swal from 'sweetalert2';
-import MapSearch from "./MapSearch";
+// import MapSearch from "./MapSearch";
 export default function BigCacdFilter() {
 
   const [modal, setModal] = useState({ key: "", value: false });
@@ -115,11 +115,11 @@ export default function BigCacdFilter() {
     <div className="card-container-shablon">
       {" "}
       {/* //card-container */}
-      <div className="shablon-map">
+      {/* <div className="shablon-map">
         <MapSearch />
 
 
-      </div>
+      </div> */}
       {/* //map-end */}
       {[1, 2, 3, 4, 5, 56, 6, 7, 8].map((e) => (
         <div className="shablon-card" key={e}>
@@ -263,7 +263,7 @@ export default function BigCacdFilter() {
                       </SwiperSlide>
                       <SwiperSlide>
                         <h3 className="photo-title-h3">PHOTO NOMI</h3>
-                        
+
                       </SwiperSlide>
                       <SwiperSlide>
                         <h3 className="photo-title-h3">PHOTO NOMI</h3>

@@ -25,7 +25,7 @@ export default function App() {
           <h1>Muxrlar</h1>
 
           <button className="see_all">
-            <Link to="/news">Barchasi →</Link>
+            <Link>Barchasi →</Link>
           </button>
         </div>
         <Swiper
