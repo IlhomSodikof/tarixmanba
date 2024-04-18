@@ -16,6 +16,7 @@ import archi3 from "../../assets/img/archi3.jpg";
 import archi4 from "../../assets/img/archi4.jpg";
 import archi5 from "../../assets/img/archi5.jpg";
 import archi6 from "../../assets/img/archi6.jpg";
+import bgPattern from "../../assets/img/bg_pattern.png";
 
 export default function App() {
   return (
@@ -141,6 +142,9 @@ export default function App() {
           {/* <div className="swiper-button-next"></div>
           <div className="swiper-button-prev"></div> */}
         </Swiper>
+      </div>
+      <div className="archi_pattern">
+        <img src={bgPattern} alt="" />
       </div>
     </div>
   );

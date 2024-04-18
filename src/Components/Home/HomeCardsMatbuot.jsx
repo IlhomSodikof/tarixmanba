@@ -13,6 +13,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import bgPattern from "../../assets/img/bg_pattern.png";
 
 export default function App() {
   return (
@@ -156,6 +157,9 @@ export default function App() {
           {/* <div className="swiper-button-next"></div>
           <div className="swiper-button-prev"></div> */}
         </Swiper>
+      </div>
+      <div className="matbuot_pattern">
+        <img src={bgPattern} alt="" />
       </div>
     </div>
   );
