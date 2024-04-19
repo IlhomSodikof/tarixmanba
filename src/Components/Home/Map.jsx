@@ -19,6 +19,9 @@ export default function Map() {
   const position = [41.304987, 69.283384];
   const position1 = [41.488801, 69.5857077];
 
+  const token =
+    "TJXhVqiVIdchC4MZLFHEN0v6OUMqj9SC2uXNisfWEE3F2K5JbtkyrfLoskcOJfQU";
+
   const [num, setNum] = useState(0);
 
   const cordinat = [
@@ -27,7 +30,6 @@ export default function Map() {
         id: 1,
         lan: [41.304987, 69.283384],
         title: "Tarix ddsdf",
-
       },
       { id: 2, lan: [41.488801, 69.5857077], title: "Chirchiq unversity" },
     ],
@@ -63,12 +65,12 @@ export default function Map() {
     return value > 100
       ? "#800026"
       : value > 50
-        ? "#BD0026"
-        : value > 20
-          ? "#E31A1C"
-          : value > 10
-            ? "#FC4E2A"
-            : "#FFEDA0";
+      ? "#BD0026"
+      : value > 20
+      ? "#E31A1C"
+      : value > 10
+      ? "#FC4E2A"
+      : "#FFEDA0";
   };
 
   const style = (feature) => {
@@ -145,7 +147,6 @@ export default function Map() {
     iconSize: [32, 45],
   });
 
-
   return (
     <div className="map-full">
       <motion.ul className="map-menu">
@@ -187,7 +188,6 @@ export default function Map() {
             <button>
               <MdOutlineHistoryEdu />
               <span className="hover-toltip">Qo'lyozmalar</span>
-
             </button>{" "}
             <span> Qo'lyozmalar</span>
           </Link>
@@ -202,7 +202,6 @@ export default function Map() {
             <button>
               <GiTwoCoins />
               <span className="hover-toltip">Tangalar</span>
-
             </button>{" "}
             <span> Tangalar</span>
           </Link>
@@ -217,7 +216,6 @@ export default function Map() {
             <button>
               <RiFilePaper2Line />
               <span className="hover-toltip">Bitiklar</span>
-
             </button>{" "}
             <span> Bitiklar</span>
           </Link>
@@ -233,7 +231,6 @@ export default function Map() {
             <button>
               <LiaBoxOpenSolid />
               <span className="hover-toltip">Tarixiy hujatla</span>
-
             </button>{" "}
             <span> Tarixiy hujatlar</span>
           </Link>
@@ -250,7 +247,6 @@ export default function Map() {
               {" "}
               <GiStamper />
               <span className="hover-toltip">San'at asarlari</span>
-
             </button>
             <span> San'at asarlari</span>
           </Link>
@@ -261,7 +257,6 @@ export default function Map() {
             <button>
               <CiInboxIn />
               <span className="hover-toltip">Arxiv jamg'armalari</span>
-
             </button>{" "}
             <span>Arxiv jamg'armalari</span>
           </Link>
@@ -272,7 +267,6 @@ export default function Map() {
             <button>
               <ImNewspaper />
               <span className="hover-toltip">Matbuot</span>
-
             </button>{" "}
             <span> Matbuot</span>
           </Link>
@@ -283,7 +277,6 @@ export default function Map() {
             <button>
               <FaPhotoFilm />
               <span className="hover-toltip">Foto va video manbalar</span>
-
             </button>
             <span> Foto va video manbalar</span>
           </Link>
@@ -299,8 +292,10 @@ export default function Map() {
         attributionControl={false}
       >
         <TileLayer
-          url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png?lang=ru"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          //
+          //https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png?lang=uz
+          url={`https://tile.jawg.io/jawg-dark/{z}/{x}/{y}.png?lang=ru&access-token=${token}`}
+          attribution='<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>'
         />
         <GeoJSON
           data={geojsonData}
