@@ -137,7 +137,6 @@ export default function Map() {
     });
   };
   const markerIcon = useCallback(() => {
-    console.log(leftBarType);
     return new L.Icon({
       iconUrl: leftBarType,
       iconRetinaUrl: leftBarType,
@@ -147,17 +146,7 @@ export default function Map() {
   }, [leftBarType]);
 
   const setMarker = (type) => {
-    if (leftBarType === markerIconarchialogy) {
-      setNum(3);
-    }
-    if (leftBarType === markerIconPng) {
-      setNum(0);
-    }
-    if (leftBarType === markerIcongroup) {
-      setNum(1);
-    }
     setLeftBarType(type);
-    markerIcon();
   };
   return (
     <div className="map-full">
