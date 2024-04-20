@@ -19,9 +19,6 @@ export default function Map() {
   const position = [41.304987, 69.283384];
   const position1 = [41.488801, 69.5857077];
 
-  const token =
-    "TJXhVqiVIdchC4MZLFHEN0v6OUMqj9SC2uXNisfWEE3F2K5JbtkyrfLoskcOJfQU";
-
   const [num, setNum] = useState(0);
 
   const cordinat = [
@@ -292,10 +289,8 @@ export default function Map() {
         attributionControl={false}
       >
         <TileLayer
-          //
-          //https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png?lang=uz
-          url={`https://tile.jawg.io/jawg-dark/{z}/{x}/{y}.png?lang=ru&access-token=${token}`}
-          attribution='<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>'
+          url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png?lang=ru"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         <GeoJSON
           data={geojsonData}
