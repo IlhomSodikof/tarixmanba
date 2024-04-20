@@ -11,16 +11,23 @@ import { CiInboxIn } from "react-icons/ci";
 import { ImNewspaper } from "react-icons/im";
 import { FaPhotoFilm } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import markerIconSVG from "../../assets/marker.svg";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import markerIconarchialogy from "../../assets/img/archialogy.svg";
 import markerIconPng from "../../assets/img/coin (4) 1.svg";
-
+import markerIcongroup from "../../assets/img/group.svg";
+const leftBarTypeList = {
+  archialogy: markerIconarchialogy,
+  group: markerIcongroup,
+};
 export default function Map() {
   const position = [41.304987, 69.283384];
   const position1 = [41.488801, 69.5857077];
+<<<<<<< HEAD
 
+=======
+>>>>>>> d9b5c8eb24bb9a6c2e322f38b9b03faf8d30de3d
   const [num, setNum] = useState(0);
-
+  const [leftBarType, setLeftBarType] = useState(markerIconPng);
   const cordinat = [
     [
       {
@@ -55,9 +62,6 @@ export default function Map() {
       { id: 4, lan: [41.430995, 69.490318], title: "Beruniy" },
     ],
   ];
-
-  console.log(cordinat);
-
   const getColor = (value) => {
     return value > 100
       ? "#800026"
@@ -69,7 +73,6 @@ export default function Map() {
       ? "#FC4E2A"
       : "#FFEDA0";
   };
-
   const style = (feature) => {
     // Assuming your GeoJSON properties have a "value" property
     const value = feature.properties.value;
@@ -137,38 +140,34 @@ export default function Map() {
       click: zoomToFeature,
     });
   };
-  const markerIcon = new L.Icon({
-    iconUrl: markerIconPng,
-    iconRetinaUrl: markerIconPng,
-    popupAnchor: [-0, -0],
-    iconSize: [32, 45],
-  });
+  const markerIcon = useCallback(() => {
+    return new L.Icon({
+      iconUrl: leftBarType,
+      iconRetinaUrl: leftBarType,
+      popupAnchor: [-0, -0],
+      iconSize: [32, 45],
+    });
+  }, [leftBarType]);
 
+  const setMarker = (type) => {
+    setLeftBarType(type);
+  };
   return (
     <div className="map-full">
       <motion.ul className="map-menu">
-        <motion.li
-          className="map-item"
-          whileHover={{ x: 55 }}
-          onClick={() => setNum(0)}
-        >
+        <motion.li className="map-item" whileHover={{ x: 55 }}>
           <Link className="map-link">
-            {" "}
-            <button>
+            <button onClick={() => setMarker(leftBarTypeList.archialogy)}>
               <TbBuildingCastle />
               <span className="hover-toltip">Arxealogiya</span>
             </button>{" "}
             <span> Arxealogiya</span>
           </Link>
         </motion.li>
-        <motion.li
-          className="map-item"
-          whileHover={{ x: 55 }}
-          onClick={() => setNum(5)}
-        >
+        <motion.li className="map-item" whileHover={{ x: 55 }}>
           <Link className="map-link">
             {" "}
-            <button>
+            <button onClick={() => setMarker(leftBarTypeList.group)}>
               <HiUserGroup />
               <span className="hover-toltip">Xalq og'zaki ijodi</span>
             </button>{" "}
@@ -195,7 +194,6 @@ export default function Map() {
           onClick={() => setNum(3)}
         >
           <Link className="map-link">
-            {" "}
             <button>
               <GiTwoCoins />
               <span className="hover-toltip">Tangalar</span>
@@ -281,6 +279,7 @@ export default function Map() {
       </motion.ul>
 
       <MapContainer
+        key={leftBarType}
         className="map"
         center={position}
         center2={position1}
@@ -298,7 +297,12 @@ export default function Map() {
           onEachFeature={onEachFeature}
         />
         {cordinat[num]?.map((e) => (
-          <Marker key={e.id} position={e.lan} icon={markerIcon}>
+          <Marker
+            key={e.id + num + leftBarType}
+            position={e.lan}
+            icon={markerIcon()}
+          >
+            {console.log(markerIcon())}
             <Popup className="popapa">
               {e.title} <br /> {e.title2}
               <button className="popapa-btn">Batafsil</button>
