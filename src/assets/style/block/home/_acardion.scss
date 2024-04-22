@@ -36,7 +36,7 @@ $defaultSeconds: 3s;
   // background-color: red !important;
   // z-index: 1000000;
   //width: 200vh;
-  height: 80vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   padding: 15px;
@@ -94,14 +94,18 @@ $defaultSeconds: 3s;
   }
 }
 .flex-title {
+  width: 100%;
   color: #f1f1f1;
-  position: relative;
-  font-size: 1vw;
-  margin: auto;
+  position: absolute;
+  font-size: 1.5vw;
+  // margin: ;
   text-align: center;
-  transform: rotate(90deg);
-  top: 190px;
-  left: -30px;
+  background: rgba(0, 0, 0, 0.5);
+  // transform: rotate(90deg);
+  bottom: 0;
+  padding: 10px 10px 10px 0;
+  // top: 190px;
+  // left: -30px;
   // left:-150px;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -140,6 +144,7 @@ $defaultSeconds: 3s;
 }
 
 .flex-slide {
+  position: relative;
   -webkit-flex: 1; /* Safari 6.1+ */
   -ms-flex: 1; /* IE 10 */
   flex: 1;
@@ -235,14 +240,14 @@ $defaultSeconds: 3s;
   }
 }
 
-.flex-title-home {
-  @media screen and (min-width: 768px) {
-    transform: rotate(90deg);
-    // top: 15%;
-    animation: aboutFlexSlide $defaultSeconds 1;
-    animation-delay: 0s;
-  }
-}
+// .flex-title-home {
+//   @media screen and (min-width: 768px) {
+//     transform: rotate(90deg);
+//     // top: 15%;
+//     animation: aboutFlexSlide $defaultSeconds 1;
+//     animation-delay: 0s;
+//   }
+// }
 
 @keyframes homeFlextitle {
   0% {
@@ -284,6 +289,10 @@ $defaultSeconds: 3s;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  @media screen and (min-width: 768px) {
+    animation: aboutFlexSlide $defaultSeconds 1;
+    animation-delay: 0s;
+  }
 }
 .contact-form {
   width: 100%;
@@ -299,6 +308,10 @@ textarea {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  @media screen and (min-width: 768px) {
+    animation: aboutFlexSlide $defaultSeconds 1;
+    animation-delay: 0s;
+  }
 }
 .acc_img4 {
   // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -306,6 +319,10 @@ textarea {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  @media screen and (min-width: 768px) {
+    animation: aboutFlexSlide $defaultSeconds 1;
+    animation-delay: 0s;
+  }
 }
 .acc_img5 {
   // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -313,6 +330,10 @@ textarea {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  @media screen and (min-width: 768px) {
+    animation: aboutFlexSlide $defaultSeconds 1;
+    animation-delay: 0s;
+  }
 }
 .acc_img6 {
   // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -320,6 +341,10 @@ textarea {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  @media screen and (min-width: 768px) {
+    animation: aboutFlexSlide $defaultSeconds 1;
+    animation-delay: 0s;
+  }
 }
 
 // Preloader

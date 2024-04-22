@@ -12,20 +12,30 @@ import { ImNewspaper } from "react-icons/im";
 import { FaPhotoFilm } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import markerIconarchialogy from "../../assets/img/archialogy.svg";
+import markerIconarchialogy from "../../assets/img/mapIconSvg/archialogy.svg";
 import markerIconPng from "../../assets/img/coin (4) 1.svg";
-import markerIcongroup from "../../assets/img/group.svg";
+import markerIcongroup from "../../assets/img/mapIconSvg/group.svg";
+import markerIconmanuscript from "../../assets/img/mapIconSvg/manuscript.svg";
+import markerIconcoin from "../../assets/img/mapIconSvg/coin.svg";
+import markerIconinscriptions from "../../assets/img/mapIconSvg/inscriptions.svg";
+import markerIcondocuments from "../../assets/img/mapIconSvg/documents.svg";
+import markerIconart from "../../assets/img/mapIconSvg/art.svg";
+import markerIconarxiv from "../../assets/img/mapIconSvg/arxiv.svg";
+import markerIconpress from "../../assets/img/mapIconSvg/press.svg";
 const leftBarTypeList = {
   archialogy: markerIconarchialogy,
   group: markerIcongroup,
+  manuscript: markerIconmanuscript,
+  coin: markerIconcoin,
+  inscriptions: markerIconinscriptions,
+  documents: markerIcondocuments,
+  art: markerIconart,
+  arxiv: markerIconarxiv,
+  press: markerIconpress,
 };
 export default function Map() {
   const position = [41.304987, 69.283384];
   const position1 = [41.488801, 69.5857077];
-<<<<<<< HEAD
-
-=======
->>>>>>> d9b5c8eb24bb9a6c2e322f38b9b03faf8d30de3d
   const [num, setNum] = useState(0);
   const [leftBarType, setLeftBarType] = useState(markerIconPng);
   const cordinat = [
@@ -155,19 +165,27 @@ export default function Map() {
   return (
     <div className="map-full">
       <motion.ul className="map-menu">
-        <motion.li className="map-item" whileHover={{ x: 55 }}>
+        <motion.li
+          className="map-item"
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.archialogy)}
+        >
           <Link className="map-link">
-            <button onClick={() => setMarker(leftBarTypeList.archialogy)}>
+            <button>
               <TbBuildingCastle />
               <span className="hover-toltip">Arxealogiya</span>
             </button>{" "}
             <span> Arxealogiya</span>
           </Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 55 }}>
+        <motion.li
+          className="map-item"
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.group)}
+        >
           <Link className="map-link">
             {" "}
-            <button onClick={() => setMarker(leftBarTypeList.group)}>
+            <button>
               <HiUserGroup />
               <span className="hover-toltip">Xalq og'zaki ijodi</span>
             </button>{" "}
@@ -176,8 +194,8 @@ export default function Map() {
         </motion.li>
         <motion.li
           className="map-item"
-          whileHover={{ x: 55 }}
-          onClick={() => setNum(2)}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.manuscript)}
         >
           <Link className="map-link">
             {" "}
@@ -190,8 +208,8 @@ export default function Map() {
         </motion.li>
         <motion.li
           className="map-item"
-          whileHover={{ x: 55 }}
-          onClick={() => setNum(3)}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.coin)}
         >
           <Link className="map-link">
             <button>
@@ -203,8 +221,8 @@ export default function Map() {
         </motion.li>
         <motion.li
           className="map-item"
-          whileHover={{ x: 55 }}
-          onClick={() => setNum(4)}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.inscriptions)}
         >
           <Link className="map-link">
             {" "}
@@ -218,8 +236,8 @@ export default function Map() {
 
         <motion.li
           className="map-item"
-          whileHover={{ x: 55 }}
-          onClick={() => setNum(5)}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.documents)}
         >
           <Link className="map-link">
             {" "}
@@ -233,8 +251,8 @@ export default function Map() {
 
         <motion.li
           className="map-item"
-          whileHover={{ x: 55 }}
-          onClick={() => setNum(6)}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.art)}
         >
           <Link className="map-link">
             {" "}
@@ -246,7 +264,11 @@ export default function Map() {
             <span> San'at asarlari</span>
           </Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 55 }}>
+        <motion.li
+          className="map-item"
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.arxiv)}
+        >
           <Link className="map-link">
             {" "}
             <button>
@@ -256,7 +278,11 @@ export default function Map() {
             <span>Arxiv jamg'armalari</span>
           </Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 55 }}>
+        <motion.li
+          className="map-item"
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.press)}
+        >
           <Link className="map-link">
             {" "}
             <button>
@@ -266,7 +292,7 @@ export default function Map() {
             <span> Matbuot</span>
           </Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 55 }}>
+        <motion.li className="map-item" whileHover={{ x: 20 }}>
           <Link className="map-link">
             {" "}
             <button>

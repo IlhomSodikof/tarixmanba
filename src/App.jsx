@@ -14,7 +14,7 @@ import NewsDetail from "./Page/NewsDetail";
 export default function App() {
   return (
     <div>
-      <CursorAnim />
+      {/* <CursorAnim /> */}
       <Routes>
         <Route path="/" Component={Layout}>
           <Route path="/" Component={Home} />

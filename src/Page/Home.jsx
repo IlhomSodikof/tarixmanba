@@ -2,6 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import HomeCardMatbuot from "../Components/Home/HomeCardsMatbuot";
 import HomeCardMuxr from "../Components/Home/HomeCardsMuxr";
 import HomeCardArchi from "../Components/Home/HomeCardsArchi";
+import HomeCardsFolkArt from "../Components/Home/HomeCardsFolkArt";
+import HomeCardsManuscript from "../Components/Home/HomeCardsManuscript";
+import HomeCardsLetter from "../Components/Home/HomeCardsLetter";
+import HomeCardsArt from "../Components/Home/HomeCardsArt";
+import HomeCardsArxiv from "../Components/Home/HomeCardsArxiv";
+import HomeCardsDocuments from "../Components/Home/HomeCardsDocuments";
+import HomeCardsMedia from "../Components/Home/HomeCardsMedia";
 import ViewKop from "../Components/Home/ViewKop";
 import FashionCard from "../Components/Home/FashionCard";
 import Acardion from "../Components/Home/Acardion";
@@ -62,11 +69,19 @@ export default function Home() {
         }} /> */}
         {/* <video data-testid="video-asset" style={{ width: "675px", maxWidth: "100%" }} src="https://media.istockphoto.com/id/950253426/video/close-up-of-very-old-coins.mp4?s=mp4-640x640-is&amp;k=20&amp;c=kHvhxNg1Hli6PCpJyRthVCGtzrXHDNKhE0T2jO49xy8=" alt="Close up of very old coins Coins From Various Countries 4K Resolution Stock Footage Video" controls controlslist="nodownload" autoplay={true} loop></video> */}
         <Acardion />
+        {/* <Acardion /> */}
         <Map />
         <FashionCard />
         <HomeCardMuxr />
         <HomeCardMatbuot />
         <HomeCardArchi />
+        <HomeCardsFolkArt />
+        <HomeCardsManuscript />
+        <HomeCardsLetter />
+        <HomeCardsArt />
+        <HomeCardsArxiv />
+        <HomeCardsDocuments />
+        <HomeCardsMedia />
         <ViewKop />
       </main>
     </>

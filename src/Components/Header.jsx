@@ -416,7 +416,7 @@ export default function Header() {
                   <Link className="nav-drop-link" to="/sources/archive">
                     {" "}
                     <TbBuildingCastle />
-                    <span> Arxealogiya</span>
+                    <span> Arxeologiya</span>
                   </Link>
                 </motion.li>
                 <motion.li
