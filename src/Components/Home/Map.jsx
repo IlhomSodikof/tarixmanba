@@ -166,7 +166,9 @@ export default function Map() {
     <div className="map-full">
       <motion.ul className="map-menu">
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.archialogy ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.archialogy)}
         >
@@ -193,7 +195,9 @@ export default function Map() {
           </Link>
         </motion.li>
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.manuscript ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.manuscript)}
         >
@@ -314,6 +318,7 @@ export default function Map() {
         attributionControl={false}
       >
         <TileLayer
+          // url="https://tile.jawg.io/jawg-dark/{z}/{x}/{y}.png?lang=ru&access-token=cP6rLK4nDH9gYDmHudFvIbWeHcS6fi4LrsXRV03tZ55CV16hlgRiOPMbGejtGuXm"
           url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png?lang=ru"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
