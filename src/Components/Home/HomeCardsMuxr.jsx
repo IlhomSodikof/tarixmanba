@@ -141,7 +141,7 @@ export default function App() {
           <div className="swiper-button-prev"></div> */}
           </Swiper>
         </div>{" "}
-        <div className="muxr_pattern">
+        <div className="Left_pattern">
           <img src={bgPattern} alt="" />
         </div>
       </div>

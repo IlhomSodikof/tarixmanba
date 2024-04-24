@@ -181,7 +181,9 @@ export default function Map() {
           </Link>
         </motion.li>
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.group ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.group)}
         >
@@ -211,7 +213,9 @@ export default function Map() {
           </Link>
         </motion.li>
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.coin ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.coin)}
         >
@@ -224,7 +228,9 @@ export default function Map() {
           </Link>
         </motion.li>
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.inscriptions ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.inscriptions)}
         >
@@ -239,7 +245,9 @@ export default function Map() {
         </motion.li>
 
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.documents ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.documents)}
         >
@@ -254,7 +262,9 @@ export default function Map() {
         </motion.li>
 
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.art ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.art)}
         >
@@ -269,7 +279,9 @@ export default function Map() {
           </Link>
         </motion.li>
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.arxiv ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.arxiv)}
         >
@@ -283,7 +295,9 @@ export default function Map() {
           </Link>
         </motion.li>
         <motion.li
-          className="map-item"
+          className={`map-item ${
+            leftBarType == leftBarTypeList.press ? " active" : ""
+          }`}
           whileHover={{ x: 20 }}
           onClick={() => setMarker(leftBarTypeList.press)}
         >

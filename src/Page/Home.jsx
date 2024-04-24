@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import HomeCardMatbuot from "../Components/Home/HomeCardsMatbuot";
 import HomeCardMuxr from "../Components/Home/HomeCardsMuxr";
 import HomeCardArchi from "../Components/Home/HomeCardsArchi";
+import HomeCardsCoin from "../Components/Home/HomeCardsCoin";
 import HomeCardsFolkArt from "../Components/Home/HomeCardsFolkArt";
 import HomeCardsManuscript from "../Components/Home/HomeCardsManuscript";
 import HomeCardsLetter from "../Components/Home/HomeCardsLetter";
@@ -75,6 +76,7 @@ export default function Home() {
         <HomeCardMuxr />
         <HomeCardMatbuot />
         <HomeCardArchi />
+        <HomeCardsCoin />
         <HomeCardsFolkArt />
         <HomeCardsManuscript />
         <HomeCardsLetter />

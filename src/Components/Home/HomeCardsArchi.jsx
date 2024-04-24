@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 // import image
-import archi1 from "../../assets/img/archi1.jpg";
+import archi1 from "../../assets/img/arxeologiya4.jpg";
 import archi2 from "../../assets/img/arxeologiya1.jpg";
 import archi3 from "../../assets/img/arxeologiya2.jpg";
 import archi4 from "../../assets/img/arxeologiya3.jpg";
@@ -56,9 +56,12 @@ export default function App() {
                   Lorem ipsum is simply dummy text from the printing and typing
                   industry
                 </p>
-                <a href="#" class="home__btn">
-                  Read More
-                </a>
+
+                <Link to="/CardDetail">
+                  <a href="#" class="home__btn">
+                    Read More
+                  </a>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -141,7 +144,7 @@ export default function App() {
           <div className="swiper-button-prev"></div> */}
         </Swiper>
       </div>
-      <div className="archi_pattern">
+      <div className="Left_pattern">
         <img src={bgPattern} alt="" />
       </div>
     </div>

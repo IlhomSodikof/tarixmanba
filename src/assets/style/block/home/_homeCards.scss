@@ -47,18 +47,12 @@
     color: #c75652;
   }
   .button {
-    --font-color: #fefefe;
-    --bg-color: #111;
-    --main-color: #fefefe;
     width: 150px;
     height: 40px;
+    border: 2px solid #c75652;
     border-radius: 5px;
-    border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
     font-size: 17px;
     font-weight: 900;
-    color: var(--font-color);
     cursor: pointer;
   }
   .button:active {
@@ -223,17 +217,7 @@
   margin-top: 40px;
 }
 
-.muxr_pattern {
-  top: -120px;
-  left: -240px;
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  filter: grayscale(50%);
-  opacity: 0.5;
-  animation: circleAnimation 25s infinite linear;
-}
-.matbuot_pattern {
+.right_pattern {
   top: -120px;
   right: 0;
   position: absolute;
@@ -244,7 +228,7 @@
   animation: circleAnimation 25s infinite linear;
   z-index: -1;
 }
-.archi_pattern {
+.Left_pattern {
   top: -120px;
   left: -240px;
   position: absolute;

@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "@react-three/drei": "^9.102.6",
     "chroma-js": "^2.4.2",
     "clsx": "^2.1.0",
     "dateformat": "^5.0.3",
     "framer-motion": "^11.0.20",
     "google-map-react": "^2.2.1",
+    "gsap": "^3.12.5",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
     "numeral": "^2.0.6",

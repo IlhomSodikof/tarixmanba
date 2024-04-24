@@ -156,7 +156,7 @@ export default function App() {
           <div className="swiper-button-prev"></div> */}
         </Swiper>
       </div>
-      <div className="archi_pattern">
+      <div className="right_pattern">
         <img src={bgPattern} alt="" />
       </div>
     </div>

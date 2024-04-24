@@ -367,6 +367,11 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.56.0.tgz"
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
+"@fancyapps/ui@^5.0.36":
+  version "5.0.36"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-5.0.36.tgz#dd5117cb579e9fc85c06dc32c947be6105724fb2"
+  integrity sha512-GMygQzp1MBTFNTT6AzpbL6pXTD6bTxwjmmpI1fe8Ozmmiseu8/g82Sudl1YhcbZmS4bJgaBOF5THDFGpXQ1fDw==
+
 "@googlemaps/js-api-loader@^1.13.8":
   version "1.16.6"
   resolved "https://registry.npmjs.org/@googlemaps/js-api-loader/-/js-api-loader-1.16.6.tgz"
@@ -1066,11 +1071,6 @@ convert-source-map@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz"
   integrity sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==
-
-countup.js@^2.8.0:
-  version "2.8.0"
-  resolved "https://registry.npmjs.org/countup.js/-/countup.js-2.8.0.tgz"
-  integrity sha512-f7xEhX0awl4NOElHulrl4XRfKoNH3rB+qfNSZZyjSZhaAoUk6elvhH+MNxMmlmuUJ2/QNTWPSA7U4mNtIAKljQ==
 
 cross-env@^7.0.3:
   version "7.0.3"
@@ -1841,6 +1841,11 @@ graphemer@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/graphemer/-/graphemer-1.4.0.tgz"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
+
+gsap@^3.12.5:
+  version "3.12.5"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.12.5.tgz#136c02dad4c673b441bdb1ca00104bfcb4eae7f4"
+  integrity sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==
 
 h3-js@4:
   version "4.1.0"
@@ -2670,24 +2675,12 @@ rafor@^1.0.2:
   resolved "https://registry.npmjs.org/rafor/-/rafor-1.0.2.tgz"
   integrity sha512-b8e8/srbSbC0FZTxivEz9pj5z1mQM8CpCEv1aAxuaK26ljSOHJk8AjimcTaHpHIZlwH/VPbli12LuKKrJyyGmA==
 
-react-animated-cursor@^2.11.2:
-  version "2.11.2"
-  resolved "https://registry.npmjs.org/react-animated-cursor/-/react-animated-cursor-2.11.2.tgz"
-  integrity sha512-LV0PtST61tdeW/chCqFt1JLp6i0d5fD9v2uradBcPAkKKCi2Iw7sAcD11ADS1TjXPPj9MOoD9YubEt++/IbZ+g==
-
 react-composer@^5.0.3:
   version "5.0.3"
   resolved "https://registry.npmjs.org/react-composer/-/react-composer-5.0.3.tgz"
   integrity sha512-1uWd07EME6XZvMfapwZmc7NgCZqDemcvicRi3wMJzXsQLvZ3L7fTHVyPy1bZdnWXM4iPjYuNE+uJ41MLKeTtnA==
   dependencies:
     prop-types "^15.6.0"
-
-react-countup@^6.5.0:
-  version "6.5.3"
-  resolved "https://registry.npmjs.org/react-countup/-/react-countup-6.5.3.tgz"
-  integrity sha512-udnqVQitxC7QWADSPDOxVWULkLvKUWrDapn5i53HE4DPRVgs+Y5rr4bo25qEl8jSh+0l2cToJgGMx+clxPM3+w==
-  dependencies:
-    countup.js "^2.8.0"
 
 react-dom@^18.2.0:
   version "18.2.0"

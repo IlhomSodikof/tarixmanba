@@ -13,6 +13,14 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+
+// import image
+import coin1 from "../../assets/img/coin1.png";
+import coin2 from "../../assets/img/coin2.jpg";
+import coin3 from "../../assets/img/coin3.jpg";
+import coin4 from "../../assets/img/coin4.png";
+import coin5 from "../../assets/img/coin3.jpg";
+import coin6 from "../../assets/img/coin4.png";
 import bgPattern from "../../assets/img/bg_pattern.png";
 
 export default function App() {
@@ -20,7 +28,7 @@ export default function App() {
     <div className="home__card__container">
       <div className="home__wrapper">
         <div className="home__cards__title">
-          <h1>Foto va Video manbalar</h1>
+          <h1>Tangalar</h1>
 
           <button class="button">Barchasi →</button>
         </div>
@@ -46,10 +54,7 @@ export default function App() {
         >
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                alt=""
-              />
+              <img src={coin1} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -64,10 +69,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                alt=""
-              />
+              <img src={coin2} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -82,10 +84,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                alt=""
-              />
+              <img src={coin3} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -100,10 +99,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                alt=""
-              />
+              <img src={coin4} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -118,10 +114,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                alt=""
-              />
+              <img src={coin5} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -136,10 +129,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                alt=""
-              />
+              <img src={coin6} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -156,7 +146,7 @@ export default function App() {
           <div className="swiper-button-prev"></div> */}
         </Swiper>
       </div>
-      <div className="Left_pattern">
+      <div className="right_pattern">
         <img src={bgPattern} alt="" />
       </div>
     </div>

@@ -511,7 +511,9 @@ export default function Header() {
               </Link>
             </div>
             <div className="nav-menu">
-              <Link className="link">Voqea</Link>
+              <Link to="/media" className="link">
+                Voqea
+              </Link>
             </div>
             <div className="nav-menu">
               <Link className="link">Bizhaqimizda</Link>
