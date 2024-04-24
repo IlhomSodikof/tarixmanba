@@ -1,11 +1,13 @@
 import React from "react";
+// import image
+import DetailImg from "../assets/img/arxeologiya4.jpg";
 
 export default function NewsDetail() {
   return (
     <div className="card__container">
       <div className="card__detail__container">
         <div className="Card_detail_img">
-          <img src="https://thumbs.dreamstime.com/b/news-woodn-dice-depicting-letters-bundle-small-newspapers-leaning-left-dice-34802664.jpg" />
+          <img src={DetailImg} />
         </div>
         <div className="card_detail_title">
           <h1>Card Detail Title</h1>
