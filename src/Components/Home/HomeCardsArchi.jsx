@@ -11,11 +11,11 @@ import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 // import image
 import archi1 from "../../assets/img/archi1.jpg";
-import archi2 from "../../assets/img/archi2.jpg";
-import archi3 from "../../assets/img/archi3.jpg";
-import archi4 from "../../assets/img/archi4.jpg";
-import archi5 from "../../assets/img/archi5.jpg";
-import archi6 from "../../assets/img/archi6.jpg";
+import archi2 from "../../assets/img/arxeologiya1.jpg";
+import archi3 from "../../assets/img/arxeologiya2.jpg";
+import archi4 from "../../assets/img/arxeologiya3.jpg";
+import archi5 from "../../assets/img/arxeologiya4.jpg";
+import archi6 from "../../assets/img/arxeologiya5.jpg";
 import bgPattern from "../../assets/img/bg_pattern.png";
 
 export default function App() {
@@ -25,9 +25,7 @@ export default function App() {
         <div className="home__cards__title">
           <h1>Arxeologiya yodgorliklari</h1>
 
-          <button className="see_all">
-            <Link>Barchasi →</Link>
-          </button>
+          <button class="button">Barchasi →</button>
         </div>
         <Swiper
           slidesPerView={1}

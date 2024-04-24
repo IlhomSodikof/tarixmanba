@@ -26,9 +26,7 @@ export default function App() {
           <div className="home__cards__title">
             <h1>Muxrlar</h1>
 
-            <button className="see_all">
-              <Link>Barchasi →</Link>
-            </button>
+            <button class="button">Barchasi →</button>
           </div>
           <Swiper
             slidesPerView={1}
