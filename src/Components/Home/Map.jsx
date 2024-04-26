@@ -198,6 +198,38 @@ export default function Map() {
         </motion.li>
         <motion.li
           className={`map-item ${
+            leftBarType == leftBarTypeList.inscriptions ? " active" : ""
+          }`}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.inscriptions)}
+        >
+          <Link className="map-link">
+            {" "}
+            <button>
+              <RiFilePaper2Line />
+              <span className="hover-toltip">Bitiklar</span>
+            </button>{" "}
+            <span> Bitiklar</span>
+          </Link>
+        </motion.li>
+        <motion.li
+          className={`map-item ${
+            leftBarType == leftBarTypeList.inscriptions ? " active" : ""
+          }`}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.inscriptions)}
+        >
+          <Link className="map-link">
+            {" "}
+            <button>
+              <RiFilePaper2Line />
+              <span className="hover-toltip">Tarixiy yodgorliklar</span>
+            </button>{" "}
+            <span> Tarixiy yodgorliklar</span>
+          </Link>
+        </motion.li>
+        <motion.li
+          className={`map-item ${
             leftBarType == leftBarTypeList.manuscript ? " active" : ""
           }`}
           whileHover={{ x: 20 }}
@@ -207,9 +239,9 @@ export default function Map() {
             {" "}
             <button>
               <MdOutlineHistoryEdu />
-              <span className="hover-toltip">Qo'lyozmalar</span>
+              <span className="hover-toltip">Yozma asarlar</span>
             </button>{" "}
-            <span> Qo'lyozmalar</span>
+            <span>Yozma asarlar</span>
           </Link>
         </motion.li>
         <motion.li
@@ -225,22 +257,6 @@ export default function Map() {
               <span className="hover-toltip">Tangalar</span>
             </button>{" "}
             <span> Tangalar</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.inscriptions ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.inscriptions)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <RiFilePaper2Line />
-              <span className="hover-toltip">Bitiklar</span>
-            </button>{" "}
-            <span> Bitiklar</span>
           </Link>
         </motion.li>
 
@@ -263,6 +279,23 @@ export default function Map() {
 
         <motion.li
           className={`map-item ${
+            leftBarType == leftBarTypeList.documents ? " active" : ""
+          }`}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.documents)}
+        >
+          <Link className="map-link">
+            {" "}
+            <button>
+              <LiaBoxOpenSolid />
+              <span className="hover-toltip">Muhrlar</span>
+            </button>{" "}
+            <span> Muhrlar</span>
+          </Link>
+        </motion.li>
+
+        <motion.li
+          className={`map-item ${
             leftBarType == leftBarTypeList.art ? " active" : ""
           }`}
           whileHover={{ x: 20 }}
@@ -276,22 +309,6 @@ export default function Map() {
               <span className="hover-toltip">San'at asarlari</span>
             </button>
             <span> San'at asarlari</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.arxiv ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.arxiv)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <CiInboxIn />
-              <span className="hover-toltip">Arxiv jamg'armalari</span>
-            </button>{" "}
-            <span>Arxiv jamg'armalari</span>
           </Link>
         </motion.li>
         <motion.li
@@ -310,7 +327,24 @@ export default function Map() {
             <span> Matbuot</span>
           </Link>
         </motion.li>
-        <motion.li className="map-item" whileHover={{ x: 20 }}>
+        <motion.li
+          className={`map-item ${
+            leftBarType == leftBarTypeList.arxiv ? " active" : ""
+          }`}
+          whileHover={{ x: 20 }}
+          onClick={() => setMarker(leftBarTypeList.arxiv)}
+        >
+          <Link className="map-link">
+            {" "}
+            <button>
+              <CiInboxIn />
+              <span className="hover-toltip">Arxiv hujjatlari</span>
+            </button>{" "}
+            <span>Arxiv hujjatlari</span>
+          </Link>
+        </motion.li>
+
+        {/* <motion.li className="map-item" whileHover={{ x: 20 }}>
           <Link className="map-link">
             {" "}
             <button>
@@ -319,7 +353,7 @@ export default function Map() {
             </button>
             <span> Foto va video manbalar</span>
           </Link>
-        </motion.li>
+        </motion.li> */}
       </motion.ul>
 
       <MapContainer

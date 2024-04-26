@@ -20,7 +20,7 @@ export default function App() {
     <div className="home__card__container">
       <div className="home__wrapper">
         <div className="home__cards__title">
-          <h1>Yozma asarlar</h1>
+          <h1>Tarixiy yodgorliklar</h1>
 
           <button class="button">Barchasi →</button>
         </div>
@@ -156,7 +156,7 @@ export default function App() {
           <div className="swiper-button-prev"></div> */}
         </Swiper>
       </div>
-      <div className="Left_pattern">
+      <div className="right_pattern">
         <img src={bgPattern} alt="" />
       </div>
     </div>

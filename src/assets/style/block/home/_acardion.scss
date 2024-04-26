@@ -30,6 +30,7 @@ $defaultSeconds: 3s;
 }
 
 .acardions {
+  font-family: "Courier New", Courier, monospace;
   margin-top: -50px;
   z-index: 1;
   position: relative;
@@ -95,6 +96,7 @@ $defaultSeconds: 3s;
   }
 }
 .flex-title {
+  font-weight: 500;
   width: 100%;
   color: #f1f1f1;
   position: absolute;

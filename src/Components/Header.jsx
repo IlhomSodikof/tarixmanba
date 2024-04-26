@@ -127,7 +127,8 @@ export default function Header() {
       <header>
         <div className="header-top-box">
           <Link className="logo-box" to="/">
-            <img className="logo" src={Logo} alt="Logo" />
+            {/* <img className="logo" src={Logo} alt="Logo" /> */}
+            <h3>TARIXMANBA.UZ</h3>
           </Link>
           <div className="search-box-bigs">
             <div className="search-box">
@@ -431,8 +432,24 @@ export default function Header() {
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
+                  <Link className="nav-drop-link" to="/sources/coins">
+                    <RiFilePaper2Line /> <span> Bitiklar</span>
+                  </Link>
+                </motion.li>
+                <motion.li
+                  className="dorop-item"
+                  whileHover={{ x: 15, opacity: 0.5 }}
+                >
+                  <Link className="nav-drop-link" to="/sources/coins">
+                    <RiFilePaper2Line /> <span> Tarixiy yodgorliklar</span>
+                  </Link>
+                </motion.li>
+                <motion.li
+                  className="dorop-item"
+                  whileHover={{ x: 15, opacity: 0.5 }}
+                >
                   <Link className="nav-drop-link" to="/sources/manuscript">
-                    <MdOutlineHistoryEdu /> <span> Qo'lyozmalar</span>
+                    <MdOutlineHistoryEdu /> <span> Yozma asarlar</span>
                   </Link>
                 </motion.li>
                 <motion.li
@@ -443,12 +460,13 @@ export default function Header() {
                     <GiTwoCoins /> <span> Tangalar</span>
                   </Link>
                 </motion.li>
+
                 <motion.li
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
-                  <Link className="nav-drop-link" to="/sources/coins">
-                    <RiFilePaper2Line /> <span> Bitiklar</span>
+                  <Link className="nav-drop-link">
+                    <LiaBoxOpenSolid /> <span> Tarixiy hujatlar</span>
                   </Link>
                 </motion.li>
 
@@ -457,7 +475,7 @@ export default function Header() {
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
                   <Link className="nav-drop-link">
-                    <LiaBoxOpenSolid /> <span> Tarixiy hujatlar</span>
+                    <LiaBoxOpenSolid /> <span> Muhrlar</span>
                   </Link>
                 </motion.li>
 
@@ -476,7 +494,9 @@ export default function Header() {
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
                   <Link className="nav-drop-link">
-                    <CiInboxIn /> <span>Arxiv jamg'armalari</span>
+                    {" "}
+                    <ImNewspaper />
+                    <span> Matbuot</span>
                   </Link>
                 </motion.li>
                 <motion.li
@@ -484,11 +504,10 @@ export default function Header() {
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
                   <Link className="nav-drop-link">
-                    {" "}
-                    <ImNewspaper />
-                    <span> Matbuot</span>
+                    <CiInboxIn /> <span>Arxiv hujjatlari</span>
                   </Link>
                 </motion.li>
+
                 <motion.li
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}

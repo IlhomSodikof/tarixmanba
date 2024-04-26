@@ -29,16 +29,16 @@ export default function Acardion() {
             <div className="flex-title">Xalq og'zaki ijodi</div>
           </div>
           <div className="flex-slide acc_img3">
-            <div className="flex-title">Qo'lyozmalar</div>
-          </div>
-          <div className="flex-slide acc_img4">
-            <div className="flex-title">Tangalar </div>
-          </div>
-          <div className="flex-slide acc_img5">
             <div className="flex-title">Bitiklar</div>
           </div>
+          <div className="flex-slide acc_img4">
+            <div className="flex-title">Tarixiy yodgorliklar </div>
+          </div>
+          <div className="flex-slide acc_img5">
+            <div className="flex-title">Yozma asarlar</div>
+          </div>
           <div className="flex-slide acc_img6">
-            <div className="flex-title">Tarixiy hujjatlar</div>
+            <div className="flex-title">Tangalar</div>
           </div>
         </div>
       </div>
@@ -57,23 +57,23 @@ export default function Acardion() {
         </motion.h1> */}
         <div class="flex-container">
           <div className="flex-slide acc_img1">
-            <div className="flex-title">San'at asarlari</div>
+            <div className="flex-title">Tarixiy hujjatlar</div>
           </div>
 
           <div className="flex-slide acc_img2">
-            <div className="flex-title">Arxiv jamg'armasi</div>
+            <div className="flex-title">Muhrlar</div>
           </div>
           <div className="flex-slide acc_img3">
-            <div className="flex-title">Matbuot</div>
+            <div className="flex-title">San'at asarlari</div>
           </div>
           <div className="flex-slide acc_img4">
-            <div className="flex-title">Foto</div>
+            <div className="flex-title">Matbuat</div>
           </div>
           <div className="flex-slide acc_img5">
-            <div className="flex-title">Pichoq topti</div>
+            <div className="flex-title">Arxiv hujjatlari</div>
           </div>
           <div className="flex-slide acc_img6">
-            <div className="flex-title">Qipchoq</div>
+            <div className="flex-title">Ko'r, eshit, tingla</div>
           </div>
         </div>
       </div>

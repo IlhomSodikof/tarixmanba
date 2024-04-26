@@ -9,6 +9,7 @@ import HomeCardsLetter from "../Components/Home/HomeCardsLetter";
 import HomeCardsArt from "../Components/Home/HomeCardsArt";
 import HomeCardsArxiv from "../Components/Home/HomeCardsArxiv";
 import HomeCardsDocuments from "../Components/Home/HomeCardsDocuments";
+import HomeCardsManuments from "../Components/Home/HomeCardsManuments";
 import HomeCardsMedia from "../Components/Home/HomeCardsMedia";
 import ViewKop from "../Components/Home/ViewKop";
 import FashionCard from "../Components/Home/FashionCard";
@@ -73,16 +74,17 @@ export default function Home() {
         {/* <Acardion /> */}
         <Map />
         <FashionCard />
-        <HomeCardMuxr />
-        <HomeCardMatbuot />
         <HomeCardArchi />
-        <HomeCardsCoin />
         <HomeCardsFolkArt />
-        <HomeCardsManuscript />
         <HomeCardsLetter />
-        <HomeCardsArt />
-        <HomeCardsArxiv />
+        <HomeCardsManuments />
+        <HomeCardsManuscript />
+        <HomeCardsCoin />
         <HomeCardsDocuments />
+        <HomeCardMuxr />
+        <HomeCardsArt />
+        <HomeCardMatbuot />
+        <HomeCardsArxiv />
         <HomeCardsMedia />
         <ViewKop />
       </main>
