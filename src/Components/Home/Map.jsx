@@ -361,7 +361,7 @@ export default function Map() {
         className="map"
         center={position}
         center2={position1}
-        zoom={3}
+        zoom={6}
         // style={{ height: "600px", width: "100%" }}
         attributionControl={false}
       >
