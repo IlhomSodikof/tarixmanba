@@ -1,3 +1,8 @@
+* {
+  font-family: "Dr Sugiyama", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   background-image: linear-gradient(
       147deg,
@@ -28,64 +33,22 @@ body {
     ),
     linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
 }
-body.bgprimary {
-  background-image: linear-gradient(
-      147deg,
-      transparent 0%,
-      transparent 8%,
-      rgba(63, 106, 202, 0.08) 8%,
-      rgba(63, 106, 202, 0.08) 46%,
-      transparent 46%,
-      transparent 100%
-    ),
-    linear-gradient(
-      107deg,
-      transparent 0%,
-      transparent 21%,
-      rgba(63, 106, 202, 0.08) 21%,
-      rgba(63, 106, 202, 0.08) 53%,
-      transparent 53%,
-      transparent 100%
-    ),
-    linear-gradient(
-      288deg,
-      transparent 0%,
-      transparent 35%,
-      rgba(63, 106, 202, 0.08) 35%,
-      rgba(63, 106, 202, 0.08) 91%,
-      transparent 91%,
-      transparent 100%
-    ),
-    linear-gradient(90deg, rgb(218, 4, 4), rgb(0, 0, 0));
-}
 
-body.bgsecondary {
-  background-image: linear-gradient(
-      147deg,
-      transparent 0%,
-      transparent 8%,
-      rgba(63, 106, 202, 0.08) 8%,
-      rgba(63, 106, 202, 0.08) 46%,
-      transparent 46%,
-      transparent 100%
-    ),
-    linear-gradient(
-      107deg,
-      transparent 0%,
-      transparent 21%,
-      rgba(63, 106, 202, 0.08) 21%,
-      rgba(63, 106, 202, 0.08) 53%,
-      transparent 53%,
-      transparent 100%
-    ),
-    linear-gradient(
-      288deg,
-      transparent 0%,
-      transparent 35%,
-      rgba(63, 106, 202, 0.08) 35%,
-      rgba(63, 106, 202, 0.08) 91%,
-      transparent 91%,
-      transparent 100%
-    ),
-    linear-gradient(90deg, rgb(17, 217, 57), rgb(0, 0, 0));
+body.bgOne {
+  background-image: linear-gradient(90deg, rgb(17, 217, 57), rgb(0, 0, 0));
+}
+body.bgTwo {
+  background-image: linear-gradient(90deg, rgb(218, 4, 4), rgb(0, 0, 0));
+}
+body.bgThree {
+  background-image: linear-gradient(90deg, rgb(3, 20, 255), rgb(0, 0, 0));
+}
+body.bgFour {
+  background-image: linear-gradient(90deg, rgb(205, 255, 3), rgb(0, 0, 0));
+}
+body.bgFive {
+  background-image: linear-gradient(90deg, rgb(255, 3, 158), rgb(0, 0, 0));
+}
+body.bgSix {
+  background-image: linear-gradient(90deg, rgb(255, 163, 3), rgb(0, 0, 0));
 }

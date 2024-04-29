@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import { IoMdSettings } from "react-icons/io";
 // import React from "react";
 // import Header from "./Components/Header";
 // import Footer from "./Components/Footer";
@@ -14,6 +15,8 @@ export default function Layout() {
     }, 6100);
     return () => clearTimeout(timer);
   }, []);
+
+  const [changeColor, setChangeColor] = useState(false);
   const onchangeMode = (mode) => {
     const body = document.querySelector("body");
     body.className = mode;
@@ -67,15 +70,45 @@ export default function Layout() {
           <div className="container-layout">
             <Outlet />
           </div>
-          <div className="" style={{ position: "absolute" }}>
-            <div className=" " style={{ display: "flex", gap: 2 }}>
+          <div
+            className={`color__switcher ${
+              changeColor && "color__switcher--open"
+            }`}
+            style={{ position: "absolute" }}
+          >
+            <button
+              onClick={() => setChangeColor((prevState) => !prevState)}
+              className="color_switcher_button"
+            >
+              <i>
+                <IoMdSettings />
+              </i>
+            </button>
+            <h1 className="color__switcher__title">Rang tanlang</h1>
+            <div className="color__list ">
               <div
-                className="bgsecondarycolor"
-                onClick={() => onchangeMode("bgsecondary")}
+                className="color__item bgOnecolor"
+                onClick={() => onchangeMode("bgOne")}
               ></div>
               <div
-                className="bgprimarycolor"
-                onClick={() => onchangeMode("bgprimary")}
+                className="color__item bgTwocolor"
+                onClick={() => onchangeMode("bgTwo")}
+              ></div>
+              <div
+                className="color__item bgThreecolor"
+                onClick={() => onchangeMode("bgThree")}
+              ></div>
+              <div
+                className="color__item bgFourcolor"
+                onClick={() => onchangeMode("bgFour")}
+              ></div>
+              <div
+                className="color__item bgFivecolor"
+                onClick={() => onchangeMode("bgFive")}
+              ></div>
+              <div
+                className="color__item bgSixcolor"
+                onClick={() => onchangeMode("bgSix")}
               ></div>
             </div>
           </div>
