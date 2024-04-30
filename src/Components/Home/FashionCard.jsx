@@ -137,9 +137,9 @@ export default function FashionCard() {
           </div>
         </div>
       </div>
-      <div className="fashion_pattern">
+      {/* <div className="fashion_pattern">
         <img src={fashionPattern} alt="" />
-      </div>
+      </div> */}
     </>
   );
 }

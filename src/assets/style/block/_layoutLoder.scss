@@ -184,12 +184,13 @@
   transition: all 0.5s ease-in-out;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 1000;
 
   .color_switcher_button {
     width: 3rem;
     height: 3rem;
-    background: #fff;
+    background: #026ec6;
     border: none;
     font-size: 1.2rem;
     position: absolute;
@@ -198,9 +199,12 @@
     transform: translate(-100%, -50%);
     display: grid;
     place-items: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 
     i {
       animation: settingsButton 2s infinite;
+      color: #fff;
     }
   }
   .color__switcher__title {
