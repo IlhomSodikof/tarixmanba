@@ -15,6 +15,16 @@
   --shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
+
+////////////////////////////////////////////// fuul time and calendar
+.full__data__picer {
+  display: flex;
+  gap: 10px;
+  .live__calendar {
+    border: 2px solid #000;
+    z-index: 100;
+  }
+}
 header {
   position: relative;
   z-index: 10;
@@ -503,11 +513,12 @@ header {
     }
   }
   .header_img_pattern {
+    padding: 5px 0;
     display: flex;
     height: 75px;
     width: 100%;
     border: none !important;
-    background-image: url("../../img/lentaBg.jpg") !important;
+    background-image: url("../../../public/lentaBg.jpg") !important;
     background-size: contain;
     background-repeat: repeat-x;
     // background: #2b2e63;

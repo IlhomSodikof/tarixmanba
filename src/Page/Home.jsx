@@ -73,7 +73,7 @@ export default function Home() {
         <Acardion />
         {/* <Acardion /> */}
         <Map />
-        <FashionCard />
+        {/* <FashionCard /> */}
         <HomeCardArchi />
         <HomeCardsFolkArt />
         <HomeCardsLetter />
