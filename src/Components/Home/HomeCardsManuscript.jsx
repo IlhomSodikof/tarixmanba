@@ -13,6 +13,14 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+
+// import image
+import yozma1 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Ёзма асарлар/yozma1.jpg";
+import yozma2 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Ёзма асарлар/yozma2.jpg";
+// import archi3 from "../../assets/img/arxeologiya2.jpg";
+// import archi4 from "../../assets/img/arxeologiya3.jpg";
+// import archi5 from "../../assets/img/arxeologiya4.jpg";
+// import archi6 from "../../assets/img/arxeologiya5.jpg";
 import bgPattern from "../../assets/img/bg_pattern.png";
 
 export default function App() {
@@ -46,10 +54,7 @@ export default function App() {
         >
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                alt=""
-              />
+              <img src={yozma1} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>
@@ -64,10 +69,7 @@ export default function App() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="home__card">
-              <img
-                src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                alt=""
-              />
+              <img src={yozma2} alt="" />
               <div class="home__info">
                 <h1>Horseshoe Bend, Arizona</h1>
                 <p>

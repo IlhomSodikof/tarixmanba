@@ -6,14 +6,13 @@
 }
 body {
   max-width: 100vw;
-  background-image: url("./siteBg4.png") !important;
+  background-image: url("../../../public/siteBg.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  overflow-x: hidden;
   width: 100%;
   height: 100vh;
-  background-size: contain;
+  // background-size: contain;
   // background-image: linear-gradient(
   //     147deg,
   //     transparent 0%,

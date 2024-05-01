@@ -38,7 +38,7 @@ import lenta6 from "../assets/img/lenta6.png";
 import lenta7 from "../assets/img/lenta7.png";
 import lentaLeft from "../assets/img/lenta_left.png";
 import lentaRight from "../assets/img/lenta_right.png";
-import lentaBg from "../assets/img/lentaBg.jpg";
+// import lentaBg from "../assets/img/lentaBg.jpg";
 
 export default function Header() {
   const [primaryColor, setPrimaryColor] = useState("blue");
@@ -122,6 +122,11 @@ export default function Header() {
       document.removeEventListener("mousedown", handleClickOutsideMax);
     };
   }, []);
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    setInterval(() => setTime(new Date()), 1000);
+  }, []);
   return (
     <>
       <header>
@@ -130,6 +135,9 @@ export default function Header() {
             {/* <img className="logo" src={Logo} alt="Logo" /> */}
             <h3>TARIXMANBA.UZ</h3>
           </Link>
+          <div className="live__time">
+            <p>{time.toLocaleTimeString()}</p>
+          </div>
           <div className="search-box-bigs">
             <div className="search-box">
               <input
