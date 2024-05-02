@@ -110,6 +110,18 @@ export default function Layout() {
                 className="color__item bgSixcolor"
                 onClick={() => onchangeMode("bgSix")}
               ></div>
+              <div
+                className="color__item bgSevencolor"
+                onClick={() => onchangeMode("bgSeven")}
+              ></div>
+              <div
+                className="color__item bgEightcolor"
+                onClick={() => onchangeMode("bgEight")}
+              ></div>
+              <div
+                className="color__item bgNinecolor"
+                onClick={() => onchangeMode("bgNine")}
+              ></div>
             </div>
           </div>
           <Footer />
