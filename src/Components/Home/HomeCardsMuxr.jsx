@@ -19,12 +19,18 @@ import muhr6 from "../../assets/img/photo_2024-03-27_17-37-09.jpg";
 import bgPattern from "../../assets/img/bg_pattern.png";
 
 export default function App() {
+  const [changeColor, setChangeColor] = useState(false);
+  const onchangeMode = (mode) => {
+    const body = document.querySelector("body");
+    body.className = mode;
+  };
+
   return (
     <>
       <div className="home__card__container">
         <div className="home__wrapper">
           <div className="home__cards__title">
-            <h1>Muxrlar</h1>
+            <h1 className="home_card_title_h1">Muxrlar</h1>
 
             <button class="button">Barchasi →</button>
           </div>
@@ -141,7 +147,9 @@ export default function App() {
           <div className="swiper-button-prev"></div> */}
           </Swiper>
         </div>{" "}
-        x
+        <div className="right_pattern">
+          <img src={bgPattern} alt="" />
+        </div>
       </div>
     </>
   );

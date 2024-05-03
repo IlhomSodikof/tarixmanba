@@ -21,10 +21,11 @@
   display: flex;
   gap: 10px;
   .live__calendar {
-    border: 2px solid #000;
+    // border: 2px solid #000;
     z-index: 100;
   }
 }
+
 header {
   position: relative;
   z-index: 10;
