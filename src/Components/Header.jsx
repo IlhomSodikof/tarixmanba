@@ -283,7 +283,7 @@ export default function Header() {
                       className="bar-list-item-menu"
                       onClick={() => setshowManba(!showManba)}
                     >
-                      Manbalar
+                      <span>Manbalar</span>
                     </li>
                     <motion.li
                       className="bar-list-item-manba"
