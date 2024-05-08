@@ -4,11 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { FaCalendarAlt } from "react-icons/fa";
 
 export default function ReactDatePicker() {
-  const [selectedDate, setSelectedDate] = useState(null);
-
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
+  const [selectedDate, setSelectedDate] = useState(new Date());
 
   return (
     <>
@@ -16,9 +12,9 @@ export default function ReactDatePicker() {
         <FaCalendarAlt />
         <DatePicker
           selected={selectedDate}
-          onChange={handleDateChange}
-          dateFormat={"MM/DD/YYYY"}
-        ></DatePicker>
+          onChange={(e) => setSelectedDate(e)}
+          dateFormat={"MM/dd/yyyy"}
+        />
       </div>
     </>
   );
