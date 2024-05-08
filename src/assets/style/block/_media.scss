@@ -8,7 +8,7 @@ html,
 }
 
 .media-container {
-  // background: #ffffff !important;
+  // background: #0a1821 !important;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px !important;
   color: #000 !important;
@@ -54,7 +54,7 @@ html,
     justify-content: space-evenly;
     align-items: center;
     background: rgba(255, 255, 255, 0.005);
-    box-shadow: rgb(255, 255, 255) 0px 32px 33px 4px;
+    // box-shadow: rgb(255, 255, 255) 0px 32px 33px 4px;
 
     #title-gallery-img {
       max-width: max-content;
@@ -70,7 +70,7 @@ html,
       transition: 0.3s;
       background-image: linear-gradient(135deg, #ffffff 50%, transparent 50%);
       background-size: 300% 100%;
-      -webkit-text-stroke-color: rgb(255, 255, 255);
+      -webkit-text-stroke-color: #efa856;
       -webkit-text-stroke-width: 0.001em;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
@@ -92,8 +92,8 @@ html,
       content: "";
       position: absolute;
       z-index: -1;
-      top: -158px;
-      left: -130px;
+      top: -122px;
+      left: -95px;
       width: 950px;
       height: 500px;
       background-color: rgba(0, 0, 0, 0.807);
@@ -120,7 +120,7 @@ html,
         rgba(255, 254, 255, 0.008) 2px 3px 5px -0px;
       .avatar-border {
         .avatar {
-          color: rgba(0, 0, 255, 0.25);
+          color: #efa856;
           font-size: 40px;
           width: 100%;
           height: 100%;
@@ -133,6 +133,7 @@ html,
     }
     .avatar-cont {
       background-color: rgb(255, 255, 255);
+      color: #efa856;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
         rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
       width: 100px;
@@ -165,8 +166,10 @@ html,
       }
     }
     .avatar-cont:hover {
+      color: #efa856 !important;
       .border-anime {
-        border-left: 4px solid black;
+        border-left: 4px solid #efa856;
+
         scale: 1.04;
         // background: transparent;
         -webkit-animation: rotate-center 0.9s ease-in-out both;
@@ -312,6 +315,123 @@ html,
     }
     100% {
       border-color: transparent;
+    }
+  }
+
+
+
+  .video-media{
+    height: 80vh;
+    background-color: rgba(128, 128, 128, 0.193);
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    margin-bottom: 100px;
+    .video-live{
+      padding-top: 30px;
+      // background-color: red;
+      width: 50%;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+      video{
+        height:400px;
+        width: 90%;
+        background-color: skyblue;
+        border-radius: 5px;
+      }
+      .video{
+        height:380px;
+        width: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        border-radius: 5px;
+        color: white;
+        .logo-vid{
+          cursor: pointer;
+        }
+      }
+
+      .video-child{
+        padding: 10px 0px;
+        h3{
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
+      }
+
+    }
+    .video-list{
+      width: 40%;
+      // background-color: rgb(183, 162, 162);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      // padding-bottom: 20px;
+      padding-top: 30px;
+      h1{
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 2px;
+
+      }
+      p{
+        padding: 0px 100px;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 15px;
+
+      }
+      .video-list-item{
+        overflow: auto;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        height: 400px;
+        .child-card{
+          width: 40%;
+          .video-child{
+            background-color: blue;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 45px;
+            color: white;
+
+            .logo-vid{
+              cursor: pointer;
+            }
+
+          }
+        }
+
+      }
+      .video-list-item::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      .video-list-item::-webkit-scrollbar-track {
+        background-color: rgba(255, 255, 255, 0.029);
+      }
+
+      .video-list-item::-webkit-scrollbar-thumb {
+        background-color: rgba(4, 0, 0, 0.045);
+      }
     }
   }
 }
