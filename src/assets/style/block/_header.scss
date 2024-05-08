@@ -376,6 +376,8 @@ header {
     height: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    // gap: 20px;
     // font-weight: 600 !important;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
       rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -396,7 +398,7 @@ header {
       .nav-menu a {
         font-weight: 900;
         font-family: "FoglihtenNo06" !important;
-
+        font-size: 18px;
         display: flex;
         align-items: center;
 

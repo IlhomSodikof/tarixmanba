@@ -13,6 +13,14 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+
+// image import
+import folkArt1 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Халқ оғзаки ижоди/folkArt1.jpg";
+import folkArt2 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Халқ оғзаки ижоди/folkArt2.jpg";
+import folkArt3 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Халқ оғзаки ижоди/folkArt3.jpg";
+import folkArt4 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Халқ оғзаки ижоди/folkArt4.jpg";
+import folkArt5 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Халқ оғзаки ижоди/folkArt5.jpg";
+import folkArt6 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Халқ оғзаки ижоди/folkArt6.jpg";
 import bgPattern from "../../assets/img/bg_pattern.png";
 
 export default function App() {
@@ -47,10 +55,7 @@ export default function App() {
           >
             <SwiperSlide>
               <div class="home__card">
-                <img
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                  alt=""
-                />
+                <img src={folkArt1} alt="" />
                 <div class="home__info">
                   <h1>Horseshoe Bend, Arizona</h1>
                   <p>
@@ -65,10 +70,7 @@ export default function App() {
             </SwiperSlide>
             <SwiperSlide>
               <div class="home__card">
-                <img
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                  alt=""
-                />
+                <img src={folkArt2} alt="" />
                 <div class="home__info">
                   <h1>Horseshoe Bend, Arizona</h1>
                   <p>
@@ -83,10 +85,7 @@ export default function App() {
             </SwiperSlide>
             <SwiperSlide>
               <div class="home__card">
-                <img
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                  alt=""
-                />
+                <img src={folkArt3} alt="" />
                 <div class="home__info">
                   <h1>Horseshoe Bend, Arizona</h1>
                   <p>
@@ -101,10 +100,7 @@ export default function App() {
             </SwiperSlide>
             <SwiperSlide>
               <div class="home__card">
-                <img
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                  alt=""
-                />
+                <img src={folkArt4} alt="" />
                 <div class="home__info">
                   <h1>Horseshoe Bend, Arizona</h1>
                   <p>
@@ -119,10 +115,7 @@ export default function App() {
             </SwiperSlide>
             <SwiperSlide>
               <div class="home__card">
-                <img
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                  alt=""
-                />
+                <img src={folkArt5} alt="" />
                 <div class="home__info">
                   <h1>Horseshoe Bend, Arizona</h1>
                   <p>
@@ -137,10 +130,7 @@ export default function App() {
             </SwiperSlide>
             <SwiperSlide>
               <div class="home__card">
-                <img
-                  src="https://api.tarixmanba.uz/storage/uploads/sources/1LAraYYYxDXcZjvnTDTHIcvBq553xKNdS4fFjgb8.jpg"
-                  alt=""
-                />
+                <img src={folkArt6} alt="" />
                 <div class="home__info">
                   <h1>Horseshoe Bend, Arizona</h1>
                   <p>
