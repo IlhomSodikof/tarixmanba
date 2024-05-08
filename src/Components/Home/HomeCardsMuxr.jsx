@@ -10,12 +10,12 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 // import image
-import muhr1 from "../../assets/img/photo_2024-03-27_17-35-54.jpg";
-import muhr3 from "../../assets/img/photo_2024-03-27_17-36-00.jpg";
-import muhr4 from "../../assets/img/photo_2024-03-27_17-36-00.jpg";
-import muhr2 from "../../assets/img/photo_2024-03-27_17-35-57.jpg";
-import muhr5 from "../../assets/img/photo_2024-03-27_17-36-41.jpg";
-import muhr6 from "../../assets/img/photo_2024-03-27_17-37-09.jpg";
+import muhr1 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Муҳрлар/Muhr-1.jpg";
+import muhr3 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Муҳрлар/Muhr-2.jpg";
+import muhr4 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Муҳрлар/photo_2024-04-29_19-53-52.jpg";
+import muhr2 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Муҳрлар/Muhr-4.jpg";
+import muhr5 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Муҳрлар/Muhr-5.jpg";
+import muhr6 from "../../assets/img/Фотошоп/пастдаги блоклар учун/Муҳрлар/Muhr-6.jpg";
 import bgPattern from "../../assets/img/bg_pattern.png";
 
 export default function App() {
@@ -26,7 +26,7 @@ export default function App() {
   };
 
   return (
-    <>
+    <div className="muxr_bg">
       <div className="home__card__container">
         <div className="home__wrapper">
           <div className="home__cards__title">
@@ -151,6 +151,6 @@ export default function App() {
           <img src={bgPattern} alt="" />
         </div>
       </div>
-    </>
+    </div>
   );
 }

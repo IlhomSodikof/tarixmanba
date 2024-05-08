@@ -31,7 +31,7 @@ export default function Home() {
   // }, [autos]);
   return (
     <>
-      <main className="card__container">
+      <main>
         {/* <video
           autoPlay
           muted

@@ -26,8 +26,13 @@
 }
 
 .home__card__container {
-  width: 100% !important;
+  // width: 100% !important;
   position: relative;
+  max-width: 1350px;
+  margin: auto;
+  padding: 2rem;
+  // background-color: var(--background);
+  background: transparent;
 }
 
 .home__cards__title {

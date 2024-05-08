@@ -163,188 +163,190 @@ export default function Map() {
     setLeftBarType(type);
   };
   return (
-    <div className="map-full">
-      <motion.ul className="map-menu">
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.archialogy ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.archialogy)}
-        >
-          <Link className="map-link">
-            <button>
-              <TbBuildingCastle />
-              <span className="hover-toltip">Arxealogiya</span>
-            </button>{" "}
-            <span> Arxealogiya</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.group ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.group)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <HiUserGroup />
-              <span className="hover-toltip">Xalq og'zaki ijodi</span>
-            </button>{" "}
-            <span> Xalq og'zaki ijodi</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.inscriptions ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.inscriptions)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <RiFilePaper2Line />
-              <span className="hover-toltip">Bitiklar</span>
-            </button>{" "}
-            <span> Bitiklar</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.inscriptions ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.inscriptions)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <RiFilePaper2Line />
-              <span className="hover-toltip">Tarixiy yodgorliklar</span>
-            </button>{" "}
-            <span> Tarixiy yodgorliklar</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.manuscript ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.manuscript)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <MdOutlineHistoryEdu />
-              <span className="hover-toltip">Yozma asarlar</span>
-            </button>{" "}
-            <span>Yozma asarlar</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.coin ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.coin)}
-        >
-          <Link className="map-link">
-            <button>
-              <GiTwoCoins />
-              <span className="hover-toltip">Tangalar</span>
-            </button>{" "}
-            <span> Tangalar</span>
-          </Link>
-        </motion.li>
+    <div className="map_bg">
+      <div className="card__container">
+        <div className="map-full">
+          <motion.ul className="map-menu">
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.archialogy ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.archialogy)}
+            >
+              <Link className="map-link">
+                <button>
+                  <TbBuildingCastle />
+                  <span className="hover-toltip">Arxealogiya</span>
+                </button>{" "}
+                <span> Arxealogiya</span>
+              </Link>
+            </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.group ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.group)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  <HiUserGroup />
+                  <span className="hover-toltip">Xalq og'zaki ijodi</span>
+                </button>{" "}
+                <span> Xalq og'zaki ijodi</span>
+              </Link>
+            </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.inscriptions ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.inscriptions)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  <RiFilePaper2Line />
+                  <span className="hover-toltip">Bitiklar</span>
+                </button>{" "}
+                <span> Bitiklar</span>
+              </Link>
+            </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.inscriptions ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.inscriptions)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  <RiFilePaper2Line />
+                  <span className="hover-toltip">Tarixiy yodgorliklar</span>
+                </button>{" "}
+                <span> Tarixiy yodgorliklar</span>
+              </Link>
+            </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.manuscript ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.manuscript)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  <MdOutlineHistoryEdu />
+                  <span className="hover-toltip">Yozma asarlar</span>
+                </button>{" "}
+                <span>Yozma asarlar</span>
+              </Link>
+            </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.coin ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.coin)}
+            >
+              <Link className="map-link">
+                <button>
+                  <GiTwoCoins />
+                  <span className="hover-toltip">Tangalar</span>
+                </button>{" "}
+                <span> Tangalar</span>
+              </Link>
+            </motion.li>
 
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.documents ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.documents)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <LiaBoxOpenSolid />
-              <span className="hover-toltip">Tarixiy hujatla</span>
-            </button>{" "}
-            <span> Tarixiy hujatlar</span>
-          </Link>
-        </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.documents ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.documents)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  <LiaBoxOpenSolid />
+                  <span className="hover-toltip">Tarixiy hujatla</span>
+                </button>{" "}
+                <span> Tarixiy hujatlar</span>
+              </Link>
+            </motion.li>
 
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.documents ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.documents)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <LiaBoxOpenSolid />
-              <span className="hover-toltip">Muhrlar</span>
-            </button>{" "}
-            <span> Muhrlar</span>
-          </Link>
-        </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.documents ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.documents)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  <LiaBoxOpenSolid />
+                  <span className="hover-toltip">Muhrlar</span>
+                </button>{" "}
+                <span> Muhrlar</span>
+              </Link>
+            </motion.li>
 
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.art ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.art)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              {" "}
-              <GiStamper />
-              <span className="hover-toltip">San'at asarlari</span>
-            </button>
-            <span> San'at asarlari</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.press ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.press)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <ImNewspaper />
-              <span className="hover-toltip">Matbuot</span>
-            </button>{" "}
-            <span> Matbuot</span>
-          </Link>
-        </motion.li>
-        <motion.li
-          className={`map-item ${
-            leftBarType == leftBarTypeList.arxiv ? " active" : ""
-          }`}
-          whileHover={{ x: 20 }}
-          onClick={() => setMarker(leftBarTypeList.arxiv)}
-        >
-          <Link className="map-link">
-            {" "}
-            <button>
-              <CiInboxIn />
-              <span className="hover-toltip">Arxiv hujjatlari</span>
-            </button>{" "}
-            <span>Arxiv hujjatlari</span>
-          </Link>
-        </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.art ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.art)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  {" "}
+                  <GiStamper />
+                  <span className="hover-toltip">San'at asarlari</span>
+                </button>
+                <span> San'at asarlari</span>
+              </Link>
+            </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.press ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.press)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  <ImNewspaper />
+                  <span className="hover-toltip">Matbuot</span>
+                </button>{" "}
+                <span> Matbuot</span>
+              </Link>
+            </motion.li>
+            <motion.li
+              className={`map-item ${
+                leftBarType == leftBarTypeList.arxiv ? " active" : ""
+              }`}
+              whileHover={{ x: 20 }}
+              onClick={() => setMarker(leftBarTypeList.arxiv)}
+            >
+              <Link className="map-link">
+                {" "}
+                <button>
+                  <CiInboxIn />
+                  <span className="hover-toltip">Arxiv hujjatlari</span>
+                </button>{" "}
+                <span>Arxiv hujjatlari</span>
+              </Link>
+            </motion.li>
 
-        {/* <motion.li className="map-item" whileHover={{ x: 20 }}>
+            {/* <motion.li className="map-item" whileHover={{ x: 20 }}>
           <Link className="map-link">
             {" "}
             <button>
@@ -354,41 +356,43 @@ export default function Map() {
             <span> Foto va video manbalar</span>
           </Link>
         </motion.li> */}
-      </motion.ul>
+          </motion.ul>
 
-      <MapContainer
-        key={leftBarType}
-        className="map"
-        center={position}
-        center2={position1}
-        zoom={5}
-        // style={{ height: "600px", width: "100%" }}
-        attributionControl={false}
-      >
-        <TileLayer
-          // url="https://tile.jawg.io/jawg-dark/{z}/{x}/{y}.png?lang=ru&access-token=cP6rLK4nDH9gYDmHudFvIbWeHcS6fi4LrsXRV03tZ55CV16hlgRiOPMbGejtGuXm"
-          url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png?lang=ru"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
-        <GeoJSON
-          data={geojsonData}
-          style={style}
-          onEachFeature={onEachFeature}
-        />
-        {cordinat[num]?.map((e) => (
-          <Marker
-            key={e.id + num + leftBarType}
-            position={e.lan}
-            icon={markerIcon()}
+          <MapContainer
+            key={leftBarType}
+            className="map"
+            center={position}
+            center2={position1}
+            zoom={5}
+            // style={{ height: "600px", width: "100%" }}
+            attributionControl={false}
           >
-            {console.log(markerIcon())}
-            <Popup className="popapa">
-              {e.title} <br /> {e.title2}
-              <button className="popapa-btn">Batafsil</button>
-            </Popup>
-          </Marker>
-        ))}
-      </MapContainer>
+            <TileLayer
+              // url="https://tile.jawg.io/jawg-dark/{z}/{x}/{y}.png?lang=ru&access-token=cP6rLK4nDH9gYDmHudFvIbWeHcS6fi4LrsXRV03tZ55CV16hlgRiOPMbGejtGuXm"
+              url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png?lang=ru"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+            <GeoJSON
+              data={geojsonData}
+              style={style}
+              onEachFeature={onEachFeature}
+            />
+            {cordinat[num]?.map((e) => (
+              <Marker
+                key={e.id + num + leftBarType}
+                position={e.lan}
+                icon={markerIcon()}
+              >
+                {console.log(markerIcon())}
+                <Popup className="popapa">
+                  {e.title} <br /> {e.title2}
+                  <button className="popapa-btn">Batafsil</button>
+                </Popup>
+              </Marker>
+            ))}
+          </MapContainer>
+        </div>
+      </div>
     </div>
   );
 }
