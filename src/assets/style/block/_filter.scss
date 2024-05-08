@@ -25,12 +25,10 @@
     position: relative !important;
     top: -5px !important;
     width: 600px;
-
   }
   @media screen and (max-width: 666px) {
     min-width: 100%;
     width: 100%;
-
   }
   .sidebar-title {
     padding: 5px 20px;
@@ -46,35 +44,31 @@
     @media screen and (max-width: 666px) {
       justify-content: center;
       gap: 200px;
-
     }
     @media screen and (max-width: 620px) {
       justify-content: center;
       gap: 20px;
-
     }
 
-    span{
+    span {
       display: none;
     }
     @media screen and (max-width: 1000px) {
       font-size: 17px;
     }
 
-     @media screen and (max-width:870px){
+    @media screen and (max-width: 870px) {
       font-size: 20px;
-      span{
+      span {
         display: block;
         font-size: 25px;
       }
     }
-
-
   }
-  .bar-filter{
+  .bar-filter {
     @media screen and (max-width: 870px) {
       min-width: 200px;
-      width:100%;
+      width: 100%;
       position: fixed;
       top: 0;
       left: 0;
@@ -84,22 +78,22 @@
       height: 100vh;
       z-index: 10000;
     }
-    .sidebar-title-filters{
+    .sidebar-title-filters {
       position: sticky;
       background-color: #ffffff00;
-      top:0;
+      top: 0;
       z-index: 1000;
-      padding: 10px ;
+      padding: 10px;
       margin: 0;
       font-size: 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      span{
+      span {
         font-size: 23px;
       }
     }
-      .filter-box {
+    .filter-box {
       background-color: rgba(63, 106, 202, 0.08);
       @media screen and (max-width: 870px) {
         // display: none;
@@ -151,21 +145,22 @@
     }
   }
 
-///////////////////////////////////////////////////////////////////////////////////////
-  .bar-filter1{
+  ///////////////////////////////////////////////////////////////////////////////////////
+  .bar-filter1 {
+    background: #ede6e6;
     @media screen and (max-width: 870px) {
       display: none;
     }
-    .sidebar-title-filters{
+    .sidebar-title-filters {
       background-color: #ffffff00;
-      padding: 10px ;
+      padding: 10px;
       margin: 0;
       font-size: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-      .filter-box {
+    .filter-box {
       background-color: rgba(63, 106, 202, 0.08);
 
       h3 {
@@ -214,14 +209,7 @@
     }
   }
 
-
-
-
-
-
-
-  .close-bar-filter{
+  .close-bar-filter {
     display: none;
   }
-
 }
