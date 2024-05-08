@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className="footer-top-box">
+        {/* <div className="footer-top-box">
           <svg
             className="svg"
             version="1.1"
@@ -80,11 +80,12 @@ export default function Footer() {
               </use>
             </g>
           </svg>
-        </div>
+        </div> */}
         <div className="footer-bottom-box">
           <div className="footer-icons">
             <div className="footer-logos">
-              <img className="logo-footer" src={Logo} />
+              {/* <img className="logo-footer" src={Logo} /> */}
+              <h1>TARIXMANBA.UZ</h1>
             </div>
             <div className="footer-icons-box">
               {/* <p className='footer-title'> Bizni  ichtimoiy tarmoqlarda kuzating:</p> */}

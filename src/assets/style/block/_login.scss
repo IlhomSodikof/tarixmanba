@@ -3,7 +3,13 @@ $border_radius: 50px;
 // Login ---start
 
 .login_container {
-  height: max-content;
+  height: max-content !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  user-select: none !important;
+  height: 120vh !important;
+
   // z-index: 10000;
 
   width: 100%;
@@ -24,13 +30,14 @@ $border_radius: 50px;
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background:linear-gradient(120deg, #272c30,#0a1821) ;
   border-radius: 8px;
+  border: 3px solid #efa856;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .login_img {
@@ -59,16 +66,31 @@ $border_radius: 50px;
   grid-area: con;
   // position: absolute;
 
+  h2{
+    color: #efa856;
+    margin: 0 !important;
+  }
+  p{
+    color: #efa856;
+  }
+  .loginInp{
+    background-color: #0a1821 !important;
+    border: 1px solid #efa856 !important;
+    color:#febc66 !important;
+  }
+
   form {
     label {
       display: block;
       margin-top: 15px;
       margin-bottom: 5px;
+      color: #efa856;
     }
 
     .input_div {
       display: flex;
       flex-direction: column;
+
 
       // }
       input {
@@ -80,17 +102,18 @@ $border_radius: 50px;
         // border-radius: 6px;
         padding: 15px;
         background: transparent;
+
       }
       .phone_input {
         display: flex;
         border-radius: 30px;
-        border: 1px solid #ccc;
+        border: 1px solid  #efa856;
         color: #161212;
         align-items: center;
 
         background: transparent;
         span {
-          color: #000;
+          color: #efa856;
           margin: 2px 0 0 20px;
         }
 
@@ -98,6 +121,7 @@ $border_radius: 50px;
           background: transparent;
           border: none;
           outline: none;
+          color: #febc66 !important;
         }
         button {
           border: none;
@@ -111,7 +135,7 @@ $border_radius: 50px;
       .pass_input {
         display: flex;
         border-radius: 30px;
-        border: 1px solid #ccc;
+        border: 1px solid #efa856;
         color: #161212;
         align-items: center;
         position: relative;
@@ -128,6 +152,7 @@ $border_radius: 50px;
           border: none;
           outline: none;
           padding: 20px;
+          color: #febc66 ;
         }
         button {
           border: none;
@@ -137,7 +162,7 @@ $border_radius: 50px;
           font-size: 20px;
           outline: none;
           background: transparent;
-          color: grey;
+          color: #efa856;
         }
       }
     }
@@ -148,7 +173,7 @@ $border_radius: 50px;
     text-align: right;
     margin-bottom: 15px;
     text-decoration: none;
-    color: #333;
+    color: #5e5d5d;
   }
 
   .signup {
@@ -166,15 +191,15 @@ $border_radius: 50px;
     width: 100%;
     height: 50px;
     padding: 15px 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #efa856 ;
     border-radius: $border_radius;
     box-sizing: border-box;
   }
 
   button[type="submit"] {
-    background-color: #000;
-    color: white;
-    border: none;
+    background-color: #0a1821;
+    border: 1px solid #febc66;
+    color:#febc66;
     padding: 12px;
     border-radius: $border_radius;
     cursor: pointer;
@@ -190,17 +215,18 @@ $border_radius: 50px;
     .social-button {
       position: relative;
       width: 320px;
-      border: 1px solid #c2c8d0;
+      border: 1px solid
+      #efa856 !important;
       border-radius: 6px;
       font-size: 16px;
       align-items: center;
-      background-color: #fff;
+      // background-color: #fff !;
       height: 52px;
       transition: box-shadow 0.15 ease-in-out,
         background-color 0.15s ease-in-out;
       cursor: pointer;
       padding: 0 8px 0 52px !important;
-      color: #2d333a;
+      color: #febc66 !important;
       margin-bottom: 8px;
       display: flex;
       outline: 0;
@@ -243,6 +269,7 @@ $border_radius: 50px;
 
   button[type="button"].social-button:hover {
     background-color: #ddd;
+    color: #0a1821 !important;
   }
 }
 

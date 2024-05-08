@@ -6,23 +6,26 @@ import { InputMask } from "primereact/inputmask";
 import { FcGoogle } from "react-icons/fc";
 import { RiEyeCloseLine } from "react-icons/ri";
 import { RiEyeLine } from "react-icons/ri";
+import rasm from '../assets/img/fon2.jpg'
 
 function Login() {
   const [state, setState] = useState({ phone: "", password: "" });
   const [eye, setEye] = useState(false);
   const [value1, setValue1] = useState(null);
   return (
-    <div className="login_container">
+    <div className="login_container"
+      style={{ background: `url(${rasm})` }}
+    >
       <div className="login_main">
-        <div className="login_img">
-          {/* <img
+        {/* <div className="login_img"> */}
+        {/* <img
             // src="https://i.pinimg.com/736x/c5/20/8e/c5208e457b292828003882e5c7210444.jpg"
             src="	https://img.freepik.com/free-vector/light-colors-ornamental-pattern-background_1268-794.jpg"
             width={"100%"}
             height={"100%"}
             alt="log_img"
           /> */}
-        </div>
+        {/* </div> */}
         <div className="login_body">
           <Link
             to="/"
@@ -30,7 +33,7 @@ function Login() {
               display: "flex",
               alignItems: "center",
               gap: "10px",
-              color: "#000",
+              color: "#febc66",
             }}
           >
             <FaArrowLeft /> Back to Website
