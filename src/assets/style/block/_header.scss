@@ -387,6 +387,7 @@ header {
   }
   ////////////////////////////////////////// Nav
   nav {
+    color: #fff;
     width: 100%;
     height: 50px;
     display: flex;
@@ -397,7 +398,7 @@ header {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
       rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 
-    background-image: url("../../../public/qog'ozLentaBg.jpg");
+    // background-image: url("../../../public/qog'ozLentaBg.jpg");
     .nav-box {
       padding: 15px;
       width: 50%;
@@ -411,6 +412,7 @@ header {
       justify-content: space-between;
       .nav-drop a,
       .nav-menu a {
+        color: #fff;
         font-weight: 900;
         font-family: "FoglihtenNo06" !important;
         font-size: 18px;
