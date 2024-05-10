@@ -394,7 +394,7 @@ export default function Header() {
                     <li className="bar-list-item-menu">
                       <Link>Voqea</Link>{" "}
                     </li>
-                    <li className="bar-list-item-menu">Bizhaqimizda</li>
+                    <li className="bar-list-item-menu">Biz haqimizda</li>
                     <li className="bar-list-item-menu" to="/login">
                       Login
                     </li>
