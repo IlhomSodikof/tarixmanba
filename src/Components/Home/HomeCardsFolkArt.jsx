@@ -30,8 +30,9 @@ export default function App() {
         <div className="home__wrapper">
           <div className="home__cards__title">
             <h1>Xalq og'zaki ijodi</h1>
-
-            <button class="button">Barchasi →</button>
+            <Link to="/sources/society">
+              <button class="button">Barchasi →</button>
+            </Link>
           </div>
           <Swiper
             slidesPerView={1}

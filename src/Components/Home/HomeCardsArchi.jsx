@@ -26,7 +26,10 @@ export default function App() {
           <div className="home__cards__title">
             <h1>Arxeologiya yodgorliklari</h1>
 
-            <button class="button">Barchasi →</button>
+            <Link to="/sources/archive">
+              {" "}
+              <button class="button">Barchasi →</button>
+            </Link>
           </div>
           <Swiper
             slidesPerView={1}
