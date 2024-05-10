@@ -78,9 +78,9 @@ export default function Acardion() {
             </div>
           </div>
         </div>
-        <div className="accardion_pattern">
+        {/* <div className="accardion_pattern">
           <img src={bgPattern} alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
