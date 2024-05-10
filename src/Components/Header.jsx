@@ -145,14 +145,14 @@ export default function Header() {
             </div>
             <div className="live__calendar">
               <ReactDatePicker />
-            </div>
-            <div>
-              {new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
-                day: "numeric",
-                month: "long",
-                weekday: "long",
-                year: "numeric",
-              }).format(Date.now())}
+              <div>
+                {new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
+                  day: "numeric",
+                  month: "long",
+                  weekday: "long",
+                  year: "numeric",
+                }).format(Date.now())}
+              </div>
             </div>
           </div>
 
