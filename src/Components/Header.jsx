@@ -156,12 +156,16 @@ export default function Header() {
             </div>
           </div>
 
+          <div className="ob-havo">
+            <Wather />
+          </div>
+
           <div className="search-box-bigs">
             <div className="search-box">
               <input
                 className="search-inp"
                 type="text"
-                placeholder="Search"
+                placeholder="Qidirish"
                 required
               />{" "}
               <span className="search-btn">
@@ -169,9 +173,6 @@ export default function Header() {
               </span>
             </div>
             <div className="functionale">
-              <div className="ob-havo">
-                <Wather />
-              </div>
               <div
                 className="dark-m"
                 onClick={() => {
