@@ -57,6 +57,10 @@ header {
       font-weight: 600;
       cursor: pointer;
       color: #efa856;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
     .search-box {
       position: relative;
