@@ -13,7 +13,7 @@ export default function ReactDatePicker() {
         <DatePicker
           selected={selectedDate}
           onChange={(e) => setSelectedDate(e)}
-          dateFormat={"MM/dd/yyyy"}
+          dateFormat={"dd/MM/yyyy"}
         />
       </div>
     </>

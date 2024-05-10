@@ -23,7 +23,7 @@
       input{
         background: transparent !important;
         width: max-content !important;
-        border: 1px solid #efa856;
+        border: 1px solid #fff;
         outline: none;
       }
     }
@@ -39,7 +39,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:  #efa856;
+  color:  #fff;
   background:#0a1821;
   .header-top-box {
     display: flex;
@@ -56,7 +56,7 @@ header {
       // height: 80px;
       font-weight: 600;
       cursor: pointer;
-      color: #efa856;
+      color: #fff;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -70,7 +70,7 @@ header {
       }
       .search-inp {
         border-radius: 5px;
-        border: 1px solid #efa856;
+        border: 1px solid #fff;
         background: transparent;
         width: 100%;
         outline: none;
@@ -79,7 +79,7 @@ header {
       .search-inp::placeholder {
         font-weight: bold;
         opacity: 0.5;
-        color:  #efa856;
+        color:  #fff;
       }
       .search-btn {
         font-size: 20px;
@@ -87,7 +87,7 @@ header {
         right: 10px;
         cursor: pointer;
         top: 4px;
-        color:  #efa856;
+        color:  #fff;
       }
     }
     .search-box-bigs {
@@ -122,7 +122,7 @@ header {
           cursor: pointer;
           align-items: center;
           font-size: 30px;
-          color:  #efa856;
+          color:  #fff;
           @media screen and (max-width: 900px) {
             display: none;
           }
@@ -133,7 +133,7 @@ header {
             font-family: system-ui, -apple-system, BlinkMacSystemFont,
               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
               "Helvetica Neue", sans-serif;
-            color:  #efa856;
+            color:  #fff;
           }
           ul {
             display: none;
@@ -159,7 +159,7 @@ header {
             right: 5px;
             align-items: flex-start;
             box-shadow: var(--shadow);
-            color:  #efa856;
+            color:  #fff;
 
             .max-item {
               display: flex;
@@ -170,7 +170,7 @@ header {
                 gap: 5px;
                 font-size: 15px;
                 font-family: sans-serif;
-                color:  #efa856;
+                color:  #fff;
               }
 
               .colors {
@@ -181,7 +181,7 @@ header {
                 width: 34px;
                 height: 34px;
                 font-size: 18px;
-                color:  #efa856;
+                color:  #fff;
               }
               .blue {
                 background-color: #4267b2;
@@ -231,7 +231,7 @@ header {
           cursor: pointer;
           align-items: center;
           justify-content: center;
-          color:  #efa856;
+          color:  #fff;
           @media screen and (max-width: 900px) {
             display: block;
           }
@@ -471,7 +471,7 @@ header {
               font-size: 10px;
               font-family: sans-serif;
 
-              color:  #efa856;
+              color:  #fff;
             }
           }
         }
@@ -516,7 +516,7 @@ header {
               font-size: 25px;
               font-family: sans-serif;
               // color: $lightBackTex;
-              color:  #efa856;
+              color:  #fff;
               @media screen and (max-width: 768px) {
                 font-size: 20px;
               }
@@ -535,12 +535,13 @@ header {
     }
   }
   .header_img_pattern {
+    background: #d7d7d7;
     padding: 5px 0;
     display: flex;
     height: 60px;
     width: 100%;
     border: none !important;
-    background-image: url("../../../public/lentaBg.jpg") !important;
+    // background-image: url("../../../public/lentaBg.jpg") !important;
     background-size: contain;
     background-repeat: repeat-x;
     // background: #2b2e63;
