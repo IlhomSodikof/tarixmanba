@@ -256,7 +256,7 @@ export default function Header() {
           <Link className="logo-box" to="/">
             {/* <img className="logo" src={Logo} alt="Logo" /> */}
             {/* <h3>TARIXMANBA.UZ</h3> */}
-            <h3>AQILLIY KUTUBXONA</h3>
+            <h3>AQLLI KUTUBXONA</h3>
           </Link>
           <div className="full__data__picer">
             <div className="live__time">
