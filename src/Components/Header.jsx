@@ -43,20 +43,6 @@ import ReactDatePicker from "./component/ReactDatePicker";
 
 export default function Header() {
   const [hijriList, setHijriList] = useState({ year: "", day: "", month: "" });
-  const regionObj = {
-    tashkent: "Muharram",
-    andijan: "Safar",
-    bukhara: "Rabiul Avval",
-    urgench: "Raius Soniy",
-    samarkand: "Jumodul Avval",
-    nurafshon: "Jumodus Soniy",
-    nukus: "Rajab",
-    navoiy: "Sha'bon",
-    namangan: "Ramazon",
-    jizzakh: "Shavvol",
-    gulistan: "Zulqa'da ",
-    fergana: "Zulhijja",
-  };
 
   const [time, setTime] = useState(new Date());
 
@@ -68,80 +54,75 @@ export default function Header() {
       weekday: "long",
       year: "numeric",
     }).format(new Date());
-    console.log("oy nomi hijri", manth.split("/")[0]);
-    console.log("oy nomi hijri", manth.split(" ")[1].slice(0, 2));
-    if (manth.slice(11, 13) == "11") {
-      console.log("dddddddddddddddddddddddddd");
-    }
 
     switch (manth.split(" ")[1].slice(0, 2)) {
       case "1/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Muharram`,
         });
         break;
       case "2/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Safar`,
         });
         break;
       case "3/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Rabiul Avval`,
         });
         break;
       case "4/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Raius Soniy`,
         });
         break;
       case "5/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Jumodul Avval`,
         });
         break;
       case "6/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Jumodus Soniy`,
         });
         break;
       case "7/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Rajab`,
         });
         break;
       case "8/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Sha'bon`,
         });
         break;
       case "9/":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Ramazon`,
         });
         break;
       case "10":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Shavvol`,
         });
         break;
@@ -149,7 +130,7 @@ export default function Header() {
       case "11":
         setHijriList({
           year: `${manth.split("/")[2].slice(0, 4)} yil`,
-          day: `${manth.split("/")[2]}`,
+          day: `${manth.split("/")[1]}`,
           month: `Zulqa'da`,
         });
         // console.log(hijriList);
@@ -264,15 +245,8 @@ export default function Header() {
             </div>
             <div className="live__calendar">
               <ReactDatePicker />
-              <div>
-                {/* {new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
-                  day: "numeric",
-                  month: "numeric",
-                  weekday: "long",
-                  year: "numeric",
-                }).format(Date.now())} */}
-              </div>
             </div>
+            <div>{`${hijriList.year} ${hijriList.day} ${hijriList.month}`}</div>
           </div>
 
           <div className="ob-havo">
