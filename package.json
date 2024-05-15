@@ -18,6 +18,7 @@
     "framer-motion": "^11.0.20",
     "google-map-react": "^2.2.1",
     "gsap": "^3.12.5",
+    "hijri-js": "^1.0.25",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
     "numeral": "^2.0.6",

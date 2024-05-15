@@ -25,7 +25,7 @@ import { CgDarkMode } from "react-icons/cg"; // darkmods
 import { IoLanguage } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { VscColorMode } from "react-icons/vsc";
-import Wather from "./component/Wather";
+import Wather from "./component/Weather";
 
 // import image
 import Logo from "../assets/img/Group 8.svg";
@@ -137,7 +137,8 @@ export default function Header() {
         <div className="header-top-box">
           <Link className="logo-box" to="/">
             {/* <img className="logo" src={Logo} alt="Logo" /> */}
-            <h3>TARIXMANBA.UZ</h3>
+            {/* <h3>TARIXMANBA.UZ</h3> */}
+            <h3>AQILLIY KUTUBXONA</h3>
           </Link>
           <div className="full__data__picer">
             <div className="live__time">

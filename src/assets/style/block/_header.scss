@@ -19,11 +19,40 @@
   .live__calendar {
     // border: 2px solid #000;
     z-index: 100;
-    .react-datepicker__input-container{
-      input{
-        background: transparent !important;
+    div:first-child{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-radius: 5px;
+        border: 2px solid #fff;
         width: max-content !important;
-        border: 1px solid #fff;
+        svg{
+          margin-left:5px ;
+        }
+        .react-datepicker__tab-loop{
+          border: none !important;
+        }
+      }
+    .react-datepicker__input-container{
+      // display: flex;
+      // text-align: center;
+      // justify-content: center;
+      border: none !important;
+
+      input{
+        // background: transparent !important;
+        border:none !important;
+        width: max-content !important;
+        background-color: #fff;
+        color: #000000;
+        border-radius: 3px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius:0px ;
+        padding-left:5px ;
+        width: 100px !important;
+
+
+
         outline: none;
       }
     }
