@@ -24,7 +24,7 @@ export default function () {
               damping: 80,
             }}
           >
-            TARIXY QO'LYOZMALR VA <br /> NODIR ASARLAR
+            TARIXIY QO'LYOZMALAR VA <br /> NODIR ASARLAR
           </motion.h1>
         </div>
         <div className="libCardCont">

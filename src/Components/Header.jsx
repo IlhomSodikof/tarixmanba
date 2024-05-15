@@ -149,7 +149,7 @@ export default function Header() {
               <div>
                 {new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
                   day: "numeric",
-                  month: "long",
+                  month: "numeric",
                   weekday: "long",
                   year: "numeric",
                 }).format(Date.now())}
@@ -166,7 +166,7 @@ export default function Header() {
               <input
                 className="search-inp"
                 type="text"
-                placeholder="Qidirish"
+                placeholder="Izlash"
                 required
               />{" "}
               <span className="search-btn">
@@ -563,7 +563,7 @@ export default function Header() {
               </Link>
             </div>
             <div className="nav-menu">
-              <Link className="link">Bizhaqimizda</Link>
+              <Link className="link">Biz haqimizda</Link>
             </div>
             <div
               className="nav-menu nav-login"
@@ -571,7 +571,7 @@ export default function Header() {
                 setLoginDrop(!loginDrop);
               }}
             >
-              <Link className="link">Login</Link>
+              <Link className="link">Kirish</Link>
               <motion.div
                 className="arr"
                 animate={{ rotate: loginDrop ? 1080 : 540 }}
@@ -601,7 +601,7 @@ export default function Header() {
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
                   <Link className="nav-login-link" to="/login">
-                    Login
+                    Kirish
                   </Link>
                 </motion.li>
                 <motion.li
