@@ -85,7 +85,7 @@ export default function Footer() {
           <div className="footer-icons">
             <div className="footer-logos">
               {/* <img className="logo-footer" src={Logo} /> */}
-              <h1>TARIXMANBA.UZ</h1>
+              <h1>Aqlli kutubxona</h1>
             </div>
             <div className="footer-icons-box">
               {/* <p className='footer-title'> Bizni  ichtimoiy tarmoqlarda kuzating:</p> */}
