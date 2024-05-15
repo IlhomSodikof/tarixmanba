@@ -354,28 +354,28 @@ body.bg10 {
   background-image: url("../../../public/yengiFon4.jpg");
   background-size: cover;
   background-position: center;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
 }
-// body.bg11 {
-//   max-width: 100vw;
-//   background-image: url("../../../public/siteBg5.png");
-//   background-size: cover;
-//   background-position: center;
-//   background-attachment: fixed;
-//   width: 100%;
-//   height: 100vh;
-// }
-// body.bg12 {
-//   max-width: 100vw;
-//   background-image: url("../../../public/siteBg7.png");
-//   background-size: cover;
-//   background-position: center;
-//   background-attachment: fixed;
-//   width: 100%;
-//   height: 100vh;
-// }
+body.bg11 {
+  max-width: 100vw;
+  background-image: url("../../../public/yengiFon5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+body.bg12 {
+  max-width: 100vw;
+  background-image: url("../../../public/yengiFon6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
 
 // .accardion_bg {
 //   max-width: 100vw;

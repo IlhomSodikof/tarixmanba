@@ -9,7 +9,7 @@ export default function NewsDetail() {
         </div>
         <div className="detail_title">
           <h1>News Detail Title</h1>
-          <span className="data-jadids">News Create time</span>
+          <span className="data-detail">News Create time</span>
           <div className="detail_describtion">
             <p>
               News description Lorem, ipsum dolor sit amet consectetur

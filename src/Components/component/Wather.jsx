@@ -14,6 +14,23 @@ import cloud from "../../assets/img/cloud.png";
 import snow from "../../assets/img/snow.png";
 
 function WeatherSide({ t }) {
+  const regionObj = {
+    tashkent: "Toshkent",
+    andijan: "Andijon",
+    bukhara: "Buxoro",
+    urgench: "Urganch",
+    samarkand: "Samarqand",
+    nurafshon: "Nurafshon",
+    nukus: "Nukus",
+    navoiy: "Navoi",
+    namangan: "Namangan",
+    jizzakh: "Jizzax",
+    gulistan: "Guliston",
+    fergana: "Farg'ona",
+    termez: "Termiz",
+    qarshi: "Qarshi",
+  };
+
   const [city, setCity] = useState();
   const [daily, setDaily] = useState();
   useEffect(() => {
@@ -30,9 +47,10 @@ function WeatherSide({ t }) {
         let arr = [];
         for (let key in res) {
           let obj = res[key];
-          obj["name"] = key;
+          obj["name"] = regionObj[key];
           arr.push(obj);
         }
+        console.log(res, arr);
         setDaily(arr);
       });
   }, []);
