@@ -13,22 +13,44 @@
 }
 
 ////////////////////////////////////////////// fuul time and calendar
+///
+.react-datepicker__month-container{
+  display: block !important;
+  background-color: #0a1821!important;
+  *{
+    color: #fff !important;
+ }
+}
+.react-datepicker__header {
+  width: 100% !important;
+  background-color: #0a1821!important;
+
+  text-align: center !important;
+  padding: 10px !important;
+  *{
+     color: #fff !important;
+  }
+}
 .full__data__picer {
   display: flex;
   gap: 10px;
   .live__calendar {
-    // border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
+    .live_clendar_item{
+      display: flex; gap: 5px; justify-content: center;
+      align-items: center;
+      border: 1px solid #fff;
+      border-radius: 5px ;
+      padding: 5px;
+    }
+    *{
+      padding: 0;
+    }
     div:first-child{
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        border-radius: 5px;
-        border: 2px solid #fff;
         width: max-content !important;
-        svg{
-          margin-left:5px ;
-        }
         .react-datepicker__tab-loop{
           border: none !important;
         }
@@ -37,23 +59,23 @@
       // display: flex;
       // text-align: center;
       // justify-content: center;
-      border: none !important;
+      // border: none !important;
+      // outline: none !important;
+      // padding: 0 !important;
 
       input{
-        // background: transparent !important;
         border:none !important;
-        width: max-content !important;
-        background-color: #fff;
+        outline: none !important;
         color: #000000;
         border-radius: 3px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius:0px ;
-        padding-left:5px ;
+        text-align: center !important;
+
+        // padding-left:5px ;
         width: 100px !important;
 
 
 
-        outline: none;
+        // outline: none !important;
       }
     }
   }
