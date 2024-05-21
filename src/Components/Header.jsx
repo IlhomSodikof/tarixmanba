@@ -246,7 +246,7 @@ export default function Header() {
             <div className="live__calendar">
               <ReactDatePicker />
             </div>
-            <div>{`${hijriList.year} ${hijriList.day} ${hijriList.month}`}</div>
+
           </div>
 
           <div className="ob-havo">
