@@ -75,7 +75,7 @@ export default function Home() {
         <Map />
         {/* <FashionCard /> */}
         <HomeCardArchi />
-        <HomeCardsFolkArt />
+        {/* <HomeCardsFolkArt />
         <HomeCardsLetter />
         <HomeCardsManuments />
         <HomeCardsManuscript />
@@ -84,7 +84,7 @@ export default function Home() {
         <HomeCardMuxr />
         <HomeCardsArt />
         <HomeCardMatbuot />
-        <HomeCardsArxiv />
+        <HomeCardsArxiv /> */}
         <HomeCardsMedia />
         <ViewKop />
       </main>

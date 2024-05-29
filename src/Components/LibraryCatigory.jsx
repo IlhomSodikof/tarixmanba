@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoBookOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion, useMotionValueEvent } from "framer-motion";
 import { useScroll } from "framer-motion";
+import { DataService } from "../config/dataService";
+import { endpoints } from "../config/endpoints";
 
 export default function () {
+  const navigate = useNavigate();
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log("Page scroll: ", latest);
+    // console.log("Page scroll: ", latest);
   });
+
+  // bu qism api lar bilan ishlash uchun
+  const [apiData, setApiData] = useState();
+  const fetchData = async () => {
+    const response = await DataService.get(endpoints.libraryCategory);
+    console.log(response.results, "libCategory");
+    setApiData(response);
+    // let x = document.querySelector("title");
+    // x.textContent = `Jadidlar / ${response.title}`;
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <>
       <div className="libraryCont">
@@ -28,20 +44,26 @@ export default function () {
           </motion.h1>
         </div>
         <div className="libCardCont">
-          <Link className="linkLib">
-            <div className="libraryCard">
-              <div className="iconLib">
-                <img
-                  src="https://baburid.uz/front/img/library/icon_1.png"
-                  alt="icon"
-                />
+          {apiData?.results?.map((libCategory) => (
+            <Link
+              className="linkLib"
+              to={`/libraryDetail/${libCategory.id}`}
+              key={libCategory.id}
+            >
+              <div className="libraryCard">
+                <div className="iconLib">
+                  <img
+                    src="https://baburid.uz/front/img/library/icon_1.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>{libCategory.title}</h3>
+                {/* <p>Shosh va Movoronnahr hudularidagi qo'l yozma asarlar</p> */}
               </div>
-              <h3>Ilmiy asarlar</h3>
-              <p>Shosh va Movoronnahr hudularidagi qo'l yozma asarlar</p>
-            </div>
-          </Link>
+            </Link>
+          ))}
 
-          <Link className="linkLib">
+          {/* <Link className="linkLib">
             <div className="libraryCard">
               <div className="iconLib">
                 <img
@@ -130,7 +152,7 @@ export default function () {
               <h3>Arxeologik asarlar</h3>
               <p>Shosh va Movoronnahr hudularidagi qo'l yozma asarlar</p>
             </div>
-          </Link>
+          </Link> */}
         </div>
 
         <div className="moreLib">

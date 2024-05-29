@@ -11,6 +11,7 @@ import Login from "./Components/Login";
 import NewsDetail from "./Page/NewsDetail";
 import CardDetail from "./Page/CardDetail";
 import Media from "./Page/Media";
+import LibraryCategoryDetail from "./Page/LibraryCategoryDetail";
 
 export default function App() {
   return (
@@ -20,9 +21,10 @@ export default function App() {
         <Route path="/" Component={Layout}>
           <Route path="/" Component={Home} />
           <Route path="/news" Component={News} />
-          <Route path="/newsDetail" Component={NewsDetail} />
+          <Route path="/newsDetail/:id" Component={NewsDetail} />
           <Route path="/library" Component={LibraryCatigory} />
-          <Route path="/cardDetail" Component={CardDetail} />
+          <Route path="/libraryDetail/:id" Component={LibraryCategoryDetail} />
+          <Route path="/cardDetail/:id" Component={CardDetail} />
           <Route path="/media" Component={Media} />
           <Route path="/login" Component={Login} />
           <Route path="/sources/:type" Component={Shablon} />

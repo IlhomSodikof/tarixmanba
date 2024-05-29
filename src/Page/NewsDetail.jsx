@@ -1,54 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { DataService } from "../config/dataService";
+import { endpoints } from "../config/endpoints";
 
-export default function NewsDetail() {
+export default function apiData() {
+  const route = useParams();
+
+  // bu qism api lar bilan ishlash uchun
+  const [apiData, setApiData] = useState([]);
+  const fetchData = async () => {
+    console.log(route);
+    const response = await DataService.get(endpoints.newsById(route?.id));
+    setApiData(response);
+    console.log(response, "news detail");
+    // let x = document.querySelector("title");
+    // x.textContent = `Jadidlar / ${response.title}`;
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div className="card__container">
+      {/* <h2>{JSON.stringify(apiData)}</h2> */}
       <div className="news__detail__container">
         <div className="detail_img">
-          <img src="https://thumbs.dreamstime.com/b/news-woodn-dice-depicting-letters-bundle-small-newspapers-leaning-left-dice-34802664.jpg" />
+          <img
+            src={`http://161.35.219.128:8001${apiData?.file}`}
+            alt="chiqmadi"
+          />
         </div>
         <div className="detail_title">
-          <h1>News Detail Title</h1>
-          <span className="data-detail">News Create time</span>
+          <h1>{apiData?.title}</h1>
+          <span className="data-detail">{apiData?.created_time}</span>
           <div className="detail_describtion">
-            <p>
-              News description Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Fugit quis eaque ducimus culpa, qui fugiat
-              molestias iusto. Voluptatem, magni vitae! Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Sunt dignissimos, quibusdam
-              accusamus recusandae, inventore quidem saepe amet iste optio ullam
-              totam dolorem ipsam adipisci eius quaerat suscipit accusantium cum
-              quod dolorum molestiae qui maiores natus ex nihil. Voluptatibus
-              ipsum rerum minima culpa animi, est sint, quos consequatur vitae,
-              officia reiciendis suscipit placeat! Nisi libero, illo sunt
-              excepturi, omnis assumenda deleniti accusamus repudiandae labore
-              rem cumque quibusdam fuga id ab. Possimus neque modi officiis
-              aspernatur accusantium culpa fugiat. Deserunt impedit reiciendis
-              ullam cupiditate eum temporibus fugiat libero magni iste vero
-              fuga, sed quisquam quibusdam. Quo molestiae magnam nam fugit
-              minima accusantium.
-            </p>
-            {/*  */}
+            <p>{apiData.content}</p>
           </div>
         </div>
-
-        {/* <div
-          className="share-jadids"
-          onClick={() =>
-            (window.location.href = `https://telegram.me/share/url?url=http://jadidlar.uz/jadidlar/${router?.id}/`)
-          }
-        >
-          <div>
-            <a target="_blank" className="span-jadids">
-              {" "}
-              {t("share_")}
-            </a>
-            <div className="sp-ic-jd">
-              {" "}
-              <FaTelegramPlane />
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

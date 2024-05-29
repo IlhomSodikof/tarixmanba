@@ -76,6 +76,13 @@ export default function Header() {
           day: `${manth.split("/")[1]}`,
           month: `Rabiul Avval`,
         });
+        <div
+          className="
+        
+        
+        
+        "
+        ></div>;
         break;
       case "4/":
         setHijriList({
@@ -246,7 +253,6 @@ export default function Header() {
             <div className="live__calendar">
               <ReactDatePicker />
             </div>
-
           </div>
 
           <div className="ob-havo">

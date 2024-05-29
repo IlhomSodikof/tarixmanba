@@ -1,152 +1,74 @@
-import React, { useRef, useState } from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
-// Import Swiper React components
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-// import image
-import archi1 from "../../assets/img/arxeologiya4.jpg";
-import archi2 from "../../assets/img/arxeologiya1.jpg";
-import archi3 from "../../assets/img/arxeologiya2.jpg";
-import archi4 from "../../assets/img/arxeologiya3.jpg";
-import archi5 from "../../assets/img/arxeologiya4.jpg";
-import archi6 from "../../assets/img/arxeologiya5.jpg";
 import bgPattern from "../../assets/img/bg_pattern.png";
+import { DataService } from "../../config/dataService";
+import { endpoints } from "../../config/endpoints";
 
 export default function App() {
+  const [apiData, setApiData] = useState([]);
+
+  const fetchData = async () => {
+    try {
+      const response = await DataService.get(endpoints.categoryApi_list);
+      console.log(response, "categoryApi_list");
+      setApiData(response);
+    } catch (error) {
+      console.error("Error fetching category data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className="archi_bg">
       <div className="home__card__container">
         <div className="home__wrapper">
-          <div className="home__cards__title">
-            <h1>Arxeologiya yodgorliklari</h1>
-
-            <Link to="/sources/archive">
-              {" "}
-              <button class="button">Barchasi →</button>
-            </Link>
-          </div>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            // navigation={true}
-            pagination={{
-              clickable: true,
-            }}
-            breakpoints={{
-              800: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              1075: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-              },
-            }}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <div class="home__card">
-                <img src={archi1} alt="" />
-                <div class="home__info">
-                  <h1>Horseshoe Bend, Arizona</h1>
-                  <p>
-                    Lorem ipsum is simply dummy text from the printing and
-                    typing industry
-                  </p>
-
-                  <Link to="/CardDetail">
-                    <a href="#" class="home__btn">
-                      Read More
-                    </a>
-                  </Link>
-                </div>
+          {apiData?.results?.map((categoryApi) => (
+            <div key={categoryApi.id}>
+              <div className="home__cards__title">
+                <h1>{categoryApi.title}</h1>
+                <Link to="/sources/archive">
+                  <button className="button">Barchasi →</button>
+                </Link>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div class="home__card">
-                <img src={archi2} alt="" />
-                <div class="home__info">
-                  <h1>Horseshoe Bend, Arizona</h1>
-                  <p>
-                    Lorem ipsum is simply dummy text from the printing and
-                    typing industry
-                  </p>
-                  <a href="#" class="home__btn">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div class="home__card">
-                <img src={archi3} alt="" />
-                <div class="home__info">
-                  <h1>Horseshoe Bend, Arizona</h1>
-                  <p>
-                    Lorem ipsum is simply dummy text from the printing and
-                    typing industry
-                  </p>
-                  <a href="#" class="home__btn">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div class="home__card">
-                <img src={archi4} alt="" />
-                <div class="home__info">
-                  <h1>Horseshoe Bend, Arizona</h1>
-                  <p>
-                    Lorem ipsum is simply dummy text from the printing and
-                    typing industry
-                  </p>
-                  <a href="#" class="home__btn">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div class="home__card">
-                <img src={archi5} alt="" />
-                <div class="home__info">
-                  <h1>Horseshoe Bend, Arizona</h1>
-                  <p>
-                    Lorem ipsum is simply dummy text from the printing and
-                    typing industry
-                  </p>
-                  <a href="#" class="home__btn">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div class="home__card">
-                <img src={archi6} alt="" />
-                <div class="home__info">
-                  <h1>Horseshoe Bend, Arizona</h1>
-                  <p>
-                    Lorem ipsum is simply dummy text from the printing and
-                    typing industry
-                  </p>
-                  <a href="#" class="home__btn">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </SwiperSlide>
-            {/* <div className="swiper-button-next"></div>
-          <div className="swiper-button-prev"></div> */}
-          </Swiper>
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                pagination={{ clickable: true }}
+                breakpoints={{
+                  800: { slidesPerView: 2, spaceBetween: 20 },
+                  1075: { slidesPerView: 4, spaceBetween: 40 },
+                }}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+              >
+                {categoryApi?.category?.map((cat) => (
+                  <SwiperSlide key={cat.id}>
+                    <div className="home__card">
+                      <img src={cat.image} alt="" />
+                      <div className="home__info">
+                        <h1>{cat.title}</h1>
+                        <p>{cat.content}</p>
+                        <Link
+                          to={`/cardDetail/${cat.id}`}
+                          className="home__btn"
+                        >
+                          Read More
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          ))}
         </div>
         <div className="Left_pattern">
           <img src={bgPattern} alt="" />

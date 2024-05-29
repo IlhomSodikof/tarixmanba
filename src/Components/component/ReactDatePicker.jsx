@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { registerLocale, setDefaultLocale } from "react-datepicker";
+import uz from "date-fns/locale/uz";
 import { FaCalendarAlt } from "react-icons/fa";
+import { format } from "date-fns";
 
+registerLocale("uz", uz);
+setDefaultLocale("uz");
 
 export default function ReactDatePicker() {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -15,10 +20,21 @@ export default function ReactDatePicker() {
       month: "numeric",
       weekday: "long",
       year: "numeric",
-    }).format(new Date(`${selectedDate.getFullYear()}/${selectedDate.getMonth() + 1}/${selectedDate.getDate()}`))
+    }).format(
+      new Date(
+        `${selectedDate.getFullYear()}/${
+          selectedDate.getMonth() + 1
+        }/${selectedDate.getDate()}`
+      )
+    );
     // console.log("hijjjjjjjjjjj", manth);
     // console.log(manth.split(" ")[1].slice(0, 2));
-    console.log(`${selectedDate.getFullYear()}/${selectedDate.getMonth() + 1}/${selectedDate.getDate()}`);
+    console.log(
+      `${selectedDate.getFullYear()}/${
+        selectedDate.getMonth() + 1
+      }/${selectedDate.getDate()}`,
+      "datA"
+    );
 
     switch (manth.split(" ")[1].slice(0, 2)) {
       case "1/":
@@ -110,6 +126,7 @@ export default function ReactDatePicker() {
         break;
     }
   }, [selectedDate]);
+  // const formattedDate = format(selectedDate, "yyyy 'yil' dd MMMM  ");
   return (
     <>
       <div className="live_clendar_item">
@@ -117,8 +134,10 @@ export default function ReactDatePicker() {
         <DatePicker
           selected={selectedDate}
           onChange={(e) => setSelectedDate(e)}
-          dateFormat={"dd-MM-yyyy"}
+          dateFormat={"yyyy 'yil' dd MMMM   "}
+          locale="uz"
         />
+        {/* <div>{formattedDate}</div> */}
         {/* {console.log();} */}
         <div>{`${hijriList.year} ${hijriList.day} ${hijriList.month}`}</div>
       </div>
