@@ -197,6 +197,8 @@
   transition: 0.5s all;
 }
 .home__card:hover .home__info {
+  width: 100%;
+  text-align: center;
   opacity: 1;
   transform: translateY(0);
 }

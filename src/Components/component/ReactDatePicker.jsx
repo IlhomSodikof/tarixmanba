@@ -134,7 +134,7 @@ export default function ReactDatePicker() {
         <DatePicker
           selected={selectedDate}
           onChange={(e) => setSelectedDate(e)}
-          dateFormat={"yyyy 'yil' dd MMMM   "}
+          dateFormat={"yyyy-'yil' dd-MMMM   "}
           locale="uz"
         />
         {/* <div>{formattedDate}</div> */}
