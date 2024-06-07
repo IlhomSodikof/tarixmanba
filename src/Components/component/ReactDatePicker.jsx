@@ -39,89 +39,89 @@ export default function ReactDatePicker() {
     switch (manth.split(" ")[1].slice(0, 2)) {
       case "1/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Muharram`,
+          month: `muharram`,
         });
         break;
       case "2/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Safar`,
+          month: `safar`,
         });
         break;
       case "3/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Rabiul Avval`,
+          month: `rabiul Avval`,
         });
         break;
       case "4/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Raius Soniy`,
+          month: `raius Soniy`,
         });
         break;
       case "5/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Jumodul Avval`,
+          month: `jumodul Avval`,
         });
         break;
       case "6/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Jumodus Soniy`,
+          month: `jumodus Soniy`,
         });
         break;
       case "7/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Rajab`,
+          month: `rajab`,
         });
         break;
       case "8/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Sha'bon`,
+          month: `sha'bon`,
         });
         break;
       case "9/":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Ramazon`,
+          month: `ramazon`,
         });
         break;
       case "10":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Shavvol`,
+          month: `shavvol`,
         });
         break;
 
       case "11":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Zulqa'da`,
+          month: `zulqa'da`,
         });
         // console.log(hijriList);
         break;
 
       case "12":
         setHijriList({
-          year: `${manth.split("/")[2].slice(0, 4)} yil`,
+          year: `${manth.split("/")[2].slice(0, 4)}-yil`,
           day: `${manth.split("/")[1]}`,
-          month: `Zulhijja`,
+          month: `zulhijja`,
         });
         break;
     }
@@ -139,7 +139,7 @@ export default function ReactDatePicker() {
         />
         {/* <div>{formattedDate}</div> */}
         {/* {console.log();} */}
-        <div>{`${hijriList.year} ${hijriList.day} ${hijriList.month}`}</div>
+        <div>{`${hijriList.year} ${hijriList.day}-${hijriList.month}`}</div>
       </div>
     </>
   );

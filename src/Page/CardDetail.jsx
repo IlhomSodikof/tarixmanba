@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // import image
 import DetailImg from "../assets/img/arxeologiya4.jpg";
+import { DataService } from "../config/dataService";
+import { endpoints } from "../config/endpoints";
+import { useParams } from "react-router-dom";
 
 export default function NewsDetail() {
+  const route = useParams();
+
+  // bu qism api lar bilan ishlash uchun
+  const [apiData, setApiData] = useState([]);
+  const fetchData = async () => {
+    console.log(route);
+    const response = await DataService.get(
+      endpoints.categoryResourceDetailById(route?.id)
+    );
+    setApiData(response);
+    console.log(response, "card filter detail");
+    // let x = document.querySelector("title");
+    // x.textContent = `Jadidlar / ${response.title}`;
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className="card__container">
       <div className="card__detail__container">
         <div className="Card_detail_img">
-          <img src={DetailImg} />
+          <img src={apiData?.image} />
         </div>
         <div className="card_detail_title">
-          <h1>Card Detail Title</h1>
+          <h1>{apiData.title}</h1>
           <span className="data_card_create">Card Create time</span>
           <div className="card_detail_describtion">
             <p>

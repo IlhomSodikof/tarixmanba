@@ -27,7 +27,7 @@ export default function App() {
           <Route path="/cardDetail/:id" Component={CardDetail} />
           <Route path="/media" Component={Media} />
           <Route path="/login" Component={Login} />
-          <Route path="/sources/:type" Component={Shablon} />
+          <Route path="/sources/:type/:id" Component={Shablon} />
         </Route>
       </Routes>
     </div>

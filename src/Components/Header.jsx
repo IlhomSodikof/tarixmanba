@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
 // import { IoGlassesSharp } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { GiSunglasses } from "react-icons/gi";
 import { motion } from "framer-motion";
@@ -39,9 +39,29 @@ import lenta7 from "../assets/img/lenta7.png";
 import lentaLeft from "../assets/img/lenta_left.png";
 import lentaRight from "../assets/img/lenta_right.png";
 import ReactDatePicker from "./component/ReactDatePicker";
+import { DataService } from "../config/dataService";
+import { endpoints } from "../config/endpoints";
 // import lentaBg from "../assets/img/lentaBg.jpg";
 
 export default function Header() {
+  ///////// Api ulangan joy
+  const [apiData, setApiData] = useState([]);
+
+  const fetchData = async () => {
+    try {
+      const response = await DataService.get(endpoints.categoryResourceApi);
+      console.log(response, "categoryResourceApi");
+      setApiData(response);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  /////////////////////// api end
+
   const [hijriList, setHijriList] = useState({ year: "", day: "", month: "" });
 
   const [time, setTime] = useState(new Date());
@@ -536,17 +556,35 @@ export default function Header() {
                   damping: 20,
                 }}
               >
-                <motion.li
-                  className="dorop-item"
-                  whileHover={{ x: 15, opacity: 0.5 }}
-                >
-                  <Link className="nav-drop-link" to="/sources/archive">
-                    {" "}
-                    <TbBuildingCastle />
-                    <span> Arxeologiya</span>
-                  </Link>
-                </motion.li>
-                <motion.li
+                {/* <h1>{apiData.response}</h1> */}
+                {apiData && apiData.length > 0 ? (
+                  apiData.map((categoryResurs, index) => (
+                    <motion.li
+                      key={index}
+                      className="dorop-item"
+                      whileHover={{ x: 15, opacity: 0.5 }}
+                    >
+                      <Link
+                        className="nav-drop-link"
+                        to={`/sources/archive/${categoryResurs.id}`}
+                      >
+                        <TbBuildingCastle />
+                        <span
+                        // onClick={() =>
+                        //   navigate(`/sources/archive/${categoryResurs.id}`)
+                        // }
+                        >
+                          {" "}
+                          {categoryResurs.title}
+                        </span>
+                      </Link>
+                    </motion.li>
+                  ))
+                ) : (
+                  <p>No data available</p>
+                )}
+
+                {/* <motion.li
                   className="dorop-item"
                   whileHover={{ x: 15, opacity: 0.5 }}
                 >
@@ -642,7 +680,7 @@ export default function Header() {
                     <FaPhotoFilm />
                     <span> Foto va video manbalar</span>
                   </Link>
-                </motion.li>
+                </motion.li> */}
               </motion.ul>
             </div>
             <div className="nav-menu">
@@ -655,11 +693,11 @@ export default function Header() {
                 Yangiliklar
               </Link>
             </div>
-            <div className="nav-menu">
+            {/* <div className="nav-menu">
               <Link to="/media" className="link">
                 Voqea
               </Link>
-            </div>
+            </div> */}
             <div className="nav-menu">
               <Link className="link">Biz haqimizda</Link>
             </div>
